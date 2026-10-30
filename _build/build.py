@@ -187,7 +187,8 @@ P[-1]["chapters"] = [
     ("<p>Intelligent City builds with a set system of mass-timber panels made in its own factory. Every design has to be buildable from those panels, which makes designing by hand slow, and makes it hard to compare options on carbon and cost early on.</p>"),
     ("<ul><li><strong>A line in, a building out.</strong> A designer draws a simple line in Rhino, a few segments long. The generator turns it into a full building made from the set panel system, with every floor plan already laid out. This work increased the range of generatable building forms by 200%.</li>"
      "<li><strong>Every design, measured.</strong> Quantities of timber, concrete and steel are pulled out of each generated design automatically and joined with outside data.</li>"
-     "<li><strong>A carbon and cost dashboard</strong>, designed and built solo, that turns those quantities into embodied carbon and cost estimates for clients.</li></ul>"),
+     "<li><strong>A carbon and cost dashboard</strong>, designed and built solo, that turns those quantities into embodied carbon and cost estimates for clients.</li></ul>"
+     f'<div class="figs">{f.fig("intelligent-city-flow.jpg", "Original process diagram: parametric building generation, data extraction, building and other data, and dashboard creation, next to Intelligent City’s technology stack", "The original process diagram from the time, next to the company’s design-to-assembly stack.")}</div>'),
 
     ('<div class="stat"><div><b>200%</b><span>increase in the range of generatable building forms</span></div></div>'
      "<p>Designers could go from a sketch to a buildable design with carbon and cost numbers in one step, and compare options while they still mattered. That range became the base for the company’s design evaluation and optimization at the time.</p>"),
@@ -200,7 +201,7 @@ f = project(slug="estimating-pedestrian-activity", num="06", title="Estimating p
     dek="Generative design tools need good data about streets. This pipeline estimates street-level foot traffic from census data and feeds it straight in.",
     meta=[("Role", "Computational design summer associate"), ("Product", "Generative design tools"), ("Timeline", "Summer 2019"), ("Team", "Generative Design, Sidewalk Labs")])
 P[-1]["lead"] = f.fig("fig-ped.svg", "Diagram: one census count for an area is split across its buildings, then turned into estimated activity on each street",
-    "One census count, split across buildings by floor area and use, then turned into how busy each street is.", lazy=False)
+    "One census count, split across buildings by floor area and use, then turned into an estimate of pedestrian activity on each street.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>Generative design tools score thousands of building and street options against goals like walkability. To do that well, they need data about who is actually around a site.</p>"
      "<p>Getting geospatial data into those tools was slow and manual, which kept them stuck on narrow test cases. The first step was research into which use cases mattered most, and which standard datasets, like pedestrian activity and transit access, they needed.</p>"),

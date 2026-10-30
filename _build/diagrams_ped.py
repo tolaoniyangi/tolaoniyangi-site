@@ -57,7 +57,7 @@ for x in xs[:2]:
 b.append(f'<defs><linearGradient id="bz"><stop offset="0" stop-color="{ACC}" stop-opacity=".12"/><stop offset="1" stop-color="{ACC}" stop-opacity=".92"/></linearGradient></defs>')
 b.append(f'<rect x="{xs[2]}" y="{oy+size+58}" width="100" height="6" fill="url(#bz)"/>')
 b.append(T(xs[2],oy+size+78,"Quiet",s=9,op=.6)); b.append(T(xs[2]+100,oy+size+78,"Busy",a="end",s=9,op=.6))
-b.append(T(30,34,"THE BUZZ METRIC: FROM CENSUS COUNTS TO BUSY STREETS",s=11,w=600,op=.6,ls=1))
+b.append(T(30,34,"THE BUZZ METRIC: FROM CENSUS COUNTS TO AN ESTIMATE OF PEDESTRIAN ACTIVITY",s=11,w=600,op=.6,ls=1))
 b.append(T(30,H-12,"Illustrative numbers",s=9,op=.5))
 open('images/fig-ped.svg','w').write(f'<svg data-thinned="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="Diagram in three steps: one census count of 1,200 people for an area is split across nine blocks by floor area and use, then each street segment is shaded by the people in the blocks beside it">'+"\n".join(b)+'</svg>')
 print("ok")
