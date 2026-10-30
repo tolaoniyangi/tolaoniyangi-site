@@ -3,42 +3,6 @@ F='font-family="Archivo, Helvetica, Arial, sans-serif"'
 def T(x,y,t,a="start",s=12,w=400,op=1,ls=0):
     return f'<text x="{x}" y="{y}" text-anchor="{a}" {F} font-size="{s}" font-weight="{w}" fill="{INK}" fill-opacity="{op}" letter-spacing="{ls}">{t}</text>'
 
-# ---- Solar: flat roof plan, only setback + HVAC ----
-W,H=720,440
-o=[f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="Roof plan: solar panels fill the roof while staying clear of the fire-code setback around the edge and the HVAC units">']
-o.append(f'<defs><pattern id="h" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="{MUTED}" stroke-width="1"/></pattern></defs>')
-o.append(f'<rect width="{W}" height="{H}" fill="{PAPER}"/>')
-x0,y0,x1,y1=80,60,540,380; sb=26
-o.append(f'<rect x="{x0}" y="{y0}" width="{x1-x0}" height="{y1-y0}" fill="#F6F4EF" stroke="{INK}" stroke-width="2"/>')
-o.append(f'<path d="M{x0} {y0}H{x1}V{y1}H{x0}Z M{x0+sb} {y0+sb}V{y1-sb}H{x1-sb}V{y0+sb}Z" fill="url(#h)" fill-rule="evenodd"/>')
-o.append(f'<rect x="{x0+sb}" y="{y0+sb}" width="{x1-x0-2*sb}" height="{y1-y0-2*sb}" fill="none" stroke="{MUTED}" stroke-dasharray="5 4"/>')
-hv=[(330,150,78,58),(170,262,58,46)]; buf=10
-for x,y,w,h in hv:
-    o.append(f'<rect x="{x-buf}" y="{y-buf}" width="{w+2*buf}" height="{h+2*buf}" fill="none" stroke="{MUTED}" stroke-dasharray="3 3"/>')
-    o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="#fff" stroke="{INK}" stroke-width="1.5"/><line x1="{x}" y1="{y}" x2="{x+w}" y2="{y+h}" stroke="{INK}"/><line x1="{x+w}" y1="{y}" x2="{x}" y2="{y+h}" stroke="{INK}"/>')
-pw,ph,g=36,20,4
-def ok(x,y):
-    if not(x0+sb+4<=x and x+pw<=x1-sb-4 and y0+sb+4<=y and y+ph<=y1-sb-4): return False
-    for hx,hy,hw,hh in hv:
-        if x<hx+hw+buf and x+pw>hx-buf and y<hy+hh+buf and y+ph>hy-buf: return False
-    return True
-n=0
-for y in range(y0+sb+6,y1,ph+g):
-    for x in range(x0+sb+6,x1,pw+g):
-        if ok(x,y): o.append(f'<rect x="{x}" y="{y}" width="{pw}" height="{ph}" fill="{ACC}" stroke="#fff" stroke-width="1"/>'); n+=1
-def call(px,py,tx,ty,t,sub=None):
-    o.append(f'<line x1="{px}" y1="{py}" x2="{tx-6}" y2="{ty-4}" stroke="{INK}" stroke-width="1"/><circle cx="{px}" cy="{py}" r="2.5" fill="{INK}"/>')
-    o.append(T(tx,ty,t,w=600))
-    if sub: o.append(T(tx,ty+16,sub,s=11,op=.7))
-call(x1-sb/2,y0+90,572,140,"Fire-code setback","No panels at the roof edge")
-call(408,180,572,230,"HVAC unit","Plus clearance around it")
-o.append(T(572,316,"Panels",w=600))
-o.append(f'<rect x="572" y="326" width="36" height="20" fill="{ACC}"/>')
-o.append(T(572,366,f"{n} fit on this roof",s=11,op=.7))
-o.append(T(20,H-16,"ROOF PLAN · NOT TO SCALE",s=11,op=.6,ls=1))
-o.append('</svg>')
-open('images/fig-solar.svg','w').write("\n".join(o))
-
 # ---- Elections: pipeline ----
 W,H=720,440
 o=[f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="Diagram: hundreds of local election offices feed one verified dataset, which powers a voter guide used by more than 5 million voters">']
@@ -87,11 +51,11 @@ o.append(T(px+64,py+268,"5M+",a="middle",s=30,w=800))
 o.append(T(px+64,py+288,"voters in 2020",a="middle",s=11,op=.7))
 o.append('</svg>')
 open('images/fig-elections.svg','w').write("\n".join(o))
-print("ok", n)
+print("ok")
 
 # ---- Traffic: calmer version ----
 W,H=720,440
-cols={"A":"#F1E6DA","C":"#EE9E73","F":"#B5381B"}
+cols={"A":"#FBF4EA","C":"#EE8A55","F":"#B5381B"}
 o=[f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="Street grid where each intersection is colored by its A to F delay grade; one busy corridor stands out, and one intersection’s grade is shown across the day">']
 o.append(f'<rect width="{W}" height="{H}" fill="{PAPER}"/>')
 gx=[70,160,250,340,430]; gy=[70,150,230,310]
@@ -106,25 +70,23 @@ for x in gx:
         if (x,y)==hl:
             o.append(f'<circle cx="{x}" cy="{y}" r="15" fill="{cols[g]}" stroke="{INK}" stroke-width="2.5"/>')
         else:
-            o.append(f'<circle cx="{x}" cy="{y}" r="11" fill="{cols[g]}" stroke="#fff" stroke-width="2"/>')
-o.append(T(470,140,"Main street",a="end",s=11,op=.6))
+            o.append(f'<circle cx="{x}" cy="{y}" r="11" fill="{cols[g]}" stroke="#8A857B" stroke-width="1.5"/>')
+o.append(T(30,130,"Main street",s=11,op=.6))
 # legend: gradient bar A..F
 o.append(f'<defs><linearGradient id="gr"><stop offset="0" stop-color="{cols["A"]}"/><stop offset=".5" stop-color="{cols["C"]}"/><stop offset="1" stop-color="{cols["F"]}"/></linearGradient></defs>')
 o.append(T(520,62,"Delay grade",w=700))
 o.append(f'<rect x="520" y="74" width="160" height="12" fill="url(#gr)"/>')
-o.append(T(520,104,"A  little delay",s=11,op=.75))
-o.append(T(680,104,"F  long waits",a="end",s=11,op=.75))
+o.append(T(520,104,"A: short waits",s=11,op=.75))
+o.append(T(680,104,"F: long waits",a="end",s=11,op=.75))
 o.append(f'<line x1="{hl[0]+15}" y1="{hl[1]}" x2="514" y2="196" stroke="{INK}" stroke-width="1"/>')
-o.append(T(520,200,"Pick one intersection",w=600))
-o.append(T(520,216,"to see its day ↓",w=600))
+o.append(T(520,200,"Follow one intersection",w=600))
+o.append(T(520,216,"through the day ↓",w=600))
 # day strip: 3 colors, peaks
 hours=list(range(6,23)); prof="AACFCAAAAACCFFCAA"
 sx,sy=40,382; cw=(680-40)/len(hours)
-o.append(T(sx,sy-10,"Its grade, hour by hour",s=11,w=600))
+o.append(T(sx,sy-10,"The circled intersection, 06:00 to 22:00",s=11,w=600))
 for i,(h,g) in enumerate(zip(hours,prof)):
     o.append(f'<rect x="{sx+i*cw:.1f}" y="{sy}" width="{cw-2:.1f}" height="20" fill="{cols[g]}"/>')
-for h,lab in ((8,"Morning rush"),(18,"Evening rush")):
-    i=hours.index(h); o.append(T(sx+i*cw+cw/2,sy+38,lab,a="middle",s=10,op=.7))
 o.append(T(sx,sy+38,"06:00",s=10,op=.7)); o.append(T(680,sy+38,"22:00",a="end",s=10,op=.7))
 o.append('</svg>')
 open('images/fig-traffic.svg','w').write("\n".join(o))

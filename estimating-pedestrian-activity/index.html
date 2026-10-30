@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Estimating pedestrian activity · Shakira “Tola” Oniyangi</title>
-<meta name="description" content="Generative design tools need good data about streets. This pipeline estimates street-level foot traffic and feeds it straight in.">
+<meta name="description" content="Generative design tools need good data about streets. This pipeline estimates street-level foot traffic from census data and feeds it straight in.">
 <meta name="author" content="Shakira “Tola” Oniyangi">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Shakira “Tola” Oniyangi">
 <meta property="og:title" content="Estimating pedestrian activity · Shakira “Tola” Oniyangi">
-<meta property="og:description" content="Generative design tools need good data about streets. This pipeline estimates street-level foot traffic and feeds it straight in.">
+<meta property="og:description" content="Generative design tools need good data about streets. This pipeline estimates street-level foot traffic from census data and feeds it straight in.">
 <meta property="og:url" content="https://tolaoniyangi.github.io/tolaoniyangi-site/estimating-pedestrian-activity/">
 <meta property="og:image" content="https://tolaoniyangi.github.io/tolaoniyangi-site/images/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -28,7 +28,7 @@
     <nav aria-label="Primary">
       <a class="hide-xs" href="../#work">Work</a>
       <a class="hide-sm" href="../#about">About</a>
-      <a class="hide-sm" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume</a>
+      <a class="hide-sm" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/preview" target="_blank" rel="noopener">Resume ↗</a>
       <a class="hello-btn" href="#hello">Say hello</a>
     </nav>
   </div>
@@ -40,20 +40,20 @@
       <a class="back" href="../#work">← All work</a>
       <div class="eyebrow"><span class="num">06</span><span class="label">Sidewalk Labs · 2019 · Computational design</span></div>
       <h1 class="display">Estimating pedestrian activity</h1>
-      <p class="dek">Generative design tools need good data about streets. This pipeline estimates street-level foot traffic and feeds it straight in.</p>
+      <p class="dek">Generative design tools need good data about streets. This pipeline estimates street-level foot traffic from census data and feeds it straight in.</p>
     </section>
 
     <dl class="meta"><div><dt class="label">Role</dt><dd>Computational design summer associate</dd></div><div><dt class="label">Product</dt><dd>Generative design tools</dd></div><div><dt class="label">Status</dt><dd>Summer 2019</dd></div><div><dt class="label">Team</dt><dd>Generative Design, Sidewalk Labs</dd></div></dl>
 
-    <div class="lead"><figure><img src="../images/ped-buzz.jpg" alt="3D site model with pedestrian activity colored by intensity" width="1400" height="875"><figcaption><b>Fig. 1</b>The “buzz metric”: estimated pedestrian activity from residents and workers around a site.</figcaption></figure></div>
+    <div class="lead"><figure><img src="../images/fig-ped.svg" alt="Diagram: one census count for an area is split across its buildings, then turned into estimated activity on each street" width="720" height="320" style="max-width:720px"><figcaption><b>Fig. 1</b>The method: split census counts down to buildings, then estimate activity on each street.</figcaption></figure></div>
 
-    <section class="chapter"><h2><span class="num">01</span>The problem</h2><div class="prose"><p>Getting geospatial data into generative design was slow and manual, which kept the tools stuck on narrow test cases. The first step was research into which use cases mattered most, and which standard datasets, like pedestrian activity and transit access, they needed.</p><div class="figs"><figure><img src="../images/ped-research.gif" alt="Animated diagram of use-case research" width="512" height="301" loading="lazy"><figcaption><b>Fig. 2</b>Mapping use cases to the data they need.</figcaption></figure></div></div></section>
-    <section class="chapter"><h2><span class="num">02</span>The work</h2><div class="prose"><p>An automated pipeline pulls the data in. Census population and workforce counts are then split down to individual buildings to estimate activity at street level.</p><div class="figs two"><figure><img src="../images/ped-site.jpg" alt="Map of New York with the test site highlighted" width="667" height="1200" loading="lazy"><figcaption><b>Fig. 3</b>The test site.</figcaption></figure><figure><img src="../images/ped-volume.jpg" alt="Buildings colored by estimated population volume" width="1400" height="1066" loading="lazy"><figcaption><b>Fig. 4</b>Population split down to each building.</figcaption></figure></div></div></section>
-    <section class="chapter"><h2><span class="num">03</span>The result</h2><div class="prose"><p>Built on a test site, then confirmed in other cities and over larger areas. Generative design can now draw on building-level population, workforce and land use, plus a “buzz metric” for pedestrian activity.</p><div class="figs"><figure><img src="../images/ped-mockup.gif" alt="Animated mockup of choosing a place and loading its data" width="512" height="320" loading="lazy"><figcaption><b>Fig. 5</b>Pick a place and its data loads automatically.</figcaption></figure></div></div></section>
+    <section class="chapter"><h2><span class="num">01</span>Context</h2><div class="prose"><p>Generative design tools score thousands of building and street options against goals like walkability. To do that well, they need data about who is actually around a site.</p><p>Getting geospatial data into those tools was slow and manual, which kept them stuck on narrow test cases. The first step was research into which use cases mattered most, and which standard datasets, like pedestrian activity and transit access, they needed.</p></div></section>
+    <section class="chapter"><h2><span class="num">02</span>Approach</h2><div class="prose"><p>An automated pipeline pulls the data in. Census population and workforce counts come in large areas called block groups, so the pipeline splits them down to individual buildings by size and use, then estimates how busy each street around them is.</p><div class="figs two"><figure><img src="../images/ped-blockgroups.jpg" alt="Census block groups around the test site" width="512" height="378" loading="lazy" style="max-width:512px"><figcaption><b>Fig. 2</b>Census block groups around the test site.</figcaption></figure><figure><img src="../images/ped-buildingtypes.jpg" alt="Buildings by type with activity scores" width="512" height="320" loading="lazy" style="max-width:512px"><figcaption><b>Fig. 3</b>Buildings by type, ready to be scored.</figcaption></figure></div></div></section>
+    <section class="chapter"><h2><span class="num">03</span>Outcome</h2><div class="prose"><p>Built on a test site in New York, then confirmed in other cities and over larger areas. Generative design could now draw on building-level population, workforce and land use, plus a “buzz metric” for pedestrian activity.</p><div class="figs"><figure><img src="../images/ped-buzz.jpg" alt="3D site model with pedestrian activity colored by intensity" width="512" height="320" loading="lazy" style="max-width:512px"><figcaption><b>Fig. 4</b>The buzz metric: estimated activity from residents and workers around the site.</figcaption></figure></div></div></section>
 
     <a class="next" href="../beyond-the-blue-dot/">
       <div><span class="label">Next project</span><h2 class="display">Beyond the Blue Dot</h2></div>
-      <div class="pic"><img src="../images/bluedot.jpg" alt="" width="1800" height="1012" loading="lazy"></div>
+      <div class="pic"><img src="../images/bluedot.jpg" alt="" width="1440" height="810" loading="lazy"></div>
     </a>
   </div>
 
@@ -64,7 +64,7 @@
       <div class="ctas">
         <button class="btn primary" type="button" data-copy="tolaoniyangi@gmail.com" aria-label="Copy email address">Email</button>
         <a class="btn" href="https://www.linkedin.com/in/tolaoniyangi">LinkedIn</a>
-        <a class="btn" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume (PDF)</a>
+        <a class="btn" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/preview" target="_blank" rel="noopener">Resume ↗</a>
       </div>
       <div class="foot"><span>© 2026 Shakira “Tola” Oniyangi</span><a href="#top">Back to top ↑</a></div>
     </div>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-label="Four ways to select in Google Earth: checkbox and drag in the panel, click and the new marquee on the map"><rect width="720" height="300" fill="#EAE6DE"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#141413"/></marker></defs>
+<rect x="20.0" y="34" width="156" height="160" fill="#fff" stroke="#CFCAC0" stroke-width="1"/>
+<rect x="34.0" y="52" width="12" height="12" rx="2" fill="#fff" stroke="#8A857B" stroke-width="1.3"/>
+<rect x="54.0" y="55" width="70" height="6" rx="3" fill="#CFCAC0" fill-opacity="1"/>
+<rect x="34.0" y="74" width="12" height="12" rx="2" fill="#E2512B" stroke="#E2512B" stroke-width="1.3"/>
+<rect x="54.0" y="77" width="93" height="6" rx="3" fill="#141413" fill-opacity="0.7"/>
+<rect x="34.0" y="96" width="12" height="12" rx="2" fill="#E2512B" stroke="#E2512B" stroke-width="1.3"/>
+<rect x="54.0" y="99" width="76" height="6" rx="3" fill="#141413" fill-opacity="0.7"/>
+<rect x="34.0" y="118" width="12" height="12" rx="2" fill="#fff" stroke="#8A857B" stroke-width="1.3"/>
+<rect x="54.0" y="121" width="99" height="6" rx="3" fill="#CFCAC0" fill-opacity="1"/>
+<rect x="34.0" y="140" width="12" height="12" rx="2" fill="#fff" stroke="#8A857B" stroke-width="1.3"/>
+<rect x="54.0" y="143" width="82" height="6" rx="3" fill="#CFCAC0" fill-opacity="1"/>
+<rect x="34.0" y="162" width="12" height="12" rx="2" fill="#fff" stroke="#8A857B" stroke-width="1.3"/>
+<rect x="54.0" y="165" width="105" height="6" rx="3" fill="#CFCAC0" fill-opacity="1"/>
+<text x="20.0" y="220" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Checkbox</text>
+<text x="20.0" y="238" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">in the panel</text>
+<rect x="194.66666666666666" y="34" width="156" height="160" fill="#fff" stroke="#CFCAC0" stroke-width="1"/>
+<rect x="208.66666666666666" y="52" width="12" height="12" rx="2" fill="#fff" stroke="#8A857B" stroke-width="1.3"/>
+<rect x="228.66666666666666" y="55" width="70" height="6" rx="3" fill="#CFCAC0" fill-opacity="1"/>
+<rect x="208.66666666666666" y="74" width="12" height="12" rx="2" fill="#E2512B" stroke="#E2512B" stroke-width="1.3"/>
+<rect x="228.66666666666666" y="77" width="93" height="6" rx="3" fill="#141413" fill-opacity="0.7"/>
+<rect x="208.66666666666666" y="96" width="12" height="12" rx="2" fill="#E2512B" stroke="#E2512B" stroke-width="1.3"/>
+<rect x="228.66666666666666" y="99" width="76" height="6" rx="3" fill="#141413" fill-opacity="0.7"/>
+<rect x="208.66666666666666" y="118" width="12" height="12" rx="2" fill="#E2512B" stroke="#E2512B" stroke-width="1.3"/>
+<rect x="228.66666666666666" y="121" width="99" height="6" rx="3" fill="#141413" fill-opacity="0.7"/>
+<rect x="208.66666666666666" y="140" width="12" height="12" rx="2" fill="#E2512B" stroke="#E2512B" stroke-width="1.3"/>
+<rect x="228.66666666666666" y="143" width="82" height="6" rx="3" fill="#141413" fill-opacity="0.7"/>
+<rect x="208.66666666666666" y="162" width="12" height="12" rx="2" fill="#fff" stroke="#8A857B" stroke-width="1.3"/>
+<rect x="228.66666666666666" y="165" width="105" height="6" rx="3" fill="#CFCAC0" fill-opacity="1"/>
+<path d="M328.66666666666663 78 V156" stroke="#141413" stroke-width="1.5" marker-end="url(#ar)"/>
+<text x="194.66666666666666" y="220" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Drag</text>
+<text x="194.66666666666666" y="238" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">in the panel</text>
+<rect x="369.3333333333333" y="34" width="156" height="160" fill="#fff" stroke="#CFCAC0" stroke-width="1"/>
+<g stroke="#CFCAC0" stroke-width="1"><line x1="395.3333333333333" y1="34" x2="395.3333333333333" y2="194"/><line x1="427.3333333333333" y1="34" x2="427.3333333333333" y2="194"/><line x1="459.3333333333333" y1="34" x2="459.3333333333333" y2="194"/><line x1="491.3333333333333" y1="34" x2="491.3333333333333" y2="194"/><line x1="523.3333333333333" y1="34" x2="523.3333333333333" y2="194"/><line x1="369.3333333333333" y1="58" x2="525.3333333333333" y2="58"/><line x1="369.3333333333333" y1="90" x2="525.3333333333333" y2="90"/><line x1="369.3333333333333" y1="122" x2="525.3333333333333" y2="122"/><line x1="369.3333333333333" y1="154" x2="525.3333333333333" y2="154"/><line x1="369.3333333333333" y1="186" x2="525.3333333333333" y2="186"/></g>
+<circle cx="414" cy="119" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="463" cy="64" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="385" cy="153" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="417" cy="83" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="511" cy="111" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="465" cy="157" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="480" cy="125" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="422" cy="60" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="434" cy="149" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="496" cy="67" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="464" cy="91" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="493" cy="171" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="448" cy="172" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="465" cy="157" r="5" fill="#E2512B" stroke="#fff" stroke-width="1.3"/>
+<path d="M467 159 l0 16 l4 -4 l4 8 l3 -1.5 l-4 -8 l6 0 z" fill="#141413" stroke="#fff" stroke-width="1"/>
+<text x="369.3333333333333" y="220" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Click</text>
+<text x="369.3333333333333" y="238" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">on the map</text>
+<rect x="544.0" y="34" width="156" height="160" fill="#fff" stroke="#E2512B" stroke-width="2"/>
+<g stroke="#CFCAC0" stroke-width="1"><line x1="570.0" y1="34" x2="570.0" y2="194"/><line x1="602.0" y1="34" x2="602.0" y2="194"/><line x1="634.0" y1="34" x2="634.0" y2="194"/><line x1="666.0" y1="34" x2="666.0" y2="194"/><line x1="698.0" y1="34" x2="698.0" y2="194"/><line x1="544.0" y1="58" x2="700.0" y2="58"/><line x1="544.0" y1="90" x2="700.0" y2="90"/><line x1="544.0" y1="122" x2="700.0" y2="122"/><line x1="544.0" y1="154" x2="700.0" y2="154"/><line x1="544.0" y1="186" x2="700.0" y2="186"/></g>
+<circle cx="588" cy="119" r="5" fill="#E2512B" stroke="#fff" stroke-width="1.3"/>
+<circle cx="638" cy="64" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="560" cy="153" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="591" cy="83" r="5" fill="#E2512B" stroke="#fff" stroke-width="1.3"/>
+<circle cx="685" cy="111" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="639" cy="157" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="655" cy="125" r="5" fill="#E2512B" stroke="#fff" stroke-width="1.3"/>
+<circle cx="597" cy="60" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="609" cy="149" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="670" cy="67" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="638" cy="91" r="5" fill="#E2512B" stroke="#fff" stroke-width="1.3"/>
+<circle cx="668" cy="171" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<circle cx="623" cy="172" r="5" fill="#fff" stroke="#141413" stroke-width="1.3"/>
+<rect x="574.0" y="74" width="82" height="70" fill="#E2512B" fill-opacity=".1" stroke="#E2512B" stroke-width="1.6" stroke-dasharray="5 4"/>
+<path d="M656.0 144 l0 16 l4 -4 l4 8 l3 -1.5 l-4 -8 l6 0 z" fill="#141413" stroke="#fff" stroke-width="1"/>
+<text x="544.0" y="220" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#E2512B" fill-opacity="1" letter-spacing="0">Marquee</text>
+<text x="544.0" y="238" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">on the map · new</text>
+<text x="20" y="22" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="0.6" letter-spacing="1">FOUR WAYS TO SELECT, ALL IN SYNC</text></svg>

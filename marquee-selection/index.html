@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Drag to select · Shakira “Tola” Oniyangi</title>
+<title>Marquee map selection · Shakira “Tola” Oniyangi</title>
 <meta name="description" content="One drag on the map to select any number of features, instead of a click per feature. The first way to select in bulk directly on Google Earth’s 3D map, built to fit with every existing way to select, on web and mobile.">
 <meta name="author" content="Shakira “Tola” Oniyangi">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Shakira “Tola” Oniyangi">
-<meta property="og:title" content="Drag to select · Shakira “Tola” Oniyangi">
+<meta property="og:title" content="Marquee map selection · Shakira “Tola” Oniyangi">
 <meta property="og:description" content="One drag on the map to select any number of features, instead of a click per feature. The first way to select in bulk directly on Google Earth’s 3D map, built to fit with every existing way to select, on web and mobile.">
-<meta property="og:url" content="https://tolaoniyangi.github.io/tolaoniyangi-site/drag-to-select/">
+<meta property="og:url" content="https://tolaoniyangi.github.io/tolaoniyangi-site/marquee-selection/">
 <meta property="og:image" content="https://tolaoniyangi.github.io/tolaoniyangi-site/images/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#F3F1EC">
@@ -28,7 +28,7 @@
     <nav aria-label="Primary">
       <a class="hide-xs" href="../#work">Work</a>
       <a class="hide-sm" href="../#about">About</a>
-      <a class="hide-sm" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume</a>
+      <a class="hide-sm" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/preview" target="_blank" rel="noopener">Resume ↗</a>
       <a class="hello-btn" href="#hello">Say hello</a>
     </nav>
   </div>
@@ -39,17 +39,17 @@
     <section class="p-hero">
       <a class="back" href="../#work">← All work</a>
       <div class="eyebrow"><span class="num">01</span><span class="label">Google Earth · Interaction design, front end</span></div>
-      <h1 class="display">Drag to select</h1>
+      <h1 class="display">Marquee map selection</h1>
       <p class="dek">One drag on the map to select any number of features, instead of a click per feature. The first way to select in bulk directly on Google Earth’s 3D map, built to fit with every existing way to select, on web and mobile.</p>
     </section>
 
     <dl class="meta"><div><dt class="label">Role</dt><dd>Interaction design and front-end engineering, sole engineer</dd></div><div><dt class="label">Product</dt><dd>Google Earth, web</dd></div><div><dt class="label">Status</dt><dd>Live</dd></div><div><dt class="label">Links</dt><dd><a href="https://developers.google.com/maps/documentation/earth/style-your-places#bulk_styling">Bulk styling docs ↗</a></dd></div></dl>
 
-    <div class="lead"><figure><img src="../images/fig-select.svg" alt="Diagram: a dashed box dragged over map points selects them, and the same items appear checked in the project panel" width="720" height="440"><figcaption><b>Fig. 1</b>Drag a box on the map. Every feature inside is selected, and the project panel’s checkboxes update to match.</figcaption></figure></div>
+    <div class="lead"><figure><img src="../images/fig-select.svg" alt="Diagram: a dashed box dragged over map points selects them, and the same items appear checked in the project panel" width="720" height="440" style="max-width:720px"><figcaption><b>Fig. 1</b>Drag a box on the map. Every feature inside is selected, and the project panel’s checkboxes update to match.</figcaption></figure></div>
 
-    <section class="chapter"><h2><span class="num">01</span>The problem</h2><div class="prose"><p>On the map, features could only be picked one at a time. The alternative was ticking them off in a list in the project panel. Styling dozens of features meant dozens of clicks, and complex workflows hit a wall.</p><p>Google Earth also needed a temporary drawing state for features on the way. Drag to select would be the first thing built on it, so it had to set the pattern.</p></div></section>
-    <section class="chapter"><h2><span class="num">02</span>The work</h2><div class="prose"><p>Selection already worked three ways (checkboxes, dragging in the panel and clicking on the map), so the new gesture had to fit with all of them, across:</p><ul><li><strong>Web and mobile.</strong> One idea, two very different kinds of input.</li><li><strong>Streamlined and productivity layouts.</strong> Simple by default, fast for power users.</li><li><strong>Screen-centered drawing tools.</strong> Other tools also claim the middle of the map, so the gestures can’t collide.</li></ul><p>Every conflict was worked out by prototyping, testing and iterating with a UX designer and a PM. The implementation, end to end, was one engineer.</p></div></section>
-    <section class="chapter"><h2><span class="num">03</span>The result</h2><div class="prose"><p>Drag to select is live in Google Earth on the web. Select a whole neighborhood of features in one motion, then style them together. As the first feature on Earth’s new drawing state, it laid the groundwork for the drawing tools to come.</p></div></section>
+    <section class="chapter"><h2><span class="num">01</span>Context</h2><div class="prose"><p>Google Earth projects hold the places people care about: sites, parcels, buildings, routes. On the map, those features could only be picked one at a time. The alternative was ticking them off in a list in the project panel, away from the map where the work happens.</p><p>Styling dozens of features meant dozens of clicks, and anything more complex hit a wall. Earth also needed a temporary drawing state for features on the way, and marquee selection would be the first thing built on it, so it had to set the pattern.</p></div></section>
+    <section class="chapter"><h2><span class="num">02</span>Approach</h2><div class="prose"><p>Selection already worked three ways, and marquee selection had to become the fourth without breaking any of them. Select on the map and the panel updates. Change the panel and the map follows.</p><div class="figs"><figure><img src="../images/fig-select-modes.svg" alt="Four ways to select: checkbox and drag in the panel, click and marquee on the map" width="720" height="300" loading="lazy" style="max-width:720px"><figcaption><b>Fig. 2</b>Four ways to select, one shared selection.</figcaption></figure></div><p>The hard part was everything around the gesture:</p><ul><li><strong>Web and mobile.</strong> A mouse drag and a touch drag mean different things, and on mobile a drag usually moves the map.</li><li><strong>Streamlined and productivity layouts.</strong> Simple by default for new users, fast for people managing hundreds of features.</li><li><strong>Screen-centered drawing tools.</strong> Measuring and drawing also claim the middle of the map, so the gestures can’t collide.</li></ul><p>Every conflict was worked out by prototyping, testing and iterating with a UX designer and a PM. The implementation, end to end, was one engineer.</p></div></section>
+    <section class="chapter"><h2><span class="num">03</span>Outcome</h2><div class="prose"><p>Marquee selection is live in Google Earth on the web. Select a whole neighborhood of features in one motion, then style them together. As the first feature on Earth’s new drawing state, it laid the groundwork for the drawing tools to come.</p></div></section>
 
     <a class="next" href="../cut-and-fill/">
       <div><span class="label">Next project</span><h2 class="display">Cut and fill</h2></div>
@@ -64,7 +64,7 @@
       <div class="ctas">
         <button class="btn primary" type="button" data-copy="tolaoniyangi@gmail.com" aria-label="Copy email address">Email</button>
         <a class="btn" href="https://www.linkedin.com/in/tolaoniyangi">LinkedIn</a>
-        <a class="btn" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume (PDF)</a>
+        <a class="btn" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/preview" target="_blank" rel="noopener">Resume ↗</a>
       </div>
       <div class="foot"><span>© 2026 Shakira “Tola” Oniyangi</span><a href="#top">Back to top ↑</a></div>
     </div>
