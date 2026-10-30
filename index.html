@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tola Oniyangi, Senior UX Engineer</title>
+<meta name="description" content="Senior UX engineer at Google working on Google Earth across design, research, and engineering, with a computational design practice. Background in architecture and urban planning from Columbia GSAPP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EDF0F4; --ink:#171B26; --muted:#5A6272; --line:#C9CFDA;
+  --accent:#2F54EB;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#10131A; --ink:#E8EBF2; --muted:#9AA3B5; --line:#2A3040;
+    --accent:#8DA6FF;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#10131A; --ink:#E8EBF2; --muted:#9AA3B5; --line:#2A3040;
+  --accent:#8DA6FF;
+  color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.1875rem/1.55 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 clamp(1.1rem,4vw,2.5rem)}
+header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:1.4rem 0;font-family:var(--display);font-weight:500}
+header .name{font-weight:700;text-decoration:none;font-size:1.05rem}
+nav{display:flex;gap:1.4rem}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:5px}
+h1{font:700 clamp(2.5rem,7.4vw,5.6rem)/0.98 var(--display);letter-spacing:-0.035em;margin:clamp(1.5rem,5vw,3.5rem) 0 1.4rem;max-width:15ch}
+.lede{max-width:46ch;font-size:1.3rem;color:var(--ink);margin:0}
+section{padding:clamp(3rem,8vw,5.5rem) 0 0}
+h2{font:700 clamp(1.6rem,3.4vw,2.2rem)/1.1 var(--display);letter-spacing:-0.02em;margin:0 0 1.2rem}
+.row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.6fr) minmax(0,.9fr);gap:.4rem 2rem;padding:1.3rem 0;border-top:1px solid var(--line);text-decoration:none;align-items:baseline}
+.row:last-child{border-bottom:1px solid var(--line)}
+.row h3{font:700 1.45rem/1.15 var(--display);letter-spacing:-0.015em;margin:0}
+.row p{margin:0}
+.row .tags{color:var(--muted);font-size:1rem}
+a.row:hover h3{color:var(--accent);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.early .row{padding:1rem 0}
+.early .row h3{font-size:1.2rem}
+.row h3 a{text-decoration:none}
+.row h3 a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.contact{padding-bottom:4rem}
+.contact p{max-width:40ch;margin:0 0 1rem}
+.links{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;font-family:var(--display);font-weight:700;font-size:1.15rem}
+footer{border-top:1px solid var(--line);padding:1.2rem 0 2rem;font-size:.95rem;color:var(--muted);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer button{all:unset;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+footer button:focus-visible{outline:3px solid var(--accent)}
+@media (max-width:760px){
+  .row{grid-template-columns:1fr;gap:.25rem}
+  body{font-size:1.125rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="name" href="#top">Tola Oniyangi</a>
+    <nav aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="https://tolaoniyangi.com/resume">Resume</a>
+      <a href="https://tolaoniyangi.com/in-the-news">Mentions</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <h1>I build tools that make sense of cities.</h1>
+    <p class="lede">I’m a senior UX engineer on Google Earth. I do the design, the research, and the engineering, using computational design to turn spatial data into tools people can use. My background is in architecture and urban planning from Columbia GSAPP.</p>
+
+    <section id="work">
+      <h2>Selected work</h2>
+      <div class="row">
+        <h3>Selection at scale</h3>
+        <p>Designed and built marquee selection for Google Earth on the web. Before it, you couldn’t multi-select on the map at all. It works with the checkbox, drag, and click selection already in the panel.</p>
+        <p class="tags">UX design, front-end engineering, interaction design</p>
+      </div>
+      <div class="row">
+        <h3><a href="https://developers.google.com/maps/documentation/earth/terrain-analysis">Cut and fill terrain analysis</a></h3>
+        <p>Designed and implemented the back end for cut and fill, one of four terrain analysis tools now live in Google Earth. It finds the elevation where cut equals fill, or prices any target you set, and maps where the earth has to move. See the <a href="https://mapsplatform.google.com/resources/blog/a-field-guide-to-terrain-analysis-tools-in-google-earth/">field guide</a>.</p>
+        <p class="tags">Back-end design, computational design, terrain analysis</p>
+      </div>
+      <a class="row" href="https://tolaoniyangi.com/1p-research-data-layers">
+        <h3>1P Research Data Layers</h3>
+        <p>Productizing first-party research: architecting the framework for professional data layers in Google Earth.</p>
+        <p class="tags">Research, data visualization, computational design</p>
+      </a>
+      <a class="row" href="https://tolaoniyangi.com/solar-assessment">
+        <h3>Google Earth Solar</h3>
+        <p>Assessing solar potential for any site, at scale.</p>
+        <p class="tags">Computational design at Google</p>
+      </a>
+      <a class="row" href="https://tolaoniyangi.com/computational-design">
+        <h3>Intelligent City</h3>
+        <p>Scaling parametric systems for urban optimization.</p>
+        <p class="tags">Computational design, data analysis, visualization</p>
+      </a>
+      <a class="row" href="https://tolaoniyangi.com/data-storytelling">
+        <h3>US Elections data storytelling</h3>
+        <p>Democratizing election data to power nonpartisan voter guides for 5M+ US citizens.</p>
+        <p class="tags">Data visualization, graphic design</p>
+      </a>
+      <a class="row" href="https://tolaoniyangi.com/beyond-the-blue-dot">
+        <h3>Beyond the Blue Dot</h3>
+        <p>A tool for pulling individual-scale insights out of big location data.</p>
+        <p class="tags">Computational design, product design, data visualization</p>
+      </a>
+      <a class="row" href="https://tolaoniyangi.com/estimating-pedestrian-activity">
+        <h3>Estimating Pedestrian Activity</h3>
+        <p>Automating spatial data integration for generative urban prototyping.</p>
+        <p class="tags">Computational design, data visualization</p>
+      </a>
+    </section>
+
+    <section class="early">
+      <h2>Earlier work</h2>
+      <a class="row" href="https://tolaoniyangi.com/12">
+        <h3>wastespace</h3>
+        <p>How can we limit the waste that reaches landfill and create jobs for women?</p>
+        <p class="tags">Architectural design, research, branding</p>
+      </a>
+      <a class="row" href="https://tolaoniyangi.com/library">
+        <h3>design for who?</h3>
+        <p>Using demographic mapping to define public space.</p>
+        <p class="tags">Data visualization, architectural design, branding</p>
+      </a>
+      <a class="row" href="https://tolaoniyangi.com/citi-bike-access">
+        <h3>Citi Bike access</h3>
+        <p>Mapping how Citi Bike connects to NYC transit, and who it leaves out.</p>
+        <p class="tags">Data visualization, data analysis, graphic design</p>
+      </a>
+      <a class="row" href="https://tolaoniyangi.com/predicting-urban-sprawl">
+        <h3>Predicting urban sprawl</h3>
+        <p>Can a machine learning model be trained to predict it?</p>
+        <p class="tags">Machine learning</p>
+      </a>
+      <a class="row" href="https://tolaoniyangi.com/airbnb-analysis">
+        <h3>Airbnb analysis</h3>
+        <p>How do Airbnb’s active users talk about neighborhoods?</p>
+        <p class="tags">Data visualization</p>
+      </a>
+    </section>
+
+    <section class="early">
+      <h2>Teaching and talks</h2>
+      <div class="row">
+        <h3>Guest lecture, Prototyping in Urban Tech</h3>
+        <p>Spoke to James Piacentini’s graduate students at Columbia GSAPP about spatial and urban data design and building mapping tools for public use.</p>
+        <p class="tags">Teaching, March 2026</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Say hello</h2>
+      <p>The fastest way to reach me is LinkedIn.</p>
+      <div class="links">
+        <a href="http://linkedin.com/in/tolaoniyangi">LinkedIn</a>
+        <a href="https://tolaoniyangi.com/resume">Resume</a>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <span>© 2026 Tola Oniyangi</span>
+    <button id="theme" type="button">Switch light/dark</button>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement,mq=window.matchMedia('(prefers-color-scheme: dark)');
+  document.getElementById('theme').addEventListener('click',function(){
+    var t=root.getAttribute('data-theme'),dark=t?t==='dark':mq.matches;
+    root.setAttribute('data-theme',dark?'light':'dark');
+  });
+})();
+</script>
+</body>
+</html>
