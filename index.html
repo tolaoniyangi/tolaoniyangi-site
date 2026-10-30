@@ -2,194 +2,168 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Tola Oniyangi, Senior UX Engineer</title>
-<meta name="description" content="Senior UX engineer at Google working on Google Earth across design, research, and engineering, with a computational design practice. Background in architecture and urban planning from Columbia GSAPP.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shakira “Tola” Oniyangi</title>
+<meta name="description" content="Shakira “Tola” Oniyangi is a senior UX engineer and computational designer on Google Earth, with a background in architecture and urban planning from Columbia GSAPP.">
+<meta name="theme-color" content="#F3F1EC">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --paper:#EDF0F4; --ink:#171B26; --muted:#5A6272; --line:#C9CFDA;
-  --accent:#2F54EB;
-  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
-  --body:"Newsreader",Georgia,"Times New Roman",serif;
-  color-scheme:light;
-  box-sizing:border-box;
-  padding-top:env(safe-area-inset-top,0px);
-  padding-bottom:env(safe-area-inset-bottom,0px);
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --paper:#10131A; --ink:#E8EBF2; --muted:#9AA3B5; --line:#2A3040;
-    --accent:#8DA6FF;
-    color-scheme:dark;
-  }
-}
-:root[data-theme="dark"]{
-  --paper:#10131A; --ink:#E8EBF2; --muted:#9AA3B5; --line:#2A3040;
-  --accent:#8DA6FF;
-  color-scheme:dark;
-}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
-*,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 1.1875rem/1.55 var(--body)}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 clamp(1.1rem,4vw,2.5rem)}
-header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:1.4rem 0;font-family:var(--display);font-weight:500}
-header .name{font-weight:700;text-decoration:none;font-size:1.05rem}
-nav{display:flex;gap:1.4rem}
-nav a{text-decoration:none;color:var(--muted)}
-nav a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:5px}
-h1{font:700 clamp(2.5rem,7.4vw,5.6rem)/0.98 var(--display);letter-spacing:-0.035em;margin:clamp(1.5rem,5vw,3.5rem) 0 1.4rem;max-width:15ch}
-.lede{max-width:46ch;font-size:1.3rem;color:var(--ink);margin:0}
-section{padding:clamp(3rem,8vw,5.5rem) 0 0}
-h2{font:700 clamp(1.6rem,3.4vw,2.2rem)/1.1 var(--display);letter-spacing:-0.02em;margin:0 0 1.2rem}
-.row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.6fr) minmax(0,.9fr);gap:.4rem 2rem;padding:1.3rem 0;border-top:1px solid var(--line);text-decoration:none;align-items:baseline}
-.row:last-child{border-bottom:1px solid var(--line)}
-.row h3{font:700 1.45rem/1.15 var(--display);letter-spacing:-0.015em;margin:0}
-.row p{margin:0}
-.row .tags{color:var(--muted);font-size:1rem}
-a.row:hover h3{color:var(--accent);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
-.early .row{padding:1rem 0}
-.early .row h3{font-size:1.2rem}
-.row h3 a{text-decoration:none}
-.row h3 a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
-.contact{padding-bottom:4rem}
-.contact p{max-width:40ch;margin:0 0 1rem}
-.links{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;font-family:var(--display);font-weight:700;font-size:1.15rem}
-footer{border-top:1px solid var(--line);padding:1.2rem 0 2rem;font-size:.95rem;color:var(--muted);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-footer button{all:unset;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
-footer button:focus-visible{outline:3px solid var(--accent)}
-@media (max-width:760px){
-  .row{grid-template-columns:1fr;gap:.25rem}
-  body{font-size:1.125rem}
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <a class="name" href="#top">Tola Oniyangi</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="name" href="./">Shakira “Tola” Oniyangi</a>
     <nav aria-label="Primary">
-      <a href="#work">Work</a>
-      <a href="https://tolaoniyangi.com/resume">Resume</a>
-      <a href="https://tolaoniyangi.com/in-the-news">Mentions</a>
+      <a class="hide-xs" href="#work">Work</a>
+      <a class="hide-sm" href="#about">About</a>
+      <a class="hide-sm" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume</a>
+      <a class="hello-btn" href="#hello">Say hello</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main id="top">
-    <h1>I build tools that make sense of cities.</h1>
-    <p class="lede">I’m a senior UX engineer on Google Earth. I do the design, the research, and the engineering, using computational design to turn spatial data into tools people can use. My background is in architecture and urban planning from Columbia GSAPP.</p>
-
-    <section id="work">
-      <h2>Selected work</h2>
-      <div class="row">
-        <h3>Selection at scale</h3>
-        <p>Designed and built marquee selection for Google Earth on the web. Before it, you couldn’t multi-select on the map at all. It works with the checkbox, drag, and click selection already in the panel.</p>
-        <p class="tags">UX design, front-end engineering, interaction design</p>
-      </div>
-      <div class="row">
-        <h3><a href="https://developers.google.com/maps/documentation/earth/terrain-analysis">Cut and fill terrain analysis</a></h3>
-        <p>Designed and implemented the back end for cut and fill, one of four terrain analysis tools now live in Google Earth. It finds the elevation where cut equals fill, or prices any target you set, and maps where the earth has to move. See the <a href="https://mapsplatform.google.com/resources/blog/a-field-guide-to-terrain-analysis-tools-in-google-earth/">field guide</a>.</p>
-        <p class="tags">Back-end design, computational design, terrain analysis</p>
-      </div>
-      <a class="row" href="https://tolaoniyangi.com/1p-research-data-layers">
-        <h3>1P Research Data Layers</h3>
-        <p>Productizing first-party research: architecting the framework for professional data layers in Google Earth.</p>
-        <p class="tags">Research, data visualization, computational design</p>
-      </a>
-      <a class="row" href="https://tolaoniyangi.com/solar-assessment">
-        <h3>Google Earth Solar</h3>
-        <p>Assessing solar potential for any site, at scale.</p>
-        <p class="tags">Computational design at Google</p>
-      </a>
-      <a class="row" href="https://tolaoniyangi.com/computational-design">
-        <h3>Intelligent City</h3>
-        <p>Scaling parametric systems for urban optimization.</p>
-        <p class="tags">Computational design, data analysis, visualization</p>
-      </a>
-      <a class="row" href="https://tolaoniyangi.com/data-storytelling">
-        <h3>US Elections data storytelling</h3>
-        <p>Democratizing election data to power nonpartisan voter guides for 5M+ US citizens.</p>
-        <p class="tags">Data visualization, graphic design</p>
-      </a>
-      <a class="row" href="https://tolaoniyangi.com/beyond-the-blue-dot">
-        <h3>Beyond the Blue Dot</h3>
-        <p>A tool for pulling individual-scale insights out of big location data.</p>
-        <p class="tags">Computational design, product design, data visualization</p>
-      </a>
-      <a class="row" href="https://tolaoniyangi.com/estimating-pedestrian-activity">
-        <h3>Estimating Pedestrian Activity</h3>
-        <p>Automating spatial data integration for generative urban prototyping.</p>
-        <p class="tags">Computational design, data visualization</p>
-      </a>
-    </section>
-
-    <section class="early">
-      <h2>Earlier work</h2>
-      <a class="row" href="https://tolaoniyangi.com/12">
-        <h3>wastespace</h3>
-        <p>How can we limit the waste that reaches landfill and create jobs for women?</p>
-        <p class="tags">Architectural design, research, branding</p>
-      </a>
-      <a class="row" href="https://tolaoniyangi.com/library">
-        <h3>design for who?</h3>
-        <p>Using demographic mapping to define public space.</p>
-        <p class="tags">Data visualization, architectural design, branding</p>
-      </a>
-      <a class="row" href="https://tolaoniyangi.com/citi-bike-access">
-        <h3>Citi Bike access</h3>
-        <p>Mapping how Citi Bike connects to NYC transit, and who it leaves out.</p>
-        <p class="tags">Data visualization, data analysis, graphic design</p>
-      </a>
-      <a class="row" href="https://tolaoniyangi.com/predicting-urban-sprawl">
-        <h3>Predicting urban sprawl</h3>
-        <p>Can a machine learning model be trained to predict it?</p>
-        <p class="tags">Machine learning</p>
-      </a>
-      <a class="row" href="https://tolaoniyangi.com/airbnb-analysis">
-        <h3>Airbnb analysis</h3>
-        <p>How do Airbnb’s active users talk about neighborhoods?</p>
-        <p class="tags">Data visualization</p>
-      </a>
-    </section>
-
-    <section class="early">
-      <h2>Teaching and talks</h2>
-      <div class="row">
-        <h3>Guest lecture, Prototyping in Urban Tech</h3>
-        <p>Spoke to James Piacentini’s graduate students at Columbia GSAPP about spatial and urban data design and building mapping tools for public use.</p>
-        <p class="tags">Teaching, March 2026</p>
+<main>
+  <div class="wrap">
+    <section class="hero">
+      <h1 class="display">I design and build software for the <em>built environment.</em></h1>
+      <div class="hero-foot">
+        <p>I’m a senior UX engineer and computational designer on Google Earth. Before software, I studied architecture and urban planning at Columbia. Now I build the tools that planners, architects and builders use to understand a site before they change it.</p>
+        <div class="ctas">
+          <a class="btn primary" href="#hello">Say hello</a>
+          <a class="btn" href="#work">See the work ↓</a>
+        </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <h2>Say hello</h2>
-      <p>The fastest way to reach me is LinkedIn.</p>
-      <div class="links">
-        <a href="http://linkedin.com/in/tolaoniyangi">LinkedIn</a>
-        <a href="https://tolaoniyangi.com/resume">Resume</a>
+    <section id="work" class="block">
+      <div class="sec-head"><h2 class="label">Selected work</h2><span class="label">2019–2026</span></div>
+      <div class="index">
+        <a class="card" href="drag-to-select/">
+          <div class="pic contain"><img src="images/fig-select.svg" alt="Diagram of a box dragged over map points to select them" width="720" height="440"></div>
+          <div class="card-text"><span class="num">01</span><h3 class="display">Drag to select</h3><p>Draw a box on the map to select as many places as you want at once. Before this, Google Earth only let you pick them one at a time.</p><span class="label">Google Earth · Design, front end</span></div>
+        </a>
+        <a class="card" href="cut-and-fill/">
+          <div class="pic contain"><img src="images/fig-cutfill.svg" alt="Section diagram of cut and fill around a target elevation" width="720" height="330"></div>
+          <div class="card-text"><span class="num">02</span><h3 class="display">Cut and fill</h3><p>Draw a site and see how much earth has to be dug out or brought in to level it, and where. One of four terrain analysis tools in Google Earth.</p><span class="label">Google Earth · Back end</span></div>
+        </a>
+        <a class="card" href="1p-research-data-layers/">
+          <div class="pic contain"><img src="images/fig-traffic.svg" alt="Abstract street grid with intersections colored by A to F delay grade" width="720" height="440" loading="lazy"></div>
+          <div class="card-text"><span class="num">03</span><h3 class="display">Traffic signal level of service</h3><p>Google Research’s vehicle-delay data, turned into an A–F grade for every signalized intersection, hour by hour. Part of a launch that signed up 470+ paying professional users.</p><span class="label">Google Earth · Data product, UI</span></div>
+        </a>
+        <a class="card" href="solar-assessment/">
+          <div class="pic contain"><img src="images/fig-solar.svg" alt="Roof plan with solar panels placed around a setback, vents and an HVAC unit" width="720" height="440" loading="lazy"></div>
+          <div class="card-text"><span class="num">04</span><h3 class="display">Solar layouts for real roofs</h3><p>Panel layouts that work around roof shapes, vents, HVAC units and fire-code setbacks, with cost and output for any building or parking lot.</p><span class="label">Google Earth · Computational design lead</span></div>
+        </a>
+        <a class="card" href="computational-design/">
+          <div class="pic contain"><img src="images/intelligent-city.jpg" alt="Intelligent City's design-to-assembly technology stack" width="1800" height="758" loading="lazy"></div>
+          <div class="card-text"><span class="num">05</span><h3 class="display">Mass-timber buildings, generated</h3><p>I grew the software that generates Intelligent City’s mass-timber housing, and measured the materials, cost and emissions of every design it made.</p><span class="label">Intelligent City · Computational design</span></div>
+        </a>
+        <a class="card" href="data-storytelling/">
+          <div class="pic"><img src="images/elections-numbers.jpg" alt="Map of candidates per seat by US state" width="1800" height="1012" loading="lazy"></div>
+          <div class="card-text"><span class="num">06</span><h3 class="display">Election data for 5M voters</h3><p>I checked polling places and charted ballot trends for a nonpartisan voter guide used by more than 5 million people in 2020.</p><span class="label">BallotReady · Data visualization</span></div>
+        </a>
+        <a class="card" href="beyond-the-blue-dot/">
+          <div class="pic"><img src="images/bluedot.jpg" alt="Beyond the Blue Dot landing page with a map of New York" width="1800" height="1012" loading="lazy"></div>
+          <div class="card-text"><span class="num">07</span><h3 class="display">Beyond the Blue Dot</h3><p>A web tool that turns census data into short stories about the people who live and work in a place. My urban planning capstone, built for Sidewalk Labs.</p><span class="label">GSAPP × Sidewalk Labs · UX, prototyping</span></div>
+        </a>
+        <a class="card" href="estimating-pedestrian-activity/">
+          <div class="pic"><img src="images/ped-buzz.jpg" alt="3D site model with pedestrian activity colored by intensity" width="1400" height="875" loading="lazy"></div>
+          <div class="card-text"><span class="num">08</span><h3 class="display">Estimating pedestrian activity</h3><p>A pipeline that estimates street-level foot traffic from census data and feeds it straight into generative design tools.</p><span class="label">Sidewalk Labs · Computational design</span></div>
+        </a>
       </div>
     </section>
-  </main>
 
+    <section class="block" aria-labelledby="earlier">
+      <div class="sec-head"><h2 class="label" id="earlier">Earlier work</h2><span class="label">Columbia GSAPP, 2016–19</span></div>
+      <table class="early">
+        <tr>
+          <td class="thumb"><a href="https://tolaoniyangi.com/12" tabindex="-1" aria-hidden="true"><img src="images/wastespace.jpg" alt="" loading="lazy" width="900" height="506"></a></td>
+          <td><h3><a href="https://tolaoniyangi.com/12">wastespace</a></h3><p>A recycling hub that creates jobs for women in Vieques, Puerto Rico.</p></td>
+          <td class="when label">Architecture · 2019</td>
+        </tr>
+        <tr>
+          <td class="thumb"><a href="https://tolaoniyangi.com/library" tabindex="-1" aria-hidden="true"><img src="images/library.jpg" alt="" loading="lazy" width="900" height="900"></a></td>
+          <td><h3><a href="https://tolaoniyangi.com/library">design for who?</a></h3><p>A Dumbo library designed around who can walk to it.</p></td>
+          <td class="when label">Architecture, mapping · 2018</td>
+        </tr>
+        <tr>
+          <td class="thumb"><a href="https://tolaoniyangi.com/citi-bike-access" tabindex="-1" aria-hidden="true"><img src="images/citibike.jpg" alt="" loading="lazy" width="695" height="900"></a></td>
+          <td><h3><a href="https://tolaoniyangi.com/citi-bike-access">Citi Bike access</a></h3><p>Who Citi Bike reaches, and who it leaves out.</p></td>
+          <td class="when label">GIS · 2017</td>
+        </tr>
+        <tr>
+          <td class="thumb"><a href="https://tolaoniyangi.com/predicting-urban-sprawl" tabindex="-1" aria-hidden="true"><img src="images/sprawl.jpg" alt="" loading="lazy" width="900" height="475"></a></td>
+          <td><h3><a href="https://tolaoniyangi.com/predicting-urban-sprawl">Predicting urban sprawl</a></h3><p>A model trained on satellite images of Cairo, Dubai and Wuhan.</p></td>
+          <td class="when label">Machine learning · 2016</td>
+        </tr>
+        <tr>
+          <td class="thumb"><a href="https://tolaoniyangi.com/airbnb-analysis" tabindex="-1" aria-hidden="true"><img src="images/airbnb.jpg" alt="" loading="lazy" width="900" height="680"></a></td>
+          <td><h3><a href="https://tolaoniyangi.com/airbnb-analysis">Airbnb analysis</a></h3><p>How hosts and guests describe the same neighborhoods differently.</p></td>
+          <td class="when label">Data visualization · 2017</td>
+        </tr>
+      </table>
+    </section>
 
-  <footer>
-    <span>© 2026 Tola Oniyangi</span>
-    <button id="theme" type="button">Switch light/dark</button>
-  </footer>
-</div>
+    <section class="about block" id="about">
+      <div class="sec-head" style="grid-column:1/-1;margin-bottom:0"><h2 class="label">About</h2></div>
+      <div></div>
+      <div>
+        <p class="big">I came to software from architecture and urban planning, and the built environment is still what I care about most. I want my tools to keep getting closer to the people who design and construct it.</p>
 
-<script>
-(function(){
-  var root=document.documentElement,mq=window.matchMedia('(prefers-color-scheme: dark)');
-  document.getElementById('theme').addEventListener('click',function(){
-    var t=root.getAttribute('data-theme'),dark=t?t==='dark':mq.matches;
-    root.setAttribute('data-theme',dark?'light':'dark');
-  });
-})();
-</script>
+        <h3 class="label">Experience</h3>
+        <ul class="list">
+          <li><span>Google, Senior Computational Designer (UX Engineer)<small>Google Earth. Drag to select, cut and fill, traffic signal level of service, solar studies, and the first designs for inundation history.</small></span><span class="label">2022–now</span></li>
+          <li><span>Intelligent City, Computational Designer<small>Vancouver. Parametric mass-timber housing.</small></span><span class="label">2021–22</span></li>
+          <li><span>Columbia GSAPP Center for Spatial Research, Graduate Researcher</span><span class="label">2017–20</span></li>
+        </ul>
+
+        <h3 class="label">Education</h3>
+        <ul class="list">
+          <li><span>Columbia GSAPP, Master of Architecture and MS Urban Planning</span><span class="label">2020</span></li>
+          <li><span>Barnard College, Columbia University, BA Architecture</span><span class="label">2016</span></li>
+        </ul>
+
+        <h3 class="label">Teaching and mentoring</h3>
+        <ul class="list">
+          <li><span>Mentorship Program, Columbia GSAPP<small>Mentor to an MS Urban Planning student, class of 2027</small></span><span class="label">2026–27</span></li>
+          <li><span>Guest Lecturer, Columbia GSAPP<small><em>Prototyping in Urban Tech</em>, taught by James Piacentini</small></span><span class="label">2026</span></li>
+        </ul>
+
+        <h3 class="label">Recognition</h3>
+        <ul class="list">
+          <li><span>Honorable Mention, Analytics, Geo Makers Hackathon at Google<small>Came up with the idea and built the prototype with two teammates</small></span><span class="label">2025</span></li>
+        </ul>
+
+        <h3 class="label">Mentions</h3>
+        <ul class="list">
+          <li><a href="https://news.columbia.edu/news/tola-oniyangi-graduates-dual-degree-architecture-urban-planning">Three degrees later, this graduate is ready to move on</a><span class="label">Columbia News · 2020</span></li>
+          <li><a href="https://www.civilbeat.org/2020/01/can-fixing-our-parking-rules-make-honolulu-more-affordable/">Can fixing parking rules make Honolulu more affordable?</a><span class="label">Civil Beat · 2020</span></li>
+          <li><span>Researcher, <a href="https://c4sr.columbia.edu/projects/homophily-urban-history-algorithm"><em>Homophily: The Urban History of an Algorithm</em></a></span><span class="label">Chicago Architecture Biennial · 2019</span></li>
+          <li><a href="https://blogs.ei.columbia.edu/2019/12/06/proposals-resilience-vieques-puerto-rico/">13 proposals to boost resilience in Vieques, Puerto Rico</a><span class="label">Columbia Climate School · 2019</span></li>
+          <li><span>Researcher, <a href="https://buellcenter.columbia.edu/projects/3c803455-dbd0-4491-9c68-dec1004d1b30/"><em>Living in America: Frank Lloyd Wright, Harlem &amp; Modern Housing</em></a></span><span class="label">Buell Center · 2017</span></li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <section class="hello" id="hello">
+    <div class="wrap">
+      <h2 class="display">Say hello.</h2>
+      <p>Working on something for the built environment? I’d love to hear about it.</p>
+      <div class="ctas">
+        <a class="btn primary" href="mailto:tolaoniyangi@gmail.com">Email me</a>
+        <button class="btn" type="button" data-copy="tolaoniyangi@gmail.com">Copy email address</button>
+        <a class="btn" href="https://www.linkedin.com/in/tolaoniyangi">LinkedIn</a>
+        <a class="btn" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume (PDF)</a>
+      </div>
+      <div class="foot"><span>© 2026 Shakira “Tola” Oniyangi</span><a href="#top">Back to top ↑</a></div>
+    </div>
+  </section>
+</main>
+
+<script src="site.js"></script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cut and fill · Shakira “Tola” Oniyangi</title>
+<meta name="description" content="An earthwork estimate in Google Earth: how much soil to cut and fill to level a site.">
+<meta name="theme-color" content="#F3F1EC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="name" href="../">Shakira “Tola” Oniyangi</a>
+    <nav aria-label="Primary">
+      <a class="hide-xs" href="../#work">Work</a>
+      <a class="hide-sm" href="../#about">About</a>
+      <a class="hide-sm" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume</a>
+      <a class="hello-btn" href="#hello">Say hello</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="p-hero">
+      <a class="back" href="../#work">← All work</a>
+      <div class="eyebrow"><span class="num">02</span><span class="label">Google Earth · Back-end design, engineering</span></div>
+      <h1 class="display">Cut and fill</h1>
+      <p class="dek">How much earth does a site need moved? Draw a boundary in Google Earth and it tells you, and shows where to dig and where to fill.</p>
+    </section>
+
+    <dl class="meta"><div><dt class="label">Role</dt><dd>Back-end design and engineering</dd></div><div><dt class="label">Product</dt><dd>Google Earth terrain analysis</dd></div><div><dt class="label">Status</dt><dd>Live</dd></div><div><dt class="label">Read</dt><dd><a href="https://mapsplatform.google.com/resources/blog/a-field-guide-to-terrain-analysis-tools-in-google-earth/">Field guide ↗</a><br><a href="https://developers.google.com/maps/documentation/earth/terrain-analysis">Docs ↗</a></dd></div></dl>
+
+    <div class="lead"><figure><img src="../images/fig-cutfill.svg" alt="Section diagram: soil above the dashed target level is cut, the gap below it is filled" width="720" height="330"><figcaption><b>Fig. 1</b>The whole idea in one section. Soil above the target level gets dug out, and hollows below it get built up.</figcaption></figure></div>
+
+    <section class="chapter"><h2><span class="num">01</span>The question</h2><div class="prose"><p>Before a site can be graded, someone has to estimate how much soil comes out and how much goes back in. It’s one of the first numbers on any construction project, and it usually takes survey data and CAD software.</p></div></section><section class="chapter"><h2><span class="num">02</span>What it does</h2><div class="prose"><p>Pick or draw a site in Earth. Cut and fill finds the elevation where cut equals fill, or calculates the volumes for any target elevation you set, and maps where the earth has to move.</p><div class="figs"><figure><video src="../images/cut-and-fill.mp4" poster="../images/cutfill-poster.jpg" muted loop playsinline preload="none" width="1600" height="901" aria-label="Screen recording of the cut and fill tool in Google Earth"></video><figcaption><b>Fig. 2</b>The tool in Google Earth: choose a site, set a target elevation, get the volumes.</figcaption></figure></div></div></section><section class="chapter"><h2><span class="num">03</span>My part</h2><div class="prose"><p>I designed and implemented the back end: the calculations behind the volumes and the cut and fill map the interface draws.</p><p>It’s one of four terrain analysis tools now live in Google Earth.</p></div></section>
+
+    <a class="next" href="../1p-research-data-layers/">
+      <div><span class="label">Next project</span><h2 class="display">Traffic signal level of service</h2></div>
+      <div class="pic contain"><img src="../images/fig-traffic.svg" alt="" width="720" height="440" loading="lazy"></div>
+    </a>
+  </div>
+
+  <section class="hello" id="hello">
+    <div class="wrap">
+      <h2 class="display">Say hello.</h2>
+      <p>Working on something for the built environment? I’d love to hear about it.</p>
+      <div class="ctas">
+        <a class="btn primary" href="mailto:tolaoniyangi@gmail.com">Email me</a>
+        <button class="btn" type="button" data-copy="tolaoniyangi@gmail.com">Copy email address</button>
+        <a class="btn" href="https://www.linkedin.com/in/tolaoniyangi">LinkedIn</a>
+        <a class="btn" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume (PDF)</a>
+      </div>
+      <div class="foot"><span>© 2026 Shakira “Tola” Oniyangi</span><a href="#top">Back to top ↑</a></div>
+    </div>
+  </section>
+</main>
+
+<script src="../site.js"></script>
+</body>
+</html>
