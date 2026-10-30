@@ -228,7 +228,7 @@ P[-1]["chapters"] = [
     ("<p>Every local election office publishes voting locations and hours its own way. A voter guide has to turn all of it into one dataset people can trust.</p>"),
     ("<ul><li><strong>Verification</strong> of hundreds of early voting, absentee and polling place locations and hours for the 2020 general election.</li>"
      '<li><strong>Charts</strong> for BallotReady’s reporting: <a href="https://medium.com/@BallotReady/what-are-candidates-talking-about-this-year-2a9a9463ca50">top issues by state</a>, <a href="https://medium.com/@BallotReady/whats-on-the-ballot-75da87973a50">what’s on the ballot</a>, and <a href="https://medium.com/@BallotReady/today-is-the-day-but-what-happens-next-ff73b3bf9a4e">how people could vote</a>.</li></ul>'
-     f'<div class="figs">{f.fig("elections-reel.gif", "Animated sequence of US maps, one per ballot issue", "One map per issue: candidates and seats for education, criminal justice, the environment, healthcare, fair elections, uncontested races and third parties.")}<div class="figs two">{f.fig("elections-issues.jpg", "Maps comparing top state issues in 2018 and 2020", "Top issues by state, 2018 vs 2020.")}{f.fig("elections-voting-days.jpg", "Chart of early voting, drop-off and election day locations by day", "Every early voting, drop-off and election day location, day by day.")}</div></div>'),
+     f'<div class="figs">{f.fig("elections-numbers.jpg", "Map of candidates per seat by US state", "The topline: 97,475 candidates for 71,210 seats, mapped as candidates per seat in each state.")}{f.fig("elections-reel.gif", "Animated sequence of US maps, one per ballot issue", "Then one map per issue: education, criminal justice, the environment, healthcare, fair elections, uncontested races and third parties.")}{f.fig("elections-issues.jpg", "Maps comparing top state issues in 2018 and 2020", "Top issues by state, 2018 vs 2020.")}{f.fig("elections-voting-days.jpg", "Chart of early voting, drop-off and election day locations by day", "Every early voting, drop-off and election day location, day by day.")}</div>'),
     ('<div class="stat"><div><b>5M+</b><span>voters used the guide in 2020</span></div></div>'),
 ]
 
@@ -380,7 +380,7 @@ def home():
     <section class="hero">
       <h1 class="display">I design and build software for the <em>built environment.</em></h1>
       <div class="hero-foot">
-        <p>I’m a senior UX engineer and computational designer on Google Earth, with a background in architecture and urban planning from Columbia. I build the tools that planners, architects and builders use to understand a site and what they’re building on it.</p>
+        <p>I’m a senior UX engineer and computational designer on Google Earth, with a background in architecture and urban planning from Columbia. I build the tools that researchers, planners, architects, engineers and developers use to understand a site and what they’re building on it.</p>
         <div class="ctas">
           <a class="btn primary" href="#hello">Say hello</a>
           <a class="btn" href="#work">See the work ↓</a>
