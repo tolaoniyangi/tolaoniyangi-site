@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Diagram: site, program and the timber system feed a parametric generator that produces many building forms; each design is measured for materials, cost and emissions and shown in a client dashboard"><rect width="720" height="420" fill="#EAE6DE"/>
+<text x="20" y="30" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="0.6" letter-spacing="1">FROM RULES TO BUILDINGS TO NUMBERS</text>
+<rect x="20" y="80" width="140" height="62" fill="#fff" stroke="#141413" stroke-width="1.2"/>
+<text x="32" y="106" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Site</text>
+<text x="32" y="124" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">Lot, zoning</text>
+<line x1="160" y1="111" x2="196" y2="210" stroke="#141413" stroke-opacity=".35"/>
+<rect x="20" y="172" width="140" height="62" fill="#fff" stroke="#141413" stroke-width="1.2"/>
+<text x="32" y="198" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Program</text>
+<text x="32" y="216" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">Units, mix</text>
+<line x1="160" y1="203" x2="196" y2="210" stroke="#141413" stroke-opacity=".35"/>
+<rect x="20" y="264" width="140" height="62" fill="#fff" stroke="#141413" stroke-width="1.2"/>
+<text x="32" y="290" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Timber system</text>
+<text x="32" y="308" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">What the factory makes</text>
+<line x1="160" y1="295" x2="196" y2="210" stroke="#141413" stroke-opacity=".35"/>
+<line x1="196" y1="210" x2="206" y2="210" stroke="#141413" stroke-width="1.5"/><path d="M214 210 l-10 -5 v10 z" fill="#141413"/>
+<rect x="218" y="70" width="250" height="280" fill="#fff" stroke="#E2512B" stroke-width="2"/>
+<text x="230" y="94" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#E2512B" fill-opacity="1" letter-spacing="0">Parametric generator</text>
+<path d="M244 128 h32 v46 h-32 z" fill="#F6F4EF" fill-opacity="1" stroke="#141413" stroke-width=".8"/><path d="M276 128 l14.399999999999999 -8.399999999999999 l0 46 l-14.399999999999999 8.399999999999999 z" fill="#F6F4EF" fill-opacity="0.55" stroke="#141413" stroke-width=".8"/><path d="M244 128 l32 0 l14.399999999999999 -8.399999999999999 l-32 0 z" fill="#fff" stroke="#141413" stroke-width=".8"/>
+<path d="M272 155.0 h16 v23.0 h-16 z" fill="#F6F4EF" fill-opacity="1" stroke="#141413" stroke-width=".8"/><path d="M288 155.0 l14.399999999999999 -8.399999999999999 l0 23.0 l-14.399999999999999 8.399999999999999 z" fill="#F6F4EF" fill-opacity="0.55" stroke="#141413" stroke-width=".8"/><path d="M272 155.0 l16 0 l14.399999999999999 -8.399999999999999 l-16 0 z" fill="#fff" stroke="#141413" stroke-width=".8"/>
+<path d="M320 148 h38 v26 h-38 z" fill="#F6F4EF" fill-opacity="1" stroke="#141413" stroke-width=".8"/><path d="M358 148 l14.399999999999999 -8.399999999999999 l0 26 l-14.399999999999999 8.399999999999999 z" fill="#F6F4EF" fill-opacity="0.55" stroke="#141413" stroke-width=".8"/><path d="M320 148 l38 0 l14.399999999999999 -8.399999999999999 l-38 0 z" fill="#fff" stroke="#141413" stroke-width=".8"/>
+<path d="M396 148 h38 v26 h-38 z" fill="#F6F4EF" fill-opacity="1" stroke="#141413" stroke-width=".8"/><path d="M434 148 l14.399999999999999 -8.399999999999999 l0 26 l-14.399999999999999 8.399999999999999 z" fill="#F6F4EF" fill-opacity="0.55" stroke="#141413" stroke-width=".8"/><path d="M396 148 l38 0 l14.399999999999999 -8.399999999999999 l-38 0 z" fill="#fff" stroke="#141413" stroke-width=".8"/>
+<path d="M244 218 h38 v26 h-38 z" fill="#F6F4EF" fill-opacity="1" stroke="#141413" stroke-width=".8"/><path d="M282 218 l14.399999999999999 -8.399999999999999 l0 26 l-14.399999999999999 8.399999999999999 z" fill="#F6F4EF" fill-opacity="0.55" stroke="#141413" stroke-width=".8"/><path d="M244 218 l38 0 l14.399999999999999 -8.399999999999999 l-38 0 z" fill="#fff" stroke="#141413" stroke-width=".8"/>
+<path d="M278 235.0 h16 v13.0 h-16 z" fill="#F6F4EF" fill-opacity="1" stroke="#141413" stroke-width=".8"/><path d="M294 235.0 l14.399999999999999 -8.399999999999999 l0 13.0 l-14.399999999999999 8.399999999999999 z" fill="#F6F4EF" fill-opacity="0.55" stroke="#141413" stroke-width=".8"/><path d="M278 235.0 l16 0 l14.399999999999999 -8.399999999999999 l-16 0 z" fill="#fff" stroke="#141413" stroke-width=".8"/>
+<path d="M320 190 h32 v54 h-32 z" fill="#E2512B" fill-opacity="0.9" stroke="#141413" stroke-width=".8"/><path d="M352 190 l10.799999999999999 -6.3 l0 54 l-10.799999999999999 6.3 z" fill="#E2512B" fill-opacity="0.6" stroke="#141413" stroke-width=".8"/><path d="M320 190 l32 0 l10.799999999999999 -6.3 l-32 0 z" fill="#fff" stroke="#141413" stroke-width=".8"/>
+<path d="M348 221.0 h16 v27.0 h-16 z" fill="#E2512B" fill-opacity="0.9" stroke="#141413" stroke-width=".8"/><path d="M364 221.0 l10.799999999999999 -6.3 l0 27.0 l-10.799999999999999 6.3 z" fill="#E2512B" fill-opacity="0.6" stroke="#141413" stroke-width=".8"/><path d="M348 221.0 l16 0 l10.799999999999999 -6.3 l-16 0 z" fill="#fff" stroke="#141413" stroke-width=".8"/>
+<path d="M396 218 h26 v26 h-26 z" fill="#F6F4EF" fill-opacity="1" stroke="#141413" stroke-width=".8"/><path d="M422 218 l10.799999999999999 -6.3 l0 26 l-10.799999999999999 6.3 z" fill="#F6F4EF" fill-opacity="0.55" stroke="#141413" stroke-width=".8"/><path d="M396 218 l26 0 l10.799999999999999 -6.3 l-26 0 z" fill="#fff" stroke="#141413" stroke-width=".8"/>
+<path d="M244 288 h38 v26 h-38 z" fill="#F6F4EF" fill-opacity="1" stroke="#141413" stroke-width=".8"/><path d="M282 288 l14.399999999999999 -8.399999999999999 l0 26 l-14.399999999999999 8.399999999999999 z" fill="#F6F4EF" fill-opacity="0.55" stroke="#141413" stroke-width=".8"/><path d="M244 288 l38 0 l14.399999999999999 -8.399999999999999 l-38 0 z" fill="#fff" stroke="#141413" stroke-width=".8"/>
+<path d="M320 268 h26 v46 h-26 z" fill="#F6F4EF" fill-opacity="1" stroke="#141413" stroke-width=".8"/><path d="M346 268 l10.799999999999999 -6.3 l0 46 l-10.799999999999999 6.3 z" fill="#F6F4EF" fill-opacity="0.55" stroke="#141413" stroke-width=".8"/><path d="M320 268 l26 0 l10.799999999999999 -6.3 l-26 0 z" fill="#fff" stroke="#141413" stroke-width=".8"/>
+<path d="M396 260 h38 v54 h-38 z" fill="#F6F4EF" fill-opacity="1" stroke="#141413" stroke-width=".8"/><path d="M434 260 l10.799999999999999 -6.3 l0 54 l-10.799999999999999 6.3 z" fill="#F6F4EF" fill-opacity="0.55" stroke="#141413" stroke-width=".8"/><path d="M396 260 l38 0 l10.799999999999999 -6.3 l-38 0 z" fill="#fff" stroke="#141413" stroke-width=".8"/>
+<text x="230" y="338" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#141413" fill-opacity="0.75" letter-spacing="0">200% more forms it could produce</text>
+<line x1="468" y1="210" x2="500" y2="210" stroke="#141413" stroke-width="1.5"/><path d="M508 210 l-10 -5 v10 z" fill="#141413"/>
+<rect x="514" y="96" width="186" height="226" fill="#fff" stroke="#141413" stroke-width="1.2"/>
+<text x="526" y="120" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Every design, measured</text>
+<line x1="514" y1="130" x2="700" y2="130" stroke="#CFCAC0"/>
+<text x="526" y="146" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#141413" fill-opacity="1" letter-spacing="0">Timber</text>
+<rect x="610" y="137" width="26" height="8" rx="4" fill="#141413" fill-opacity="0.3"/>
+<text x="690" y="146" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.6" letter-spacing="0">m³</text>
+<line x1="514" y1="160" x2="700" y2="160" stroke="#CFCAC0"/>
+<text x="526" y="176" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#141413" fill-opacity="1" letter-spacing="0">Steel</text>
+<rect x="610" y="167" width="39" height="8" rx="4" fill="#141413" fill-opacity="0.3"/>
+<text x="690" y="176" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.6" letter-spacing="0">t</text>
+<line x1="514" y1="190" x2="700" y2="190" stroke="#CFCAC0"/>
+<text x="526" y="206" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#141413" fill-opacity="1" letter-spacing="0">Concrete</text>
+<rect x="610" y="197" width="52" height="8" rx="4" fill="#141413" fill-opacity="0.3"/>
+<text x="690" y="206" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.6" letter-spacing="0">m³</text>
+<line x1="514" y1="220" x2="700" y2="220" stroke="#CFCAC0"/>
+<text x="526" y="236" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#141413" fill-opacity="1" letter-spacing="0">Cost</text>
+<rect x="610" y="227" width="35" height="8" rx="4" fill="#E2512B" fill-opacity="0.85"/>
+<text x="690" y="236" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.6" letter-spacing="0">$</text>
+<line x1="514" y1="250" x2="700" y2="250" stroke="#CFCAC0"/>
+<text x="526" y="266" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#141413" fill-opacity="1" letter-spacing="0">Emissions</text>
+<rect x="610" y="257" width="48" height="8" rx="4" fill="#E2512B" fill-opacity="0.85"/>
+<text x="690" y="266" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.6" letter-spacing="0">tCO₂e</text>
+<text x="526" y="310" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#141413" fill-opacity="1" letter-spacing="0">→ client dashboard</text></svg>

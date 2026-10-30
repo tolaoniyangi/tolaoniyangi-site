@@ -70,13 +70,13 @@ open('images/fig-cutfill-plan.svg','w').write(svg(W,H,"Plan view: a drawn site b
 W,H=720,440; b=[f'<rect width="{W}" height="{H}" fill="{PAPER}"/>']
 b.append(f'<defs><pattern id="h" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="{MUTED}" stroke-width="1"/></pattern></defs>')
 x0,y0,x1,y1=80,60,540,380; sb=24; ry=(y0+y1)//2
-b.append(f'<rect x="{x0}" y="{y0}" width="{x1-x0}" height="{y1-y0}" fill="#F6F4EF" stroke="{INK}" stroke-width="2"/>')
-b.append(f'<path d="M{x0} {y0}H{x1}V{y1}H{x0}Z M{x0+sb} {y0+sb}V{y1-sb}H{x1-sb}V{y0+sb}Z" fill="url(#h)" fill-rule="evenodd"/>')
-b.append(f'<line x1="{x0}" y1="{ry}" x2="{x1}" y2="{ry}" stroke="{INK}" stroke-width="1.5"/>')
+b.append(f'<rect x="{x0}" y="{y0}" width="{x1-x0}" height="{y1-y0}" fill="#F6F4EF" stroke="{INK}" stroke-width="1"/>')
+b.append(f'<path d="M{x0} {y0}H{x1}V{y1}H{x0}Z M{x0+sb} {y0+sb}V{y1-sb}H{x1-sb}V{y0+sb}Z" fill="url(#h)" fill-opacity=".6" fill-rule="evenodd"/>')
+b.append(f'<line x1="{x0}" y1="{ry}" x2="{x1}" y2="{ry}" stroke="{INK}" stroke-width=".8" stroke-opacity=".6"/>')
 hv=[(350,ry+30,74,54),(170,ry-100,56,44)]; buf=10
 for x,y,w,h in hv:
     b.append(f'<rect x="{x-buf}" y="{y-buf}" width="{w+2*buf}" height="{h+2*buf}" fill="none" stroke="{MUTED}" stroke-dasharray="3 3"/>')
-    b.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="#fff" stroke="{INK}" stroke-width="1.5"/><line x1="{x}" y1="{y}" x2="{x+w}" y2="{y+h}" stroke="{INK}"/><line x1="{x+w}" y1="{y}" x2="{x}" y2="{y+h}" stroke="{INK}"/>')
+    b.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="#fff" stroke="{INK}" stroke-width="1"/><line x1="{x}" y1="{y}" x2="{x+w}" y2="{y+h}" stroke="{INK}" stroke-width=".6"/><line x1="{x+w}" y1="{y}" x2="{x}" y2="{y+h}" stroke="{INK}" stroke-width=".6"/>')
 pw,ph,g=36,20,4
 def ok(x,y):
     if not(x0+sb+4<=x and x+pw<=x1-sb-4 and y0+sb+4<=y and y+ph<=y1-sb-4): return False
@@ -87,16 +87,18 @@ def ok(x,y):
 for y in list(range(ry+8,y1,ph+g))+list(range(ry-8-ph,y0,-(ph+g))):
     for x in range(x0+sb+6,x1,pw+g):
         if ok(x,y):
-            sunny=y>ry
-            b.append(f'<rect x="{x}" y="{y}" width="{pw}" height="{ph}" fill="{ACC}" fill-opacity="{1 if sunny else .45}" stroke="#fff" stroke-width="1"/>')
+            t=(y-y0)/(y1-y0)                      # further south = more sun
+            op=.18+.62*t-(.08 if x<x0+120 or x>x1-140 else 0)
+            b.append(f'<rect x="{x}" y="{y}" width="{pw}" height="{ph}" fill="{ACC}" fill-opacity="{max(.15,op):.2f}" stroke="#fff" stroke-width="1"/>')
 def call(px,py,tx,ty,t):
     b.append(f'<line x1="{px}" y1="{py}" x2="{tx-6}" y2="{ty-4}" stroke="{INK}" stroke-width="1"/><circle cx="{px}" cy="{py}" r="2.5" fill="{INK}"/>')
     b.append(T(tx,ty,t,w=600))
 call(x1-sb/2,y0+70,572,110,"Fire-code setback")
 call(424,ry+57,572,250,"HVAC clearance")
-b.append(T(572,316,"Panels",w=600))
-b.append(f'<rect x="572" y="326" width="36" height="20" fill="{ACC}"/><rect x="614" y="326" width="36" height="20" fill="{ACC}" fill-opacity=".45"/>')
-b.append(T(572,366,"Sunnier",s=11,op=.7)); b.append(T(614,366,"Shadier",s=11,op=.7))
+b.append(T(572,316,"Panel output",w=600))
+b.append(f'<defs><linearGradient id="sun"><stop offset="0" stop-color="{ACC}" stop-opacity=".15"/><stop offset="1" stop-color="{ACC}" stop-opacity=".8"/></linearGradient></defs>')
+b.append(f'<rect x="572" y="326" width="120" height="12" fill="url(#sun)"/>')
+b.append(T(572,356,"Less sun",s=11,op=.7)); b.append(T(692,356,"More",a="end",s=11,op=.7))
 b.append(T(20,H-16,"ROOF PLAN · NOT TO SCALE",s=11,op=.6,ls=1))
 open('images/fig-solar.svg','w').write(svg(W,H,"Roof plan: panels fill both roof planes, darker on the sunnier side, keeping clear of the fire-code setback and HVAC units",b))
 

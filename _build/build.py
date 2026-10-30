@@ -5,6 +5,7 @@ BASE = "https://tolaoniyangi.github.io/tolaoniyangi-site/"  # change to https://
 NAME = "Shakira “Tola” Oniyangi"
 TAGLINE = "Senior UX Engineer and Computational Designer"
 RESUME = "https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/preview"
+RESUME_PDF = "https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf"
 EMAIL = "tolaoniyangi@gmail.com"
 LINKEDIN = "https://www.linkedin.com/in/tolaoniyangi"
 
@@ -74,7 +75,7 @@ def foot(pre):
       <div class="ctas">
         <button class="btn primary" type="button" data-copy="{EMAIL}" aria-label="Copy email address">Email</button>
         <a class="btn" href="{LINKEDIN}">LinkedIn</a>
-        <a class="btn" href="{RESUME}" target="_blank" rel="noopener">Resume ↗</a>
+        <a class="btn" href="{RESUME_PDF}">Resume (PDF) ↓</a>
       </div>
       <div class="foot"><span>© 2026 {NAME}</span><a href="#top">Back to top ↑</a></div>
     </div>
@@ -92,10 +93,10 @@ def project(**k): P.append(k); return Figs()
 
 # 01 Marquee map selection
 f = project(slug="marquee-selection", num="01", title="Marquee map selection", thumb="fig-select.svg", contain=True,
-    eyebrow="Google Earth · Interaction design, front end", card_label="Google Earth · Design, front end",
+    eyebrow="Google Earth · 2026 · Interaction design, front end", card_label="Google Earth · Interaction design, front end",
     card="One drag on the map to select any number of features, instead of a click per feature. The first way to select in bulk directly on Google Earth’s 3D map.",
     dek="One drag on the map to select any number of features, instead of a click per feature. The first way to select in bulk directly on Google Earth’s 3D map, built to fit with every existing way to select, on web and mobile.",
-    meta=[("Role", "Interaction design and front-end engineering, sole engineer"), ("Product", "Google Earth, web"), ("Status", "Live"),
+    meta=[("Role", "Interaction design and front-end engineering, sole engineer"), ("Product", "Google Earth, web"), ("Timeline", "2026, live"),
           ("Links", '<a href="https://developers.google.com/maps/documentation/earth/style-your-places#bulk_styling">Bulk styling docs ↗</a>')])
 P[-1]["lead"] = f.fig("fig-select.svg", "Diagram: a dashed box dragged over map points selects them, and the same items appear checked in the project panel",
     "Drag a box on the map. Every feature inside is selected, and the project panel’s checkboxes update to match.", lazy=False)
@@ -114,10 +115,10 @@ P[-1]["chapters"] = [
 
 # 02 Cut and fill
 f = project(slug="cut-and-fill", num="02", title="Cut and fill", thumb="fig-cutfill.svg", contain=True,
-    eyebrow="Google Earth · Back-end design, engineering", card_label="Google Earth · Back end",
+    eyebrow="Google Earth · 2026 · Back-end engineering", card_label="Google Earth · Back-end engineering",
     card="Draw a site and see how much earth has to be dug out or brought in to level it, and where. One of four terrain analysis tools in Google Earth.",
     dek="An earthwork estimate in Google Earth. Draw a site and see how much soil has to be dug out or brought in to level it, and where.",
-    meta=[("Role", "Back-end design and engineering"), ("Product", "Google Earth terrain analysis"), ("Status", "Live"),
+    meta=[("Role", "Back-end design and engineering"), ("Product", "Google Earth terrain analysis"), ("Timeline", "2026, live"),
           ("Links", '<a href="https://mapsplatform.google.com/resources/blog/a-field-guide-to-terrain-analysis-tools-in-google-earth/">Field guide ↗</a><br><a href="https://developers.google.com/maps/documentation/earth/terrain-analysis">Docs ↗</a>')])
 P[-1]["lead"] = f.fig("fig-cutfill.svg", "Section diagram: soil above the dashed target level is cut, the gap below it is filled",
     "The idea in one section. Soil above the target level gets dug out, and hollows below it get built up.", lazy=False)
@@ -132,10 +133,10 @@ P[-1]["chapters"] = [
 
 # 03 Traffic
 f = project(slug="1p-research-data-layers", num="03", title="Traffic signal level of service", thumb="fig-traffic.svg", contain=True,
-    eyebrow="Google Earth · 2025 · Data product, UI", card_label="Google Earth · Data product, UI",
+    eyebrow="Google Earth · 2025 · Data visualization, UI design", card_label="Google Earth · Data visualization, UI design",
     card="How long do drivers wait at each traffic light? This layer grades every signalized intersection from A to F, hour by hour. Part of a launch that signed up 470+ paying professional users.",
     dek="Google Research measured how long drivers wait at traffic lights. This data layer turns that research into an A–F grade for every signalized intersection, hour by hour.",
-    meta=[("Role", "Visualization strategy and UI design"), ("Product", "Google Earth data layers"), ("Status", "Live"),
+    meta=[("Role", "Visualization strategy and UI design"), ("Product", "Google Earth data layers"), ("Timeline", "2025, live"),
           ("Links", '<a href="https://developers.google.com/maps/documentation/earth/available-data-layers">Data layers docs ↗</a><br><a href="https://www.linkedin.com/posts/googlemapsplatform_gridlock-isnt-an-accident-its-a-data-problem-activity-7429651793367826432-dGZv/">Google Maps Platform post ↗</a>')])
 P[-1]["lead"] = f.fig("fig-traffic-anim.svg", "Animation of a street grid through one day: intersections on the main street turn from A to F during the morning and evening rush",
     "One day on a street grid. Every intersection gets a grade from A (short waits) to F (long waits), each hour from 06:00 to 22:00.", lazy=False)
@@ -149,15 +150,15 @@ P[-1]["chapters"] = [
      f'{f.fig("traffic-detail.jpg", "One intersection selected with its grade and hourly breakdown", "Click an intersection for its grade, percentile and hourly scores.")}'
      f'{f.fig("traffic-seattle.jpg", "Seattle intersections colored by delay grade in Google Earth", "Zoom out and the whole city is graded: Seattle in Google Earth.")}</div>'),
     ('<div class="stat"><div><b>470+</b><span>paying professional users</span></div><div><b>10%</b><span>conversion in the first two weeks</span></div></div>'
-     "<p>It set the template for bringing more Google research into Earth as data layers, including inundation history, which started from these initial designs.</p>"),
+     "<p>It shipped as part of Google Earth’s first paid professional tier, and set the template for bringing more Google research into Earth as data layers, including inundation history, which started from these initial designs.</p>"),
 ]
 
 # 04 Solar
 f = project(slug="solar-assessment", num="04", title="Solar layouts and potential", thumb="fig-solar.svg", contain=True,
-    eyebrow="Google Earth · 2023–24 · Computational design lead", card_label="Google Earth · Computational design lead",
+    eyebrow="Google Earth · 2023–24 · Computational design", card_label="Google Earth · Computational design",
     card="From the first version to the Solar API: estimate a site’s solar potential in minutes, with a panel layout for any building or parking lot.",
     dek="Estimate a site’s solar potential in minutes: a panel layout for any building or parking lot, with expected output and cost. Built from the first version onward.",
-    meta=[("Role", "Computational design lead"), ("Product", "Google Earth solar studies"), ("Status", "Live"),
+    meta=[("Role", "Computational design lead"), ("Product", "Google Earth solar studies"), ("Timeline", "2023–24, live"),
           ("Links", '<a href="https://medium.com/google-earth/evaluate-building-and-solar-design-options-in-minutes-with-google-earth-6b5bc5734351">Launch post ↗</a><br><a href="https://developers.google.com/maps/documentation/earth/generate-designs">How-to docs ↗</a>')])
 P[-1]["lead"] = f.fig("fig-solar.svg", "Roof plan: panels fill both roof planes, darker on the sunnier side, keeping clear of the fire-code setback and HVAC units",
     "Fire-code setback and HVAC clearance.", lazy=False)
@@ -166,28 +167,29 @@ P[-1]["chapters"] = [
      "<p>A useful estimate has to come from a layout that could actually be built, on a real roof or parking lot, or the numbers mean nothing.</p>"),
     ("<p>Solar went from nothing to two generations of the product:</p>"
      "<ul><li><strong>The first version.</strong> Designed and implemented the first solar studies: placement logic for rooftops and parking lots that keeps panels clear of HVAC units and fire-code setbacks, design logic for solar canopies, and production code for carports.</li>"
-     "<li><strong>The Solar API.</strong> Led the integration of Google’s Solar API, the first in Google Earth, for residential and small commercial roofs up to 500 m².</li>"
+     "<li><strong>The Solar API.</strong> Designed and led the integration of Google’s Solar API, the first in Google Earth, for residential and small commercial roofs up to 500 m². It cut the runtime of complex solar analyses by 32%.</li>"
      "<li><strong>Realistic output.</strong> Panel types switch between residential and commercial by building size, so estimates hold up for any project.</li></ul>"
      f'<div class="figs two">{f.fig("solar-before.jpg", "Solar layout before the Solar API integration", "Before the Solar API integration")}{f.fig("solar-after.jpg", "Solar layout after the Solar API integration", "After")}</div>'),
-    ("<p>Solar studies are live in Google Earth for rooftops and parking lots, with three carport options and expected output, savings and payback for each design.</p>"
+    ('<div class="stat"><div><b>7.9 GW</b><span>of potential solar generation identified in the first year</span></div><div><b>17.1 Mt</b><span>of potential carbon mitigation in the first year</span></div></div>'
+     "<p>Solar studies are live in Google Earth for rooftops and parking lots, with three carport options and expected output, savings and payback for each design.</p>"
      f'<div class="figs">{f.fig("solar-carports.jpg", "Carport solar design with financials in Google Earth", "A carport design with output, savings and payback.")}</div>'),
 ]
 
 # 05 Intelligent City
-f = project(slug="computational-design", num="05", title="Mass-timber buildings, generated", thumb="intelligent-city.jpg", contain=True,
+f = project(slug="computational-design", num="05", title="Mass-timber buildings, generated", thumb="fig-ic.svg", contain=True,
     eyebrow="Intelligent City · 2021–22 · Computational design", card_label="Intelligent City · Computational design",
     card="Expanded the parametric software behind Intelligent City’s mass-timber housing, and measured the materials, cost and emissions of every design it produced.",
     dek="Intelligent City designs and manufactures mass-timber housing. In 2021–22, its parametric building generator was expanded to produce far more building forms, all compatible with its manufacturing system, and every design was measured for materials, cost and emissions.",
-    meta=[("Role", "Computational designer"), ("Product", "Parametric building platform"), ("Status", "2021–22"),
+    meta=[("Role", "Computational designer"), ("Product", "Parametric building platform"), ("Timeline", "2021–22"),
           ("Links", '<a href="https://intelligent-city.com">Intelligent City ↗</a>')])
-P[-1]["lead"] = f.fig("intelligent-city.jpg", "Intelligent City's technology stack, from design and data to parametric software, automated manufacturing and on-site assembly",
-    "Intelligent City’s pipeline at the time, from design to manufacturing to site. This work sat in the parametric software and the data.", lazy=False)
+P[-1]["lead"] = f.fig("fig-ic.svg", "Diagram: site, program and the timber system feed a parametric generator that produces many building forms, each measured for materials, cost and emissions",
+    "From rules to buildings to numbers: the generator and the data around it.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>At the time, the range of buildings the generator could produce limited what the company could evaluate and optimize, and pulling data out of each design, like material quantities, was manual.</p>"),
-    ("<ul><li><strong>A bigger generator.</strong> New building forms, all compatible with the company’s mass-timber manufacturing system.</li>"
-     "<li><strong>Automatic data extraction</strong> from every design, down to material quantities, joined with outside data sources.</li>"
+    ("<ul><li><strong>A bigger generator.</strong> New methods for generating buildings automatically, all compatible with the company’s mass-timber manufacturing system, which sped up the path from design to production.</li>"
+     "<li><strong>Automatic data extraction</strong> from every design, down to material quantities, joined with outside data sources so building performance could be checked with numbers.</li>"
      "<li><strong>A client-facing dashboard</strong>, designed and built solo, that turned each design into cost and emissions estimates.</li></ul>"
-     f'<div class="figs">{f.fig("intelligent-city-process.jpg", "Diagram of parametric generation, data extraction and dashboard creation", "Generate the building, extract its data, show it to the client.")}</div>'),
+     f'<div class="figs">{f.fig("intelligent-city.jpg", "Intelligent City’s technology stack, from design and data to parametric software, automated manufacturing and on-site assembly", "Intelligent City’s pipeline at the time, from design to manufacturing to site assembly.")}{f.fig("intelligent-city-process.jpg", "Diagram of parametric generation, data extraction and dashboard creation", "Generate the building, extract its data, show it to the client.")}</div>'),
     ('<div class="stat"><div><b>200%</b><span>more building forms the generator could produce</span></div></div>'
      "<p>That range became the base for the company’s design evaluation and optimization at the time, and each design came with instant cost and emissions estimates.</p>"),
 ]
@@ -197,7 +199,7 @@ f = project(slug="estimating-pedestrian-activity", num="06", title="Estimating p
     eyebrow="Sidewalk Labs · 2019 · Computational design", card_label="Sidewalk Labs · Computational design",
     card="A pipeline that estimates street-level foot traffic from census data and feeds it straight into generative design tools.",
     dek="Generative design tools need good data about streets. This pipeline estimates street-level foot traffic from census data and feeds it straight in.",
-    meta=[("Role", "Computational design summer associate"), ("Product", "Generative design tools"), ("Status", "Summer 2019"), ("Team", "Generative Design, Sidewalk Labs")])
+    meta=[("Role", "Computational design summer associate"), ("Product", "Generative design tools"), ("Timeline", "Summer 2019"), ("Team", "Generative Design, Sidewalk Labs")])
 P[-1]["lead"] = f.fig("fig-ped.svg", "Diagram: one census count for an area is split across its buildings, then turned into estimated activity on each street",
     "The method: split census counts down to buildings, then estimate activity on each street.", lazy=False)
 P[-1]["chapters"] = [
@@ -206,29 +208,31 @@ P[-1]["chapters"] = [
     ("<p>An automated pipeline pulls the data in. Census population and workforce counts come in large areas called block groups, so the pipeline splits them down to individual buildings by size and use, then estimates how busy each street around them is.</p>"
      f'<div class="figs two">{f.fig("ped-blockgroups.jpg", "Census block groups around the test site", "Census block groups around the test site.")}{f.fig("ped-buildingtypes.jpg", "Buildings by type with activity scores", "Buildings by type, ready to be scored.")}</div>'),
     ("<p>Built on a test site in New York, then confirmed in other cities and over larger areas. Generative design could now draw on building-level population, workforce and land use, plus a “buzz metric” for pedestrian activity.</p>"
-     f'<div class="figs">{f.fig("ped-buzz.jpg", "3D site model with pedestrian activity colored by intensity", "The buzz metric: estimated activity from residents and workers around the site.")}</div>'),
+     f'<div class="figs">{f.fig("ped-buzz.gif", "Animated 3D site model with pedestrian activity from residents, then workers", "The buzz metric: estimated activity from residents, then workers, around the site.")}</div>'),
 ]
 
 # Earlier work with their own pages
 f = project(slug="beyond-the-blue-dot", num=None, title="Beyond the Blue Dot", thumb="bluedot.jpg", year="2020", kind="Urban planning",
-    eyebrow="Columbia GSAPP · 2020 · Urban planning capstone",
+    eyebrow="Columbia GSAPP · 2020 · Urban planning",
     card="A web tool that turns census data into short stories about the people who live and work in a place.",
     dek="Who lives here? Who works here? A web tool that turns census data into short stories about the people in a place.",
-    meta=[("Role", "UX, visual design, prototyping, code"), ("Product", "Web prototype"), ("Status", "Capstone, Spring 2020"), ("Advisors", "Anthony Vanky. Reader: Violet Whitney")])
+    meta=[("Role", "UX, visual design, prototyping, code"), ("Product", "Web prototype"), ("Timeline", "Spring 2020, four months"), ("Advisors", "Anthony Vanky. Reader: Violet Whitney")])
 P[-1]["lead"] = f.fig("bluedot.jpg", "Beyond the Blue Dot landing page with a map of New York", "Choose a place and a type of person, and read their story.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>A planner working on a transit project wants to disrupt people’s days as little as possible, so they need to know who lives and works nearby, how they get around and what they earn.</p>"
      "<p>Getting that from GIS takes days. Community meetings help, but they don’t represent everyone. There was no quick way to see a place at the scale of one person.</p>"),
-    ("<p>Pick a location and a profile, and the tool builds a narrative about a typical or outlier resident or worker from national data, so it works anywhere in the US. The flow was shaped by interviews with practicing planners.</p>"
+    ("<p>Pick a location and a profile, and the tool builds a narrative about a typical or outlier resident or worker from national data, so it works anywhere in the US. The persona and flow came from conversations with practicing planners, who needed it to be fast, intuitive and easy to fit into their work.</p>"
+     "<p>Early prototypes tested a split screen of map and story. Testers found the split clear but the navigation hard to follow, and the stories not personal enough. The final version leaned into avatars for each profile, and a half-mile boundary, the planning standard for a comfortable walk, to frame each person’s day.</p>"
      f'<div class="figs">{f.fig("bluedot-persona.jpg", "User persona for an urban planner", "The persona, from conversations with planners.")}{f.fig("bluedot-flow.jpg", "User flow from location to persona to narrative", "A deliberately short flow: location, person, story.")}{f.fig("bluedot-wireframes.jpg", "Wireframes of the tool’s screens", "Wireframes, from landing page to generated story.")}</div>'),
-    ("<p>A working prototype and the capstone for the MS in Urban Planning. The name plays on the blue dot that stands for you in Google Maps. Here, the dot is a person.</p>"),
+    ("<p>A working proof of concept, built in Python on New York’s Lower East Side, generating stories for residents from the Census Bureau’s American Community Survey, the LEHD workforce data, the National Household Travel Survey and the Google Places API.</p>"
+     "<p>Next steps would have added workers, travel data and natural language processing for richer stories. The name plays on the blue dot that stands for you in Google Maps. Here, the dot is a person.</p>"),
 ]
 
 f = project(slug="data-storytelling", num=None, title="Election data for 5M voters", thumb="fig-elections.svg", contain=True, year="2020", kind="Mapping",
-    eyebrow="BallotReady · 2020 · Data visualization internship",
+    eyebrow="BallotReady · 2020 · Mapping",
     card="Verified voting locations and mapped what was on the ballot, state by state, for a nonpartisan voter guide used by more than 5 million people.",
     dek="BallotReady is a nonpartisan voter guide used by more than 5 million people in 2020. Its data had to say exactly where and when people could vote.",
-    meta=[("Role", "Elections intern, data team"), ("Product", "BallotReady voter guide"), ("Status", "Fall 2020"), ("Links", '<a href="https://www.ballotready.org">BallotReady ↗</a>')])
+    meta=[("Role", "Elections intern, data team"), ("Product", "BallotReady voter guide"), ("Timeline", "Fall 2020"), ("Links", '<a href="https://www.ballotready.org">BallotReady ↗</a>')])
 P[-1]["lead"] = f.fig("fig-elections.svg", "Diagram: hundreds of local election offices feed one verified dataset, which powers a voter guide used by more than 5 million voters",
     "Hundreds of local sources, one verified dataset, more than 5 million voters.", lazy=False)
 P[-1]["chapters"] = [
@@ -240,10 +244,10 @@ P[-1]["chapters"] = [
 ]
 
 f = project(slug="12", num=None, title="wastespace", thumb="wastespace.jpg", year="2019", kind="Architecture",
-    eyebrow="Columbia GSAPP · 2019 · Architecture and planning studio",
+    eyebrow="Columbia GSAPP · 2019 · Architecture",
     card="A recycling hub in Vieques, Puerto Rico, that turns the island’s plastic waste into products and creates jobs for women.",
     dek="Vieques’ only landfill is nearly full, and women are largely missing from the island’s workforce. wastespace is a community hub that turns plastic waste into products, and trains women to make and sell them.",
-    meta=[("Role", "Architecture and planning, with Rebecca Book"), ("Product", "A building and an island-wide network"), ("Status", "Studio, Spring 2019"), ("Critics", "Richard Plunz, Douglas Woodward, Ubaldo Escalante")])
+    meta=[("Role", "Architecture and planning, with Rebecca Book"), ("Product", "A building and an island-wide network"), ("Timeline", "Spring 2019"), ("Critics", "Richard Plunz, Douglas Woodward, Ubaldo Escalante")])
 P[-1]["lead"] = f.fig("ws-render.jpg", "Rendering of the wastespace building, a timber shed with a pink sign", "The hub: a modern shed built from inexpensive materials found on the island.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>Materials that could be reprocessed were going straight to a landfill that’s close to capacity. At the same time, women on the island had been systematically shut out of the existing labor force.</p>"
@@ -256,10 +260,10 @@ P[-1]["chapters"] = [
 ]
 
 f = project(slug="library", num=None, title="The 20-minute library", thumb="library.jpg", year="2018", kind="Architecture",
-    eyebrow="Columbia GSAPP · 2018 · Architecture studio",
+    eyebrow="Columbia GSAPP · 2018 · Architecture",
     card="A Brooklyn library whose program came from researching who lives, works and visits within a 20-minute walk.",
     dek="A public library for Dumbo, Brooklyn, designed research-first: map who could walk to the site, then shape the building around them.",
-    meta=[("Role", "Architecture and spatial analysis"), ("Product", "Public library"), ("Status", "Studio, Spring 2018"), ("Critics", "Gordon Kipping. Representation: Dan Taeyoung")])
+    meta=[("Role", "Architecture and spatial analysis"), ("Product", "Public library"), ("Timeline", "Spring 2018"), ("Critics", "Gordon Kipping. Representation: Dan Taeyoung")])
 P[-1]["lead"] = f.fig("lib-render.jpg", "Rendering of the library's steel frame at street level", "Approaching the library: a solid steel frame around a lighter inner volume.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>Who would actually use a library here? Dumbo is residential, packed with tech companies and schools, about a 10-minute walk from the subway, and busy with tourists.</p>"
@@ -274,7 +278,7 @@ f = project(slug="citi-bike-access", num=None, title="Citi Bike access", thumb="
     eyebrow="Columbia GSAPP · 2017 · Mapping",
     card="Who can reach Citi Bike on foot or by subway, and who it leaves out.",
     dek="Does Citi Bike repeat New York’s existing patterns of inequity, or break from them? This study measured who can reach the network on foot or by subway.",
-    meta=[("Role", "GIS analysis and graphics, with Joan Zhang"), ("Product", "Research report"), ("Status", "Spring 2017"), ("Instructor", "Leah Meisterlin")])
+    meta=[("Role", "GIS analysis and graphics, with Joan Zhang"), ("Product", "Research report"), ("Timeline", "Spring 2017"), ("Instructor", "Leah Meisterlin")])
 P[-1]["lead"] = f.fig("cb-network.jpg", "Map of Citi Bike stations and the half-mile walk around each", "Citi Bike in May 2017: 615 stations and the 10-minute walk around each.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>Citi Bike’s stations were heavily concentrated in one part of the city. The question wasn’t who rides, but who has access at all.</p>"),
@@ -288,7 +292,7 @@ f = project(slug="airbnb-analysis", num=None, title="Airbnb analysis", thumb="ai
     eyebrow="Columbia GSAPP · 2017 · Mapping",
     card="How hosts and guests describe the same New York neighborhoods differently.",
     dek="Hosts and guests use the same platform but talk about neighborhoods differently. This project mined Airbnb listings and reviews across New York to map the difference.",
-    meta=[("Role", "Data visualization, in a team of five"), ("Product", "Interactive website"), ("Status", "Spring 2017"), ("Links", '<a href="https://rdottle.github.io/dv-final-project/index.html">Project site ↗</a>')])
+    meta=[("Role", "Data visualization, in a team of five"), ("Product", "Interactive website"), ("Timeline", "Spring 2017"), ("Links", '<a href="https://rdottle.github.io/dv-final-project/index.html">Project site ↗</a>')])
 P[-1]["lead"] = f.fig("airbnb.jpg", "The Airbnb Analysis project website", "The project site, built around four themes: price, interior, identity and neighborhood.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>A neighborhood’s identity is partly marketing. Hosts describe where they list, guests describe where they stayed. Do they agree?</p>"),
@@ -301,7 +305,7 @@ f = project(slug="predicting-urban-sprawl", num=None, title="Predicting urban sp
     eyebrow="Columbia GSAPP · 2016 · Machine learning",
     card="A neural network trained on satellite images of Cairo, Dubai and Wuhan to forecast where cities grow.",
     dek="Can a model learn how cities grow? A neural network trained on 15 years of satellite images of Cairo, Dubai and Wuhan, then asked what comes next.",
-    meta=[("Role", "Data processing and modeling, in a team of four"), ("Product", "Python model"), ("Status", "Fall 2016"), ("Links", '<a href="https://github.com/tolaoniyangi/dmc">Code on GitHub ↗</a>')])
+    meta=[("Role", "Data processing and modeling, in a team of four"), ("Product", "Python model"), ("Timeline", "Fall 2016"), ("Links", '<a href="https://github.com/tolaoniyangi/dmc">Code on GitHub ↗</a>')])
 P[-1]["lead"] = f.fig("sprawl-results.jpg", "Satellite images of three cities over time with built and unbuilt areas and predictions", "Cairo, Dubai and Wuhan: built and unbuilt land over time, and the model’s prediction.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>Three very different cities and one model: a deliberate test of whether patterns of urbanization can be learned at all.</p>"),
@@ -361,7 +365,7 @@ def card(p):
 def early_row(href, img, title, line, when):
     w, h = dims(img)
     return f'''        <tr>
-          <td class="thumb"><a href="{href}" tabindex="-1" aria-hidden="true"><img src="images/{img}" alt="" loading="lazy" width="{w}" height="{h}"></a></td>
+          <td class="thumb{' contain' if img.endswith('.svg') else ''}"><a href="{href}" tabindex="-1" aria-hidden="true"><img src="images/{img}" alt="" loading="lazy" width="{w}" height="{h}"></a></td>
           <td><h3><a href="{href}">{title}</a></h3><p>{line}</p></td>
           <td class="when label">{when}</td>
         </tr>'''
@@ -378,7 +382,7 @@ person = {
 
 def home():
     cards = "\n".join(card(p) for p in SELECTED)
-    rows = "\n".join([early_row(f'{p["slug"]}/', p["thumb"] if not p["thumb"].endswith("svg") else "elections-numbers.jpg", p["title"], p["card"], f'{p["kind"]} · {p["year"]}') for p in EARLIER]
+    rows = "\n".join([early_row(f'{p["slug"]}/', p["thumb"], p["title"], p["card"], f'{p["kind"]} · {p["year"]}') for p in EARLIER]
                      + [early_row(*r) for r in EARLY_ADOBE])
     desc = f"{NAME} is a senior UX engineer and computational designer on Google Earth, with a background in architecture and urban planning from Columbia GSAPP."
     ld = f'\n<script type="application/ld+json">{json.dumps(person, ensure_ascii=False)}</script>'
@@ -388,7 +392,7 @@ def home():
     <section class="hero">
       <h1 class="display">I design and build software for the <em>built environment.</em></h1>
       <div class="hero-foot">
-        <p>I’m a senior UX engineer and computational designer on Google Earth, with a background in architecture and urban planning from Columbia. I build the tools that researchers, planners, architects, engineers and developers use to understand a site and what they’re building on it.</p>
+        <p>I’m a senior UX engineer and computational designer on Google Earth, with a background in architecture and urban planning from Columbia University. I build the tools that researchers, planners, architects, engineers and developers use to understand a site and what they’re building on it.</p>
         <div class="ctas">
           <a class="btn primary" href="#hello">Say hello</a>
           <a class="btn" href="#work">See the work ↓</a>
