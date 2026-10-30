@@ -22,7 +22,7 @@ class Figs:
         self.n += 1; w, h = dims(src)
         c = f' class="{cls}"' if cls else ""
         ld = ' loading="lazy"' if lazy else ""
-        st = f' style="max-width:{w}px"' if int(w) < 1000 else ""
+        st = f' style="max-width:{w}px"' if int(w) < 1000 and not src.endswith(".svg") else ""
         return f'<figure{c}><img src="{self.pre}images/{src}" alt="{html.escape(alt)}" width="{w}" height="{h}"{ld}{st}><figcaption><b>Fig. {self.n}</b>{cap}</figcaption></figure>'
     def video(self, src, poster, label, cap):
         self.n += 1; w, h = dims(poster)
@@ -98,18 +98,17 @@ f = project(slug="marquee-selection", num="01", title="Marquee map selection", t
     dek="One drag on the map selects every feature inside it, instead of a click per feature. The first way to select in bulk directly on Google Earth’s 3D map, built to fit with every existing way to select, on web and mobile.",
     meta=[("Role", "Interaction design and front-end engineering, sole engineer"), ("Product", "Google Earth, web"), ("Timeline", "2026, live"),
           ("Links", '<a href="https://developers.google.com/maps/documentation/earth/style-your-places#bulk_styling">Bulk styling docs ↗</a>')])
-P[-1]["lead"] = f.fig("fig-select.svg", "Diagram: a dashed box dragged over map points selects them, and the same items appear checked in the project panel",
-    "Drag a box on the map. Every feature inside is selected, and the project panel updates to match.", lazy=False)
+P[-1]["lead"] = f.video("marquee-web.mp4", "marquee-web-poster.jpg", "Screen recording: dragging a box over Brooklyn parks selects 16 features, then restyling them all at once",
+    "Drag a box over a cluster of Brooklyn parks, then restyle all of them in one edit.")
 P[-1]["chapters"] = [
-    ("<p>Selecting many features at once already worked in the project panel: tick checkboxes, select all, or drag down the list. But not on the map, where people actually see their sites and how they relate. On the map, it was one click per feature.</p>"
-     "<p>Earth also needed a temporary drawing state for features on the way, and marquee selection would be the first thing built on it, so it had to set the pattern.</p>"),
-    ("<p>A fourth way to select had to agree with the other three. Select on the map and the panel updates. Change the panel and the map follows.</p>"
+    ("<p>Selecting many features at once already worked in the project panel: checkboxes, select all, or dragging down the list. What you couldn’t do was select them on the map itself, where you actually see your sites and how they sit next to each other. There, it was one click per feature.</p>"
+     "<p>Earth also needed a temporary drawing state for features on the way, and marquee selection would be the first thing built on it, so it had to set the pattern.</p>"
+     f'<div class="figs">{f.fig("fig-select.svg", "Diagram: a dashed box dragged over map points selects them, and the same items appear selected in the project panel", "The idea: drag on the map, and the panel updates to match.")}</div>'),
+    ("<p>Marquee selection joined three ways of selecting that already existed, and all four had to share one selection. Drag over features on the map and they light up in the panel. Tick another one in the panel and it joins what you dragged.</p>"
      f'<div class="figs">{f.fig("fig-select-modes.svg", "Four ways to select: checkbox in the panel, click in the panel or on the map, drag in the panel, and the new marquee on the map", "Four ways to select, one shared selection.")}</div>'
      "<p>It also had to work on web and on mobile, where dragging usually moves the map. It had to fit both of Earth’s layouts, the streamlined one for new users and the productivity one for heavy users. And it couldn’t collide with measuring and drawing tools that also work from the middle of the screen.</p>"
      "<p>Each of those was worked out by prototyping, testing and iterating with a UX designer and a PM. The implementation, end to end, was one engineer.</p>"),
-    ("<p>Marquee selection is live in Google Earth on the web. Drag a box and every feature inside is selected, on the map and in the panel at once. A summary counts what was caught by type, with the center of the points and the total area of the polygons.</p>"
-     "<p>From there the whole selection can be restyled in one edit, placemarks and polygons each with their own settings, or hidden, copied, deleted, zoomed to or handed to Ask Google Earth together. Mixed selections still work: anything that can only be edited on its own is flagged instead of blocking the rest.</p>"
-     f'<div class="figs">{f.video("marquee-web.mp4", "marquee-web-poster.jpg", "Screen recording: dragging a box over Brooklyn parks selects 16 features, then restyling them all at once", "Drag over a cluster of Brooklyn parks, see what was selected, and restyle all of them in one edit.")}</div>'
+    ("<p>Marquee selection is live in Google Earth on the web. One drag picks up every feature it covers, and the whole group can then be restyled in one edit, or hidden, copied, deleted or zoomed to together.</p>"
      "<p>It’s also the first feature built on Earth’s new ephemeral drawing state: shapes drawn on the map that exist only while you’re using them and are never saved to the project. That’s what makes room for other tools that need to draw on the map.</p>"),
 ]
 
@@ -120,14 +119,13 @@ f = project(slug="cut-and-fill", num="02", title="Cut and fill", thumb="fig-cutf
     dek="An earthwork estimate in Google Earth. Draw a site and see how much soil has to be dug out or brought in to level it, and where.",
     meta=[("Role", "Back-end design and engineering"), ("Product", "Google Earth terrain analysis"), ("Timeline", "2026, live"),
           ("Links", '<a href="https://mapsplatform.google.com/resources/blog/a-field-guide-to-terrain-analysis-tools-in-google-earth/">Field guide ↗</a><br><a href="https://developers.google.com/maps/documentation/earth/terrain-analysis">Docs ↗</a>')])
-P[-1]["lead"] = f.fig("fig-cutfill.svg", "Section diagram: soil above the dashed target level is cut, the gap below it is filled",
-    "The idea in one section. Soil above the target level gets dug out, and hollows below it get built up.", lazy=False)
+P[-1]["lead"] = f.fig("fig-cutfill-combined.svg", "Plan and section of a site: in plan, an area to cut and an area to fill; in section along A to A prime, soil above the target elevation is cut and hollows below it are filled",
+    "Plan and section: where the site gets dug out, where it gets built up, and the one target elevation that balances them.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>Before a site can be graded, someone has to estimate how much soil comes out and how much goes back in. It’s one of the first numbers on any construction project, it drives the grading budget, and getting it usually means survey data and CAD software.</p>"
      "<p>An early estimate doesn’t replace a survey. It tells a team what the ground is doing soon enough to shape the survey, the building footprint and the questions they take to the field.</p>"),
     ("<p>The back end takes a site drawn on the map and Earth’s elevation data, and calculates how much material sits above and below a target elevation. It can find the elevation where cut equals fill, so nothing has to be trucked in or out, or calculate the volumes for any elevation a user sets.</p>"
-     f'<div class="figs">{f.fig("fig-cutfill-plan.svg", "Plan view: a site boundary over contour lines, split into an area to cut and an area to fill", "The result in plan: where to dig and where to fill, inside the site boundary.")}'
-     f'{f.video("cut-and-fill.mp4", "cutfill-poster.jpg", "Screen recording of the cut and fill tool in Google Earth", "The tool in Google Earth: choose a site, set a target elevation, get the volumes and the map.")}</div>'),
+     f'<div class="figs">{f.video("cut-and-fill.mp4", "cutfill-poster.jpg", "Screen recording of the cut and fill tool in Google Earth", "The tool in Google Earth: choose a site, set a target elevation, get the volumes and the map.")}</div>'),
     ("<p>Cut and fill is live in Google Earth, one of four terrain analysis tools alongside elevation contours, slope and aspect. It’s available on every Google Earth plan.</p>"),
 ]
 
@@ -169,28 +167,29 @@ P[-1]["chapters"] = [
      "<ul><li><strong>The first version.</strong> Designed and implemented the first solar studies: placement logic for rooftops and parking lots that keeps panels clear of HVAC units and fire-code setbacks, design logic for solar canopies, and production code for carports.</li>"
      "<li><strong>The Solar API.</strong> Designed and led the integration of Google’s Solar API, the first in Google Earth, for residential and small commercial roofs up to 500 m². It cut the runtime of complex solar analyses by 32%.</li>"
      "<li><strong>Realistic output.</strong> Panel types switch between residential and commercial by building size, so estimates hold up for any project.</li></ul>"
-     f'<div class="figs two">{f.fig("solar-before.jpg", "Solar layout before the Solar API integration", "Before the Solar API integration")}{f.fig("solar-after.jpg", "Solar layout after the Solar API integration", "After")}</div>'),
+     f'<div class="figs two">{f.fig("solar-before.jpg", "Solar layout before the Solar API integration", "Before the Solar API integration")}{f.fig("solar-after.jpg", "Solar layout after the Solar API integration", "After")}{f.fig("solar-before-2.jpg", "A second site before the Solar API integration", "Before")}{f.fig("solar-after-2.jpg", "The same site after the Solar API integration", "After")}</div>'),
     ('<div class="stat"><div><b>7.9 GW</b><span>of potential solar generation identified in the first year</span></div><div><b>17.1 Mt</b><span>of potential carbon mitigation in the first year</span></div></div>'
      "<p>Solar studies are live in Google Earth for rooftops and parking lots, with three carport options and expected output, savings and payback for each design.</p>"
+     f'<div class="figs">{f.video("solar-studies.mp4", "solar-studies-poster.jpg", "Screen recording of starting a solar study in Google Earth", "Starting a solar study alongside Earth’s other site studies.")}</div>'
      f'<div class="figs">{f.fig("solar-carports.jpg", "Carport solar design with financials in Google Earth", "A carport design with output, savings and payback.")}</div>'),
 ]
 
 # 05 Intelligent City
 f = project(slug="computational-design", num="05", title="Mass-timber buildings, generated", thumb="fig-ic.svg", contain=True,
     eyebrow="Intelligent City · 2021–22 · Computational design", card_label="Intelligent City · Computational design",
-    card="Draw lines in Rhino, get a real mass-timber building made from a set panel system, with its carbon and cost estimated automatically.",
-    dek="Intelligent City designs and manufactures mass-timber housing from a set system of panels. Designers drew lines in Rhino, and the generator turned them into a real building made of those panels, with its carbon and cost estimated automatically.",
+    card="Sketch gestural lines in Rhino, get a real mass-timber building made from a set panel system, with its carbon and cost estimated automatically.",
+    dek="Intelligent City designs and manufactures mass-timber housing from a set system of panels. Designers sketched loose, gestural lines in Rhino, and the generator turned them into a real building made of those panels, with its carbon and cost estimated automatically.",
     meta=[("Role", "Computational designer"), ("Product", "Parametric building platform"), ("Timeline", "2021–22"),
           ("Links", '<a href="https://intelligent-city.com">Intelligent City ↗</a>')])
 P[-1]["lead"] = f.fig("fig-ic.svg", "Diagram: site, program and the timber system feed a parametric generator that produces many building forms, each measured for materials, cost and emissions",
     "Three steps: lines in Rhino, a building from the panel system, then carbon and cost.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>Intelligent City builds with a set system of mass-timber panels made in its own factory. Every design has to be buildable from those panels, which makes designing by hand slow, and makes it hard to compare options on carbon and cost early on.</p>"),
-    ("<ul><li><strong>Lines in, building out.</strong> A designer draws simple lines in Rhino for the footprint and floors. The generator turns them into a real design built from the set panel system. This work grew the range of forms it could produce by 200%.</li>"
+    ("<ul><li><strong>Gestures in, building out.</strong> A designer sketches loose, gestural lines in Rhino, not plans. The generator turns them into a real design built from the set panel system. This work increased the range of generatable building forms by 200%.</li>"
      "<li><strong>Every design, measured.</strong> Quantities of timber, concrete and steel are pulled out of each generated design automatically and joined with outside data.</li>"
      "<li><strong>A carbon and cost dashboard</strong>, designed and built solo, that turns those quantities into embodied carbon and cost estimates for clients.</li></ul>"
-     f'<div class="figs">{f.fig("intelligent-city.jpg", "Intelligent City’s technology stack, from design and data to parametric software, automated manufacturing and on-site assembly", "Intelligent City’s pipeline at the time, from design to manufacturing to site assembly.")}{f.fig("intelligent-city-process.jpg", "Diagram of parametric generation, data extraction and dashboard creation", "Generate the building, extract its data, show it to the client.")}</div>'),
-    ('<div class="stat"><div><b>200%</b><span>more building forms the generator could produce</span></div></div>'
+     f'<div class="figs">{f.fig("intelligent-city-process.jpg", "Original diagram of parametric building generation, data extraction and dashboard creation", "The original process diagram from the time: generate the building, extract its data, build the dashboard.")}{f.fig("intelligent-city.jpg", "Intelligent City’s technology stack, from design and data to parametric software, automated manufacturing and on-site assembly", "Where it sat in Intelligent City’s pipeline, from design to manufacturing to site assembly.")}</div>'),
+    ('<div class="stat"><div><b>200%</b><span>increase in the range of generatable building forms</span></div></div>'
      "<p>Designers could go from a sketch to a buildable design with carbon and cost numbers in one step, and compare options while they still mattered. That range became the base for the company’s design evaluation and optimization at the time.</p>"),
 ]
 
@@ -259,19 +258,19 @@ P[-1]["chapters"] = [
      '<p>The project was featured in <a href="https://blogs.ei.columbia.edu/2019/12/06/proposals-resilience-vieques-puerto-rico/">13 proposals to boost resilience in Vieques, Puerto Rico</a>.</p>'),
 ]
 
-f = project(slug="library", num=None, title="The 20-minute library", thumb="library.jpg", year="2018", kind="Architecture",
+f = project(slug="library", num=None, title="The 20-minute library", thumb="lib-icon-pink.jpg", year="2018", kind="Architecture",
     eyebrow="Columbia GSAPP · 2018 · Architecture",
     card="A Brooklyn library whose program came from researching who lives, works and visits within a 20-minute walk.",
     dek="A public library for Dumbo, Brooklyn, designed research-first: map who could walk to the site, then shape the building around them.",
     meta=[("Role", "Architecture and spatial analysis"), ("Product", "Public library"), ("Timeline", "Spring 2018"), ("Critics", "Gordon Kipping. Representation: Dan Taeyoung")])
-P[-1]["lead"] = f.fig("lib-render.jpg", "Rendering of the library's steel frame at street level", "Approaching the library: a solid steel frame around a lighter inner volume.", lazy=False)
+P[-1]["lead"] = '<div class="figs two">' + f.fig("lib-icon-blue.jpg", "Rendering of the library as a steel frame around a soft pink inner volume", "A solid steel frame around a softer, translucent inner volume.", lazy=False) + f.fig("lib-icon-pink.jpg", "Rendering of the library frame in pink", "The same frame, lit from within.", lazy=False) + '</div>'
 P[-1]["chapters"] = [
     ("<p>Who would actually use a library here? Dumbo is residential, packed with tech companies and schools, about a 10-minute walk from the subway, and busy with tourists.</p>"
      f'<div class="figs">{f.fig("lib-access.jpg", "Map of Brooklyn libraries and walking zones around the site", "Zones of access: five-minute walking intervals, out to a 20-minute walk.")}</div>'),
     ("<p>Inside that zone, a close look at how people get around, the neighborhood’s character, wealth and commute times showed a mix of residents, tech workers and visitors. Two parks border the site, so the concept pulls Dumbo’s waterfront open space into the building.</p>"
      f'<div class="figs two">{f.fig("lib-transport.jpg", "Map of bike, bus, subway and ferry access to the site", "Every way to get there.")}{f.fig("lib-program.jpg", "Diagram of circulation and program", "Circulation and program, shaped by who comes.")}</div>'),
     ("<p>A building meant to be open to regulars and passersby alike, with mixing spaces between related programs and an interior almost free of steel beams.</p>"
-     f'<div class="figs">{f.fig("lib-models.jpg", "Photograph of two final physical models", "Final models.")}</div>'),
+     f'<div class="figs">{f.fig("lib-postcard.jpg", "Postcard of interior views in different light colors: control your experience", "Control your experience: one interior, many moods.")}<div class="figs two">{f.fig("lib-model-zoom.jpg", "Close-up photograph of the physical model", "The final model, up close.")}{f.fig("lib-plans.gif", "Animated floor plans, one floor at a time", "Floor by floor.")}</div></div>'),
 ]
 
 f = project(slug="citi-bike-access", num=None, title="Citi Bike access", thumb="citibike.jpg", year="2017", kind="Mapping",
@@ -284,7 +283,7 @@ P[-1]["chapters"] = [
     ("<p>Citi Bike’s stations were heavily concentrated in one part of the city. The question wasn’t who rides, but who has access at all.</p>"),
     ("<p>Three service areas: a 10-minute walk to a station; a 10-minute walk from subway stations within 30 minutes of a Citi Bike station; and everywhere else, with no access. Census populations were split proportionally across them.</p>"
      f'<div class="figs">{f.fig("cb-method.jpg", "Diagrams of the network analysis method", "The network analysis, step by step.")}</div>'),
-    ('<div class="stat"><div><b>39%</b><span>of subway stations within walking distance of Citi Bike</span></div><div><b>89%</b><span>reachable once a subway ride is counted</span></div></div>'
+    ('<div class="stat"><div><b>39%</b><span>of subway stations are a 10-minute walk from a Citi Bike station</span></div><div><b>89%</b><span>are within a 30-minute subway ride of one</span></div></div>'
      f'<div class="figs">{f.fig("cb-findings.jpg", "Maps of who falls in each service area by age and race", "Who falls in each area, by age and race.")}</div>'),
 ]
 
@@ -295,10 +294,12 @@ f = project(slug="airbnb-analysis", num=None, title="Airbnb analysis", thumb="ai
     meta=[("Role", "Data visualization, in a team of five"), ("Product", "Interactive website"), ("Timeline", "Spring 2017"), ("Links", '<a href="https://rdottle.github.io/dv-final-project/index.html">Project site ↗</a>')])
 P[-1]["lead"] = f.fig("airbnb.jpg", "The Airbnb Analysis project website", "The project site, built around four themes: price, interior, identity and neighborhood.", lazy=False)
 P[-1]["chapters"] = [
-    ("<p>A neighborhood’s identity is partly marketing. Hosts describe where they list, guests describe where they stayed. Do they agree?</p>"),
-    ("<p>Text from guest reviews and host listings across the five boroughs, mined and grouped by theme, then mapped by borough and by word.</p>"
-     f'<div class="figs two">{f.fig("ab-words.jpg", "Bars of descriptive words by borough", "Descriptive words, borough by borough.")}{f.fig("ab-places.jpg", "Bars of place words by borough", "Words about places.")}</div>'),
-    ("<p>An interactive site that maps the words each group uses most, with word associations by theme. Made with Rachael Dottle, Eric Wong, Clara Dykstra and Andreea Seusan, for Juan Saldarriaga’s data visualization course.</p>"),
+    ("<p>A neighborhood’s identity is partly marketing. Hosts describe the places they list; guests describe the places they stayed. Both write on the same platform, but do they describe the same neighborhood?</p>"
+     f'<div class="figs">{f.fig("ab-themes.jpg", "Icons for the four themes: price, interior, identity and neighborhood", "Four themes to sort the language by: price, interior, identity, neighborhood, plus pace.")}</div>'),
+    ("<p>Text from guest reviews and host listings across the five boroughs was mined, grouped by theme and mapped, so the same word could be compared between hosts and guests, borough by borough.</p>"
+     f'<div class="figs">{f.fig("ab-maps.jpg", "Side-by-side maps of a word’s frequency in guest reviews and host listings", "One word, two maps: how often guests and hosts use it, across the city.")}<div class="figs two">{f.fig("ab-data.jpg", "Project page explaining the data", "The data, explained on the site.")}{f.fig("ab-process.jpg", "Project page explaining the process and code", "The process and code.")}</div></div>'),
+    ("<p>An interactive site that maps the words each group uses most, with word associations by theme. Made with Rachael Dottle, Eric Wong, Clara Dykstra and Andreea Seusan, for Juan Saldarriaga’s data visualization course.</p>"
+     f'<div class="figs two">{f.fig("ab-words.jpg", "Bars of descriptive words by borough", "Descriptive words, borough by borough.")}{f.fig("ab-transport.jpg", "Bars of transportation words by borough", "How people talk about getting around.")}</div>'),
 ]
 
 f = project(slug="predicting-urban-sprawl", num=None, title="Predicting urban sprawl", thumb="sprawl.jpg", year="2016", kind="Machine learning",
@@ -308,9 +309,9 @@ f = project(slug="predicting-urban-sprawl", num=None, title="Predicting urban sp
     meta=[("Role", "Data processing and modeling, in a team of four"), ("Product", "Python model"), ("Timeline", "Fall 2016"), ("Links", '<a href="https://github.com/tolaoniyangi/dmc">Code on GitHub ↗</a>')])
 P[-1]["lead"] = f.fig("sprawl-results.jpg", "Satellite images of three cities over time with built and unbuilt areas and predictions", "Cairo, Dubai and Wuhan: built and unbuilt land over time, and the model’s prediction.", lazy=False)
 P[-1]["chapters"] = [
-    ("<p>Three very different cities and one model: a deliberate test of whether patterns of urbanization can be learned at all.</p>"),
+    ("<p>Cairo, Dubai and Wuhan grew in very different ways. Running one model on all three tested whether urban growth follows patterns a machine can learn, regardless of the city.</p>"),
     ("<p>Satellite images from 2000, 2005, 2010 and 2015 were turned into figure-ground maps, cut into 32 × 32 pixel samples, and used to train a convolutional neural network to tell urban from non-urban land, then predict which pixels urbanize next.</p>"
-     f'<div class="figs two">{f.fig("sprawl-training.jpg", "Diagram of image processing and training", "From satellite image to training samples.")}{f.fig("sprawl-anim.gif", "Animated satellite view of a city over time", "One city across the years.")}</div>'),
+     f'<div class="figs">{f.fig("sprawl-training.jpg", "Diagram of image processing and training", "From satellite image to training samples.")}{f.fig("sprawl-anim.gif", "Animated satellite view of a city over time", "One city across the years.")}</div>'),
     ("<p>Real images exist for every year, so each prediction could be checked against what actually happened. Made with Marwah Garib, Vrinda Sharma and Kun Qian for Danil Nagy’s Data Mining the City.</p>"),
 ]
 
@@ -418,7 +419,7 @@ def home():
       <div class="sec-head" style="grid-column:1/-1;margin-bottom:0"><h2 class="label">About</h2></div>
       <div></div>
       <div>
-        <p class="big">I came to software from architecture and urban planning, and the built environment is still what I care about most. I want my tools to keep getting closer to the people who design and construct it.</p>
+        <p class="big">I trained in architecture and urban planning, and I still think in sites, sections and systems. Now I build software for the people who design and construct places, and I keep looking for ways to bring it closer to the work on the ground.</p>
 
         <h3 class="label">Experience</h3>
         <ul class="list">

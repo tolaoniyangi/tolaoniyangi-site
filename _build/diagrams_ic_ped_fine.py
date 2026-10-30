@@ -14,12 +14,11 @@ for x in xs: b.append(f'<rect x="{x}" y="{py}" width="{pw}" height="{ph}" fill="
 # 1. lines in Rhino: construction grid + accent curves with control points
 x0=xs[0]
 b.append(f'<g stroke="{LINE}" stroke-width=".5">'+"".join(f'<line x1="{x0+gx}" y1="{py}" x2="{x0+gx}" y2="{py+ph}"/>' for gx in range(20,pw,20))+"".join(f'<line x1="{x0}" y1="{py+gy}" x2="{x0+pw}" y2="{py+gy}"/>' for gy in range(20,ph,20))+'</g>')
-pts=[(40,60),(150,60),(150,110),(120,110),(120,170),(40,170)]
-d="M"+" L".join(f"{x0+a} {py+c}" for a,c in pts)+" Z"
-b.append(f'<path d="{d}" fill="none" stroke="{ACC}" stroke-width="1.2"/>')
-b.append(f'<line x1="{x0+40}" y1="{py+115}" x2="{x0+120}" y2="{py+115}" stroke="{ACC}" stroke-width=".8" stroke-dasharray="4 3"/>')
-for a,c in pts: b.append(f'<rect x="{x0+a-2.5}" y="{py+c-2.5}" width="5" height="5" fill="#fff" stroke="{ACC}" stroke-width=".8"/>')
-b.append(T(x0+40,py+196,"Footprint and floors as curves",s=10,op=.6))
+for d,wd in [("M38 150 C 60 70, 120 60, 160 96 S 150 170, 104 160", 1.3),
+             ("M50 172 C 90 150, 130 176, 170 150", .9),
+             ("M70 84 C 86 112, 96 128, 132 136", .8)]:
+    b.append(f'<path d="M{x0} 0 m0 {py}" fill="none"/><path transform="translate({x0} {py})" d="{d}" fill="none" stroke="{ACC}" stroke-width="{wd}" stroke-linecap="round"/>')
+b.append(T(x0+20,py+204,"Loose, gestural curves",s=10,op=.6))
 # 2. generated building from the panel system (isometric, panelized)
 x0=xs[1]; bx,by=x0+48,py+190; w,dpt,h=80,60,120; ddx,ddy=dpt*.75,dpt*.42
 front=[(bx,by),(bx+w,by),(bx+w,by-h),(bx,by-h)]
@@ -51,7 +50,7 @@ for i,(lab,wd) in enumerate([("Structure",96),("Envelope",64),("Interiors",44)])
     y=py+156+i*20
     b.append(T(x0+16,y+8,lab,s=10,op=.7)); b.append(f'<rect x="{x0+76}" y="{y}" width="{wd}" height="9" fill="{INK}" fill-opacity="{.25+.15*i}"/>')
 for i,x in enumerate(xs):
-    t,sub=[("Draw lines in Rhino","The designer sketches the massing"),("Generate the building","A real design from the set panel system"),("Estimate carbon and cost","Quantities pulled from every design")][i]
+    t,sub=[("Draw lines in Rhino","Quick gestures, not plans"),("Generate the building","A real design from the set panel system"),("Estimate carbon and cost","Quantities pulled from every design")][i]
     b.append(T(x,py+ph+30,f"{i+1}  {t}",s=13,w=700)); b.append(T(x,py+ph+48,sub,s=11,op=.7))
 arrow(b,xs[0]+pw+8,py+ph/2,xs[1]-8); arrow(b,xs[1]+pw+8,py+ph/2,xs[2]-8)
 open('images/fig-ic.svg','w').write(svg(W,H,"Diagram in three steps: lines drawn in Rhino, a building generated from the standard timber panel system, and a dashboard estimating embodied carbon and cost",b))
@@ -66,21 +65,31 @@ def panel(ox,title,sub,mode):
     for (x,y,w,h,v) in blds:
         if mode==0: b.append(f'<rect x="{x-10}" y="{y-10}" width="{w}" height="{h}" fill="none" stroke="{INK}" stroke-width=".5" stroke-opacity=".35"/>')
         if mode==1: b.append(f'<rect x="{x-10}" y="{y-10}" width="{w}" height="{h}" fill="{ACC}" fill-opacity="{.12+.6*v:.2f}" stroke="{INK}" stroke-width=".5" stroke-opacity=".5"/>')
-        if mode==2: b.append(f'<rect x="{x-10}" y="{y-10}" width="{w}" height="{h}" fill="#fff" stroke="{INK}" stroke-width=".5" stroke-opacity=".35"/>')
     if mode==0:
         b.append(f'<rect x="26" y="66" width="148" height="138" fill="none" stroke="{ACC}" stroke-width="1" stroke-dasharray="5 3"/>')
         b.append(f'<rect x="58" y="120" width="84" height="30" fill="#fff" stroke="{ACC}" stroke-width=".8"/>')
         b.append(T(100,134,"One total",a="middle",s=10,w=600,fill=ACC)); b.append(T(100,146,"for the whole area",a="middle",s=9,op=.7))
     if mode==2:
-        for k,yy in enumerate([84,118,152,186]):
-            b.append(f'<line x1="20" y1="{yy}" x2="180" y2="{yy}" stroke="{ACC}" stroke-width="{1+((k*7)%5)*.7:.1f}" stroke-opacity=".75"/>')
-        for k,xx in enumerate([48,82,116,150]):
-            b.append(f'<line x1="{xx}" y1="60" x2="{xx}" y2="210" stroke="{ACC}" stroke-width="{.8+((k*3)%4)*.6:.1f}" stroke-opacity=".55"/>')
+        xs_=[20,48,82,116,150,180]; ys_=[60,84,118,152,186,210]
+        for i in range(5):
+            for j in range(5):
+                b.append(f'<rect x="{xs_[i]+5}" y="{ys_[j]+5}" width="{xs_[i+1]-xs_[i]-10}" height="{ys_[j+1]-ys_[j]-10}" fill="#fff" stroke="{INK}" stroke-width=".5" stroke-opacity=".35"/>')
+        streets=[("h",84),("h",118),("h",152),("h",186),("v",48),("v",82),("v",116),("v",150)]
+        for o,p in streets:
+            if o=="h": b.append(f'<line x1="20" y1="{p}" x2="180" y2="{p}" stroke="{LINE}" stroke-width="3"/>')
+            else: b.append(f'<line x1="{p}" y1="60" x2="{p}" y2="210" stroke="{LINE}" stroke-width="3"/>')
+        busy=[("h",118,20,116,.85),("h",152,48,180,.6),("v",82,60,186,.75),("v",116,84,210,.45),("h",84,82,150,.3)]
+        for o,p,a,c,v in busy:
+            if o=="h": b.append(f'<line x1="{a}" y1="{p}" x2="{c}" y2="{p}" stroke="{ACC}" stroke-width="3" stroke-opacity="{v}"/>')
+            else: b.append(f'<line x1="{p}" y1="{a}" x2="{p}" y2="{c}" stroke="{ACC}" stroke-width="3" stroke-opacity="{v}"/>')
+        b.append(f'<defs><linearGradient id="busy"><stop offset="0" stop-color="{LINE}"/><stop offset="1" stop-color="{ACC}"/></linearGradient></defs>')
+        b.append(f'<rect x="20" y="276" width="90" height="6" fill="url(#busy)"/>')
+        b.append(T(20,296,"Quiet",s=9,op=.6)); b.append(T(110,296,"Busy",a="end",s=9,op=.6))
     b.append(T(20,240,title,s=14,w=700)); b.append(T(20,258,sub,s=12,op=.7))
     b.append('</g>')
 panel(0,"Census counts","Residents and workers per area",0)
 panel(250,"Split to buildings","By size and use",1)
-panel(500,"Activity on the street","The “buzz metric”",2)
+panel(500,"Busy streets","The “buzz metric”",2)
 for ax in (200,450): arrow(b,ax+6,135,ax+64)
 b.append(T(20,34,"FROM CENSUS COUNTS TO STREET-LEVEL ACTIVITY",s=11,w=600,op=.6,ls=1))
 open('images/fig-ped.svg','w').write(svg(W,H,"Diagram: census counts for an area are split across its buildings by size and use, then turned into estimated activity on each street",b))

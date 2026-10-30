@@ -48,7 +48,7 @@ a:hover{color:var(--accent)}
 /* ---------- home ---------- */
 .hero{padding:clamp(40px,7vw,96px) 0 clamp(56px,8vw,112px)}
 .hero h1{font-size:clamp(30px,4vw,60px);margin:0;max-width:18ch;line-height:1.02}
-.hero h1 em{font-style:italic;color:var(--accent)}
+.hero h1 em{font-style:normal;color:var(--accent)}
 .hero-foot{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 48px;align-items:end;margin-top:clamp(28px,4vw,48px)}
 .hero p{font-size:clamp(18px,1.6vw,21px);max-width:42ch;margin:0}
 @media (max-width:760px){.hero-foot{grid-template-columns:1fr}}
