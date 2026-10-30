@@ -2,7 +2,7 @@
 import os, re, subprocess, html, json
 ROOT = "/Users/tolaoniyangi/Documents/tolaoniyangi-site"
 BASE = "https://tolaoniyangi.github.io/tolaoniyangi-site/"  # change to https://tolaoniyangi.com/ when the domain moves
-NAME = "Shakira “Tola” Oniyangi"
+NAME = "Shakira Tola Oniyangi"
 TAGLINE = "Senior UX Engineer and Computational Designer"
 RESUME = "https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/preview"
 RESUME_PDF = "https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf"
@@ -204,8 +204,10 @@ P[-1]["lead"] = f.fig("fig-ped.svg", "Diagram: one census count for an area is s
     "One census count, split across buildings by floor area and use, then turned into an estimate of pedestrian activity on each street.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>Generative design tools score thousands of building and street options against goals like walkability. To do that well, they need data about who is actually around a site.</p>"
-     "<p>Getting geospatial data into those tools was slow and manual, which kept them stuck on narrow test cases. The first step was research into which use cases mattered most, and which standard datasets, like pedestrian activity and transit access, they needed.</p>"),
-    ("<p>An automated pipeline pulls the data in. Census population and workforce counts come in large areas called block groups, so the pipeline splits them down to individual buildings by size and use, then estimates how busy each street around them is.</p>"),
+     "<p>Getting geospatial data into those tools was slow and manual, which kept them stuck on narrow test cases. The first step was research into which use cases mattered most, and which standard datasets, like pedestrian activity and transit access, they needed.</p>"
+     f'<div class="figs">{f.fig("ped-research.gif", "Animated diagram mapping use cases to the datasets they need", "Use cases, mapped to the data each one needs.")}</div>'),
+    ("<p>An automated pipeline pulls the data in. Census population and workforce counts come in large areas called block groups, so the pipeline splits them down to individual buildings by size and use, then estimates how busy each street around them is.</p>"
+     f'<div class="figs two">{f.fig("ped-blockgroups.jpg", "Map of Manhattan with the test site highlighted", "The test site in Manhattan.")}{f.fig("ped-units-map.jpg", "Map of Manhattan block groups by population", "Census counts, block group by block group.")}{f.fig("ped-units.gif", "Animated map of units per building on the test site", "Split down to units in each building.")}{f.fig("ped-buildingtypes.jpg", "3D model of buildings by type with activity", "Buildings by type, ready to be scored.")}</div>'),
 
     ("<p>Built on a test site in New York, then confirmed in other cities and over larger areas. Generative design could now draw on building-level population, workforce and land use, plus a “buzz metric” for pedestrian activity.</p>"
      f'<div class="figs">{f.fig("ped-buzz.gif", "Animated 3D site model with pedestrian activity from residents, then workers", "The buzz metric: estimated activity from residents, then workers, around the site.")}</div>'),
@@ -220,12 +222,14 @@ f = project(slug="beyond-the-blue-dot", num=None, title="Beyond the Blue Dot", t
 P[-1]["lead"] = f.fig("bluedot.jpg", "Beyond the Blue Dot landing page with a map of New York", "Choose a place and a type of person, and read their story.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>A planner working on a transit project wants to disrupt people’s days as little as possible, so they need to know who lives and works nearby, how they get around and what they earn.</p>"
-     "<p>Getting that from GIS takes days. Community meetings help, but they don’t represent everyone. There was no quick way to see a place at the scale of one person.</p>"),
+     "<p>Getting that from GIS takes days. Community meetings help, but they don’t represent everyone. There was no quick way to see a place at the scale of one person.</p>"
+     f'<div class="figs">{f.fig("bluedot-old-new.jpg", "Diagram comparing the old research process with the new one", "The old way, and the new one: select a location, define a person, generate the narrative.")}</div>'),
     ("<p>Pick a location and a profile, and the tool builds a narrative about a typical or outlier resident or worker from national data, so it works anywhere in the US. The persona and flow came from conversations with practicing planners, who needed it to be fast, intuitive and easy to fit into their work.</p>"
      "<p>Early prototypes tested a split screen of map and story. Testers found the split clear but the navigation hard to follow, and the stories not personal enough. The final version leaned into avatars for each profile, and a half-mile boundary, the planning standard for a comfortable walk, to frame each person’s day.</p>"
-     f'<div class="figs">{f.fig("bluedot-persona.jpg", "User persona for an urban planner", "The persona, from conversations with planners.")}{f.fig("bluedot-flow.jpg", "User flow from location to persona to narrative", "A deliberately short flow: location, person, story.")}{f.fig("bluedot-wireframes.jpg", "Wireframes of the tool’s screens", "Wireframes, from landing page to generated story.")}</div>'),
+     f'<div class="figs">{f.fig("bluedot-persona.jpg", "User persona for an urban planner", "The persona, from conversations with planners.")}{f.fig("bluedot-flow.jpg", "User flow from location to persona to narrative", "A deliberately short flow: location, person, story.")}{f.fig("bluedot-wireframes.jpg", "Wireframes of the tool’s screens", "Wireframes, from landing page to generated story.")}{f.fig("bluedot-flow-2.jpg", "Diagram of the tool’s structure from introduction to data stories", "How the pieces connect.")}{f.fig("bluedot-iterations.jpg", "Screens from the first, intermediate and final iterations", "First, intermediate and final iterations.")}</div>'),
     ("<p>A working proof of concept, built in Python on New York’s Lower East Side, generating stories for residents from the Census Bureau’s American Community Survey, the LEHD workforce data, the National Household Travel Survey and the Google Places API.</p>"
-     "<p>Next steps would have added workers, travel data and natural language processing for richer stories. The name plays on the blue dot that stands for you in Google Maps. Here, the dot is a person.</p>"),
+     "<p>Next steps would have added workers, travel data and natural language processing for richer stories. The name plays on the blue dot that stands for you in Google Maps. Here, the dot is a person.</p>"
+     f'<div class="figs">{f.video("bluedot-demo.mp4", "bluedot-demo-poster.jpg", "Screen recording of the working prototype generating a story", "The working prototype, generating a resident’s story.")}</div>'),
 ]
 
 f = project(slug="data-storytelling", num=None, title="Election data for 5M voters", thumb="fig-elections.svg", contain=True, year="2020", kind="Mapping",
@@ -253,9 +257,10 @@ P[-1]["chapters"] = [
     ("<p>Materials that could be reprocessed were going straight to a landfill that’s close to capacity. At the same time, women on the island had been systematically shut out of the existing labor force.</p>"
      f'<div class="figs two">{f.fig("ws-employment.jpg", "Charts of employment status and income in Vieques", "Employment status and income in Vieques, 2017.")}{f.fig("ws-site.jpg", "Axonometric of the downtown site and land use", "The site in downtown Isabel Segunda.")}</div>'),
     ("<p>Plastic moves through the building in three steps. It’s collected and shredded, then reprocessed by extrusion, injection or compression molding on cheap, open-source machines, and finally sold in the store or shown in exhibitions.</p>"
-     f'<div class="figs">{f.fig("ws-machines.jpg", "Diagram of the plastic shredding and molding machines", "Open-source machines that anyone can learn to build and run.")}{f.fig("ws-section.jpg", "Long section through the building", "The building in section: collection, workshop, store.")}</div>'),
+     f'<div class="figs">{f.fig("ws-machines.jpg", "Diagram of the plastic shredding and molding machines", "Open-source machines that anyone can learn to build and run.")}{f.fig("ws-section.jpg", "Long section through the building", "The building in section: collection, workshop, store.")}{f.fig("ws-axon.jpg", "Axonometric drawing of the building", "The building, opened up.")}{f.fig("ws-interior.jpg", "Interior rendering of the workshop with people at the machines", "Inside the workshop.")}</div>'),
     ("<p>Collection points sit across the island, with the full building in one central place. A daycare makes it easier to take part, and a calendar of classes and events keeps the space busy beyond plastic.</p>"
      f'<div class="figs two">{f.fig("ws-hubs.jpg", "Map of Vieques with collection hubs", "Collection hubs across the island.")}{f.fig("ws-calendar.jpg", "A month of classes and events", "A typical month of classes and events.")}</div>'
+     f'<div class="figs">{f.fig("ws-render-2.jpg", "Rendering of the courtyard side of the hub with families", "The courtyard side, with the daycare and play space.")}<div class="figs two">{f.fig("ws-model-1.jpg", "Photograph of the physical model from above", "The model, from above.")}{f.fig("ws-model-2.jpg", "Photograph of the physical model from the side", "The model, from the street.")}</div></div>'
      '<p>The project was featured in <a href="https://blogs.ei.columbia.edu/2019/12/06/proposals-resilience-vieques-puerto-rico/">13 proposals to boost resilience in Vieques, Puerto Rico</a>.</p>'),
 ]
 
@@ -267,11 +272,11 @@ f = project(slug="library", num=None, title="The 20-minute library", thumb="lib-
 P[-1]["lead"] = '<div class="figs two">' + f.fig("lib-icon-blue.jpg", "Rendering of the library as a steel frame around a soft pink inner volume", "A solid steel frame around a softer, translucent inner volume.", lazy=False) + f.fig("lib-icon-pink.jpg", "Rendering of the library frame in pink", "The same frame, lit from within.", lazy=False) + '</div>'
 P[-1]["chapters"] = [
     ("<p>Who would actually use a library here? Dumbo is residential, packed with tech companies and schools, about a 10-minute walk from the subway, and busy with tourists.</p>"
-     f'<div class="figs">{f.fig("lib-access.jpg", "Map of Brooklyn libraries and walking zones around the site", "Zones of access: five-minute walking intervals, out to a 20-minute walk.")}</div>'),
+     f'<div class="figs">{f.fig("lib-access.jpg", "Map of Brooklyn libraries and walking zones around the site", "Zones of access: five-minute walking intervals, out to a 20-minute walk.")}<div class="figs two">{f.fig("lib-zones.jpg", "Map of walking rings around the site", "The site’s own rings, in five-minute steps.")}{f.fig("lib-character.jpg", "Maps of innovation, education and land use around the site", "The area’s character: tech, schools and land use.")}</div></div>'),
     ("<p>Inside that zone, a close look at how people get around, the neighborhood’s character, wealth and commute times showed a mix of residents, tech workers and visitors. Two parks border the site, so the concept pulls Dumbo’s waterfront open space into the building.</p>"
-     f'<div class="figs two">{f.fig("lib-transport.jpg", "Map of bike, bus, subway and ferry access to the site", "Every way to get there.")}{f.fig("lib-program.jpg", "Diagram of circulation and program", "Circulation and program, shaped by who comes.")}</div>'),
+     f'<div class="figs two">{f.fig("lib-transport.jpg", "Map of bike, bus, subway and ferry access to the site", "Every way to get there.")}{f.fig("lib-program.jpg", "Diagram of circulation and program", "Circulation and program, shaped by who comes.")}{f.fig("lib-leisure.jpg", "Map of the population with the most access to the library", "Who has the most access.")}{f.fig("lib-mobile.jpg", "Map of the mobile population", "The mobile population.")}{f.fig("lib-wealthy.jpg", "Map of the wealthy population", "The wealthy population.")}{f.fig("lib-openspace-1.jpg", "Map extending open space from the waterfront into the site", "Pulling the waterfront’s open space inland.")}{f.fig("lib-openspace-2.jpg", "Map of open space around the site", "Open space nearby.")}</div><div class="figs">{f.fig("lib-structure.jpg", "Diagram of the steel frame and the inner volume combining", "The frame and the inner volume, combined.")}{f.fig("lib-plan-section.jpg", "Plan and section drawing of the library", "Plan and section.")}</div>'),
     ("<p>A building meant to be open to regulars and passersby alike, with mixing spaces between related programs and an interior almost free of steel beams.</p>"
-     f'<div class="figs">{f.fig("lib-postcard.jpg", "Postcard of interior views in different light colors: control your experience", "Control your experience: one interior, many moods.")}<div class="figs two">{f.fig("lib-model-zoom.jpg", "Close-up photograph of the physical model", "The final model, up close.")}{f.fig("lib-plans.gif", "Animated floor plans, one floor at a time", "Floor by floor.")}</div></div>'),
+     f'<div class="figs">{f.fig("lib-postcard.jpg", "Postcard of interior views in different light colors: control your experience", "Control your experience: one interior, many moods.")}<div class="figs two">{f.fig("lib-model-zoom.jpg", "Close-up photograph of the physical model", "The final model, up close.")}{f.fig("lib-plans.gif", "Animated floor plans, one floor at a time", "Floor by floor.")}</div><div class="figs two">{f.fig("lib-model-1.jpg", "Model photograph close up", "The frame, close up.")}{f.fig("lib-model-2.jpg", "Model photograph", "The model in light.")}{f.fig("lib-model-3.jpg", "Model photograph", "Two studies side by side.")}{f.fig("lib-model-4.jpg", "Model photograph from above", "Model studies.")}{f.fig("lib-model-5.jpg", "Close-up model photograph of the frame", "Columns, up close.")}{f.fig("lib-model-6.jpg", "Close-up photograph of the inner volume material", "Details: the frame and the inner volume’s material.")}</div></div>'),
 ]
 
 f = project(slug="citi-bike-access", num=None, title="Citi Bike access", thumb="citibike.jpg", year="2017", kind="Mapping",
@@ -281,11 +286,12 @@ f = project(slug="citi-bike-access", num=None, title="Citi Bike access", thumb="
     meta=[("Role", "GIS analysis and graphics, with Joan Zhang"), ("Product", "Research report"), ("Timeline", "Spring 2017"), ("Instructor", "Leah Meisterlin")])
 P[-1]["lead"] = f.fig("cb-network.jpg", "Map of Citi Bike stations and the half-mile walk around each", "Citi Bike in May 2017: 615 stations and the 10-minute walk around each.", lazy=False)
 P[-1]["chapters"] = [
-    ("<p>Citi Bike’s stations were heavily concentrated in one part of the city. The question wasn’t who rides, but who has access at all.</p>"),
+    ("<p>Citi Bike’s stations were heavily concentrated in one part of the city. The question wasn’t who rides, but who has access at all.</p>"
+     f'<div class="figs">{f.fig("cb-stations.jpg", "Map of Citi Bike stations colored by distance to the nearest subway station", "Every station, by how far it is from the subway.")}</div>'),
     ("<p>Three service areas: a 10-minute walk to a station; a 10-minute walk from subway stations within 30 minutes of a Citi Bike station; and everywhere else, with no access. Census populations were split proportionally across them.</p>"
-     f'<div class="figs">{f.fig("cb-method.jpg", "Diagrams of the network analysis method", "The network analysis, step by step.")}</div>'),
+     f'<div class="figs">{f.fig("cb-method.jpg", "Diagrams of the network analysis method", "The network analysis, step by step.")}{f.fig("cb-demographic-method.jpg", "Diagrams of the demographic method", "The demographic method: estimating who lives in each area.")}<div class="figs two">{f.fig("cb-area-1.jpg", "Map of the area within a walk of Citi Bike", "1. A walk to a station.")}{f.fig("cb-area-2.jpg", "Map of the area reachable by walk and subway", "2. A walk plus a subway ride.")}{f.fig("cb-area-3.jpg", "Map of the area with no access", "3. No access at all.")}</div></div>'),
     ('<div class="stat"><div><b>39%</b><span>of subway stations are a 10-minute walk from a Citi Bike station</span></div><div><b>89%</b><span>are within a 30-minute subway ride of one</span></div></div>'
-     f'<div class="figs">{f.fig("cb-findings.jpg", "Maps of who falls in each service area by age and race", "Who falls in each area, by age and race.")}</div>'),
+     f'<div class="figs">{f.fig("cb-findings-1.jpg", "Maps of who has direct access, by age and race", "Who has direct access, by age and race.")}{f.fig("cb-findings-2.jpg", "Maps of who has access by subway", "Who has access by subway.")}{f.fig("cb-findings-3.jpg", "Maps of who has no access", "Who has no access.")}</div>'),
 ]
 
 f = project(slug="airbnb-analysis", num=None, title="Airbnb analysis", thumb="airbnb.jpg", year="2017", kind="Mapping",
@@ -293,12 +299,12 @@ f = project(slug="airbnb-analysis", num=None, title="Airbnb analysis", thumb="ai
     card="How hosts and guests describe the same New York neighborhoods differently.",
     dek="Hosts and guests use the same platform but talk about neighborhoods differently. This project mined Airbnb listings and reviews across New York to map the difference.",
     meta=[("Role", "Data visualization, in a team of five"), ("Product", "Interactive website"), ("Timeline", "Spring 2017"), ("Links", '<a href="https://rdottle.github.io/dv-final-project/index.html">Project site ↗</a>')])
-P[-1]["lead"] = f.fig("airbnb.jpg", "The Airbnb Analysis project website", "The project site, built around four themes: price, interior, identity and neighborhood.", lazy=False)
+P[-1]["lead"] = f.fig("airbnb-intro.gif", "Animated intro of the Airbnb Analysis website", "The project site, built around four themes: price, interior, identity and neighborhood.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>A neighborhood’s identity is partly marketing. Hosts describe the places they list; guests describe the places they stayed. Both write on the same platform, but do they describe the same neighborhood?</p>"
      f'<div class="figs">{f.fig("ab-themes.jpg", "Icons for the four themes: price, interior, identity and neighborhood", "Four themes to sort the language by: price, interior, identity, neighborhood, plus pace.")}</div>'),
     ("<p>Text from guest reviews and host listings across the five boroughs was mined, grouped by theme and mapped, so the same word could be compared between hosts and guests, borough by borough.</p>"
-     f'<div class="figs">{f.fig("ab-maps.jpg", "Side-by-side maps of a word’s frequency in guest reviews and host listings", "One word, two maps: how often guests and hosts use it, across the city.")}<div class="figs two">{f.fig("ab-data.jpg", "Project page explaining the data", "The data, explained on the site.")}{f.fig("ab-process.jpg", "Project page explaining the process and code", "The process and code.")}</div></div>'),
+     f'<div class="figs">{f.fig("fig-airbnb.svg", "Diagram: host listings and guest reviews are mined for words, sorted into five themes, then compared borough by borough", "The method: two voices, five themes, five boroughs.")}{f.fig("ab-maps.jpg", "Side-by-side maps of a word’s frequency in guest reviews and host listings", "One word, two maps: how often guests and hosts use it, across the city.")}<div class="figs two">{f.fig("ab-data.jpg", "Project page explaining the data", "The data, explained on the site.")}{f.fig("ab-process.jpg", "Project page explaining the process and code", "The process and code.")}</div></div>'),
     ("<p>An interactive site that maps the words each group uses most, with word associations by theme. Made with Rachael Dottle, Eric Wong, Clara Dykstra and Andreea Seusan, for Juan Saldarriaga’s data visualization course.</p>"
      f'<div class="figs two">{f.fig("ab-words.jpg", "Bars of descriptive words by borough", "Descriptive words, borough by borough.")}{f.fig("ab-transport.jpg", "Bars of transportation words by borough", "How people talk about getting around.")}</div>'),
 ]
@@ -312,7 +318,7 @@ P[-1]["lead"] = f.fig("sprawl-results.jpg", "Satellite images of three cities ov
 P[-1]["chapters"] = [
     ("<p>Cairo, Dubai and Wuhan grew in very different ways. Running one model on all three tested whether urban growth follows patterns a machine can learn, regardless of the city.</p>"),
     ("<p>Satellite images from 2000, 2005, 2010 and 2015 were turned into figure-ground maps, cut into 32 × 32 pixel samples, and used to train a convolutional neural network to tell urban from non-urban land, then predict which pixels urbanize next.</p>"
-     f'<div class="figs">{f.fig("sprawl-training.jpg", "Diagram of image processing and training", "From satellite image to training samples.")}{f.fig("sprawl-anim.gif", "Animated satellite view of a city over time", "One city across the years.")}</div>'),
+     f'<div class="figs">{f.fig("sprawl-prep.jpg", "Diagram of machine data sample preparation: satellite image to figure-ground to cropped samples", "Machine data sample preparation: satellite image, figure-ground, then cropped samples.")}{f.fig("sprawl-training.jpg", "Diagram of image processing and training", "From satellite image to training samples.")}{f.fig("sprawl-anim.gif", "Animated satellite view of a city over time", "One city across the years.")}</div>'),
     ("<p>Real images exist for every year, so each prediction could be checked against what actually happened. Made with Marwah Garib, Vrinda Sharma and Kun Qian for Danil Nagy’s Data Mining the City.</p>"),
 ]
 
@@ -374,7 +380,7 @@ def early_row(href, img, title, line, when):
 
 person = {
     "@context": "https://schema.org", "@type": "Person",
-    "name": "Shakira Oniyangi", "alternateName": ["Tola Oniyangi", "Shakirat Ibitola Oniyangi"],
+    "name": "Shakira Tola Oniyangi", "alternateName": ["Shakira Oniyangi", "Tola Oniyangi", "Shakirat Ibitola Oniyangi"],
     "jobTitle": TAGLINE, "worksFor": {"@type": "Organization", "name": "Google"},
     "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Columbia University Graduate School of Architecture, Planning and Preservation"},
                  {"@type": "CollegeOrUniversity", "name": "Barnard College"}],
