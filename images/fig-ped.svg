@@ -1,97 +1,106 @@
-<svg data-thinned="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-label="Diagram: census counts for an area are split across its buildings by size and use, then turned into estimated activity on each street"><rect width="720" height="320" fill="#EAE6DE"/>
-<g transform="translate(0 0)">
-<rect x="20" y="60" width="160" height="150" fill="#fff" stroke="#CFCAC0" stroke-width="0.5"/>
-<rect x="23.73741016933821" y="64.45072193556437" width="26" height="26" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="57.18023912738286" y="65.042088723136" width="20" height="26" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="88.9411079338136" y="62.23076013337385" width="20" height="22" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="125.4436471275686" y="60.07868513753341" width="20" height="22" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="25.498072230851314" y="98.59435270977485" width="20" height="18" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="57.7047151227967" y="94.76019539530162" width="20" height="18" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="89.2928870153484" y="99.89452665295555" width="20" height="22" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="123.1933359595786" y="99.25671359946566" width="26" height="18" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="25.81134064602741" y="129.1812742635562" width="24" height="22" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="56.48944026973648" y="133.61475593502976" width="24" height="18" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="92.90440186574057" y="131.51684755102022" width="26" height="26" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="122.39613470330647" y="130.13210814379983" width="24" height="22" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="21.108639440590967" y="164.8352300988735" width="20" height="18" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="59.63407082957919" y="167.69532286002317" width="24" height="22" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="92.72642982388261" y="164.19710685505117" width="26" height="18" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="126.24654953990517" y="165.7422781864634" width="20" height="18" fill="none" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="26" y="66" width="148" height="138" fill="none" stroke="#E2512B" stroke-width="0.55" stroke-dasharray="5 3"/>
-<rect x="58" y="120" width="84" height="30" fill="#fff" stroke="#E2512B" stroke-width="0.5"/>
-<text x="100" y="134" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#E2512B" fill-opacity="1" letter-spacing="0">One total</text>
-<text x="100" y="146" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">for the whole area</text>
-<text x="20" y="240" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Census counts</text>
-<text x="20" y="258" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">Residents and workers per area</text>
-</g>
-<g transform="translate(250 0)">
-<rect x="20" y="60" width="160" height="150" fill="#fff" stroke="#CFCAC0" stroke-width="0.5"/>
-<rect x="23.73741016933821" y="64.45072193556437" width="26" height="26" fill="#E2512B" fill-opacity="0.51" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="57.18023912738286" y="65.042088723136" width="20" height="26" fill="#E2512B" fill-opacity="0.15" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="88.9411079338136" y="62.23076013337385" width="20" height="22" fill="#E2512B" fill-opacity="0.45" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="125.4436471275686" y="60.07868513753341" width="20" height="22" fill="#E2512B" fill-opacity="0.29" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="25.498072230851314" y="98.59435270977485" width="20" height="18" fill="#E2512B" fill-opacity="0.20" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="57.7047151227967" y="94.76019539530162" width="20" height="18" fill="#E2512B" fill-opacity="0.25" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="89.2928870153484" y="99.89452665295555" width="20" height="22" fill="#E2512B" fill-opacity="0.31" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="123.1933359595786" y="99.25671359946566" width="26" height="18" fill="#E2512B" fill-opacity="0.23" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="25.81134064602741" y="129.1812742635562" width="24" height="22" fill="#E2512B" fill-opacity="0.13" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="56.48944026973648" y="133.61475593502976" width="24" height="18" fill="#E2512B" fill-opacity="0.32" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="92.90440186574057" y="131.51684755102022" width="26" height="26" fill="#E2512B" fill-opacity="0.54" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="122.39613470330647" y="130.13210814379983" width="24" height="22" fill="#E2512B" fill-opacity="0.54" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="21.108639440590967" y="164.8352300988735" width="20" height="18" fill="#E2512B" fill-opacity="0.27" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="59.63407082957919" y="167.69532286002317" width="24" height="22" fill="#E2512B" fill-opacity="0.13" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="92.72642982388261" y="164.19710685505117" width="26" height="18" fill="#E2512B" fill-opacity="0.39" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<rect x="126.24654953990517" y="165.7422781864634" width="20" height="18" fill="#E2512B" fill-opacity="0.57" stroke="#141413" stroke-width="0.5" stroke-opacity=".5"/>
-<text x="20" y="240" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Split to buildings</text>
-<text x="20" y="258" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">By size and use</text>
-</g>
-<g transform="translate(500 0)">
-<rect x="20" y="60" width="160" height="150" fill="#fff" stroke="#CFCAC0" stroke-width="0.5"/>
-<rect x="25" y="65" width="18" height="14" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="25" y="89" width="18" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="25" y="123" width="18" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="25" y="157" width="18" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="25" y="191" width="18" height="14" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="53" y="65" width="24" height="14" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="53" y="89" width="24" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="53" y="123" width="24" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="53" y="157" width="24" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="53" y="191" width="24" height="14" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="87" y="65" width="24" height="14" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="87" y="89" width="24" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="87" y="123" width="24" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="87" y="157" width="24" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="87" y="191" width="24" height="14" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="121" y="65" width="24" height="14" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="121" y="89" width="24" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="121" y="123" width="24" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="121" y="157" width="24" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="121" y="191" width="24" height="14" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="155" y="65" width="20" height="14" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="155" y="89" width="20" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="155" y="123" width="20" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="155" y="157" width="20" height="24" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<rect x="155" y="191" width="20" height="14" fill="#fff" stroke="#141413" stroke-width="0.5" stroke-opacity=".35"/>
-<line x1="20" y1="84" x2="180" y2="84" stroke="#CFCAC0" stroke-width="1.65"/>
-<line x1="20" y1="118" x2="180" y2="118" stroke="#CFCAC0" stroke-width="1.65"/>
-<line x1="20" y1="152" x2="180" y2="152" stroke="#CFCAC0" stroke-width="1.65"/>
-<line x1="20" y1="186" x2="180" y2="186" stroke="#CFCAC0" stroke-width="1.65"/>
-<line x1="48" y1="60" x2="48" y2="210" stroke="#CFCAC0" stroke-width="1.65"/>
-<line x1="82" y1="60" x2="82" y2="210" stroke="#CFCAC0" stroke-width="1.65"/>
-<line x1="116" y1="60" x2="116" y2="210" stroke="#CFCAC0" stroke-width="1.65"/>
-<line x1="150" y1="60" x2="150" y2="210" stroke="#CFCAC0" stroke-width="1.65"/>
-<line x1="20" y1="118" x2="116" y2="118" stroke="#E2512B" stroke-width="1.65" stroke-opacity="0.85"/>
-<line x1="48" y1="152" x2="180" y2="152" stroke="#E2512B" stroke-width="1.65" stroke-opacity="0.6"/>
-<line x1="82" y1="60" x2="82" y2="186" stroke="#E2512B" stroke-width="1.65" stroke-opacity="0.75"/>
-<line x1="116" y1="84" x2="116" y2="210" stroke="#E2512B" stroke-width="1.65" stroke-opacity="0.45"/>
-<line x1="82" y1="84" x2="150" y2="84" stroke="#E2512B" stroke-width="1.65" stroke-opacity="0.3"/>
-<defs><linearGradient id="busy"><stop offset="0" stop-color="#CFCAC0"/><stop offset="1" stop-color="#E2512B"/></linearGradient></defs>
-<rect x="20" y="276" width="90" height="6" fill="url(#busy)"/>
-<text x="20" y="296" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.6" letter-spacing="0">Quiet</text>
-<text x="110" y="296" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.6" letter-spacing="0">Busy</text>
-<text x="20" y="240" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Busy streets</text>
-<text x="20" y="258" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">The “buzz metric”</text>
-</g>
-<line x1="206" y1="135" x2="257" y2="135" stroke="#141413" stroke-width="0.5"/><path d="M264 135 l-8 -3.5 v7 z" fill="#141413"/>
-<line x1="456" y1="135" x2="507" y2="135" stroke="#141413" stroke-width="0.5"/><path d="M514 135 l-8 -3.5 v7 z" fill="#141413"/>
-<text x="20" y="34" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="0.6" letter-spacing="1">FROM CENSUS COUNTS TO STREET-LEVEL ACTIVITY</text></svg>
+<svg data-thinned="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-label="Diagram in three steps: one census count of 1,200 people for an area is split across nine blocks by floor area and use, then each street segment is shaded by the people in the blocks beside it"><rect width="720" height="360" fill="#EAE6DE"/>
+<rect x="30" y="60" width="172" height="172" fill="#fff" stroke="#CFCAC0" stroke-width=".6"/>
+<rect x="30" y="60" width="10" height="172" fill="#F1EEE8"/>
+<rect x="30" y="60" width="172" height="10" fill="#F1EEE8"/>
+<rect x="84" y="60" width="10" height="172" fill="#F1EEE8"/>
+<rect x="30" y="114" width="172" height="10" fill="#F1EEE8"/>
+<rect x="138" y="60" width="10" height="172" fill="#F1EEE8"/>
+<rect x="30" y="168" width="172" height="10" fill="#F1EEE8"/>
+<rect x="192" y="60" width="10" height="172" fill="#F1EEE8"/>
+<rect x="30" y="222" width="172" height="10" fill="#F1EEE8"/>
+<rect x="40" y="70" width="44" height="44" fill="none" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="94" y="70" width="44" height="44" fill="none" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="148" y="70" width="44" height="44" fill="none" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="40" y="124" width="44" height="44" fill="none" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="94" y="124" width="44" height="44" fill="none" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="148" y="124" width="44" height="44" fill="none" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="40" y="178" width="44" height="44" fill="none" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="94" y="178" width="44" height="44" fill="none" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="148" y="178" width="44" height="44" fill="none" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="34" y="64" width="164" height="164" fill="none" stroke="#E2512B" stroke-width="1" stroke-dasharray="5 3"/>
+<rect x="72.0" y="128.0" width="88" height="36" fill="#fff" stroke="#E2512B" stroke-width=".8"/>
+<text x="116.0" y="145.0" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#E2512B" fill-opacity="1" letter-spacing="0">1,200</text>
+<text x="116.0" y="158.0" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">people, one area</text>
+<rect x="270" y="60" width="172" height="172" fill="#fff" stroke="#CFCAC0" stroke-width=".6"/>
+<rect x="270" y="60" width="10" height="172" fill="#F1EEE8"/>
+<rect x="270" y="60" width="172" height="10" fill="#F1EEE8"/>
+<rect x="324" y="60" width="10" height="172" fill="#F1EEE8"/>
+<rect x="270" y="114" width="172" height="10" fill="#F1EEE8"/>
+<rect x="378" y="60" width="10" height="172" fill="#F1EEE8"/>
+<rect x="270" y="168" width="172" height="10" fill="#F1EEE8"/>
+<rect x="432" y="60" width="10" height="172" fill="#F1EEE8"/>
+<rect x="270" y="222" width="172" height="10" fill="#F1EEE8"/>
+<rect x="280" y="70" width="44" height="44" fill="#E2512B" fill-opacity="0.17" stroke="#141413" stroke-width=".5" stroke-opacity=".5"/>
+<text x="302.0" y="96.0" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1" letter-spacing="0">60</text>
+<rect x="334" y="70" width="44" height="44" fill="#E2512B" fill-opacity="0.34" stroke="#141413" stroke-width=".5" stroke-opacity=".5"/>
+<text x="356.0" y="96.0" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1" letter-spacing="0">180</text>
+<rect x="388" y="70" width="44" height="44" fill="#E2512B" fill-opacity="0.14" stroke="#141413" stroke-width=".5" stroke-opacity=".5"/>
+<text x="410.0" y="96.0" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1" letter-spacing="0">40</text>
+<rect x="280" y="124" width="44" height="44" fill="#E2512B" fill-opacity="0.25" stroke="#141413" stroke-width=".5" stroke-opacity=".5"/>
+<text x="302.0" y="150.0" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1" letter-spacing="0">120</text>
+<rect x="334" y="124" width="44" height="44" fill="#E2512B" fill-opacity="0.68" stroke="#141413" stroke-width=".5" stroke-opacity=".5"/>
+<text x="356.0" y="150.0" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1" letter-spacing="0">420</text>
+<rect x="388" y="124" width="44" height="44" fill="#E2512B" fill-opacity="0.21" stroke="#141413" stroke-width=".5" stroke-opacity=".5"/>
+<text x="410.0" y="150.0" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1" letter-spacing="0">90</text>
+<rect x="280" y="178" width="44" height="44" fill="#E2512B" fill-opacity="0.12" stroke="#141413" stroke-width=".5" stroke-opacity=".5"/>
+<text x="302.0" y="204.0" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1" letter-spacing="0">30</text>
+<rect x="334" y="178" width="44" height="44" fill="#E2512B" fill-opacity="0.29" stroke="#141413" stroke-width=".5" stroke-opacity=".5"/>
+<text x="356.0" y="204.0" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1" letter-spacing="0">150</text>
+<rect x="388" y="178" width="44" height="44" fill="#E2512B" fill-opacity="0.24" stroke="#141413" stroke-width=".5" stroke-opacity=".5"/>
+<text x="410.0" y="204.0" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1" letter-spacing="0">110</text>
+<rect x="510" y="60" width="172" height="172" fill="#fff" stroke="#CFCAC0" stroke-width=".6"/>
+<rect x="510" y="60" width="10" height="172" fill="#F1EEE8"/>
+<rect x="510" y="60" width="172" height="10" fill="#F1EEE8"/>
+<rect x="564" y="60" width="10" height="172" fill="#F1EEE8"/>
+<rect x="510" y="114" width="172" height="10" fill="#F1EEE8"/>
+<rect x="618" y="60" width="10" height="172" fill="#F1EEE8"/>
+<rect x="510" y="168" width="172" height="10" fill="#F1EEE8"/>
+<rect x="672" y="60" width="10" height="172" fill="#F1EEE8"/>
+<rect x="510" y="222" width="172" height="10" fill="#F1EEE8"/>
+<line x1="515.0" y1="70" x2="515.0" y2="114" stroke="#E2512B" stroke-width="7" stroke-opacity="0.19"/>
+<line x1="569.0" y1="70" x2="569.0" y2="114" stroke="#E2512B" stroke-width="7" stroke-opacity="0.39"/>
+<line x1="623.0" y1="70" x2="623.0" y2="114" stroke="#E2512B" stroke-width="7" stroke-opacity="0.37"/>
+<line x1="677.0" y1="70" x2="677.0" y2="114" stroke="#E2512B" stroke-width="7" stroke-opacity="0.17"/>
+<line x1="515.0" y1="124" x2="515.0" y2="168" stroke="#E2512B" stroke-width="7" stroke-opacity="0.26"/>
+<line x1="569.0" y1="124" x2="569.0" y2="168" stroke="#E2512B" stroke-width="7" stroke-opacity="0.74"/>
+<line x1="623.0" y1="124" x2="623.0" y2="168" stroke="#E2512B" stroke-width="7" stroke-opacity="0.70"/>
+<line x1="677.0" y1="124" x2="677.0" y2="168" stroke="#E2512B" stroke-width="7" stroke-opacity="0.22"/>
+<line x1="515.0" y1="178" x2="515.0" y2="222" stroke="#E2512B" stroke-width="7" stroke-opacity="0.15"/>
+<line x1="569.0" y1="178" x2="569.0" y2="222" stroke="#E2512B" stroke-width="7" stroke-opacity="0.33"/>
+<line x1="623.0" y1="178" x2="623.0" y2="222" stroke="#E2512B" stroke-width="7" stroke-opacity="0.42"/>
+<line x1="677.0" y1="178" x2="677.0" y2="222" stroke="#E2512B" stroke-width="7" stroke-opacity="0.25"/>
+<line x1="520" y1="65.0" x2="564" y2="65.0" stroke="#E2512B" stroke-width="7" stroke-opacity="0.19"/>
+<line x1="520" y1="119.0" x2="564" y2="119.0" stroke="#E2512B" stroke-width="7" stroke-opacity="0.33"/>
+<line x1="520" y1="173.0" x2="564" y2="173.0" stroke="#E2512B" stroke-width="7" stroke-opacity="0.29"/>
+<line x1="520" y1="227.0" x2="564" y2="227.0" stroke="#E2512B" stroke-width="7" stroke-opacity="0.15"/>
+<line x1="574" y1="65.0" x2="618" y2="65.0" stroke="#E2512B" stroke-width="7" stroke-opacity="0.33"/>
+<line x1="574" y1="119.0" x2="618" y2="119.0" stroke="#E2512B" stroke-width="7" stroke-opacity="0.81"/>
+<line x1="574" y1="173.0" x2="618" y2="173.0" stroke="#E2512B" stroke-width="7" stroke-opacity="0.77"/>
+<line x1="574" y1="227.0" x2="618" y2="227.0" stroke="#E2512B" stroke-width="7" stroke-opacity="0.29"/>
+<line x1="628" y1="65.0" x2="672" y2="65.0" stroke="#E2512B" stroke-width="7" stroke-opacity="0.17"/>
+<line x1="628" y1="119.0" x2="672" y2="119.0" stroke="#E2512B" stroke-width="7" stroke-opacity="0.27"/>
+<line x1="628" y1="173.0" x2="672" y2="173.0" stroke="#E2512B" stroke-width="7" stroke-opacity="0.35"/>
+<line x1="628" y1="227.0" x2="672" y2="227.0" stroke="#E2512B" stroke-width="7" stroke-opacity="0.25"/>
+<rect x="520" y="70" width="44" height="44" fill="#fff" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="574" y="70" width="44" height="44" fill="#fff" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="628" y="70" width="44" height="44" fill="#fff" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="520" y="124" width="44" height="44" fill="#fff" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="574" y="124" width="44" height="44" fill="#fff" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="628" y="124" width="44" height="44" fill="#fff" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="520" y="178" width="44" height="44" fill="#fff" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="574" y="178" width="44" height="44" fill="#fff" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<rect x="628" y="178" width="44" height="44" fill="#fff" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
+<text x="30" y="260" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">1  One census count</text>
+<text x="30" y="277" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">1,200 residents and workers for the whole area</text>
+<text x="270" y="260" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">2  Split to buildings</text>
+<text x="270" y="277" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">By floor area and use; the numbers add up</text>
+<text x="510" y="260" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">3  Busy streets</text>
+<text x="510" y="277" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">Each street gets the people beside it</text>
+<line x1="216" y1="146.0" x2="250" y2="146.0" stroke="#141413" stroke-width=".7"/><path d="M256 146.0 l-7 -3.5 v7 z" fill="#141413"/>
+<line x1="456" y1="146.0" x2="490" y2="146.0" stroke="#141413" stroke-width=".7"/><path d="M496 146.0 l-7 -3.5 v7 z" fill="#141413"/>
+<defs><linearGradient id="bz"><stop offset="0" stop-color="#E2512B" stop-opacity=".12"/><stop offset="1" stop-color="#E2512B" stop-opacity=".92"/></linearGradient></defs>
+<rect x="510" y="290" width="100" height="6" fill="url(#bz)"/>
+<text x="510" y="310" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.6" letter-spacing="0">Quiet</text>
+<text x="610" y="310" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.6" letter-spacing="0">Busy</text>
+<text x="30" y="34" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="0.6" letter-spacing="1">THE BUZZ METRIC: FROM CENSUS COUNTS TO BUSY STREETS</text>
+<text x="30" y="348" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.5" letter-spacing="0">Illustrative numbers</text></svg>

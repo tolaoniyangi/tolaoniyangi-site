@@ -167,7 +167,7 @@ P[-1]["chapters"] = [
      "<ul><li><strong>The first version.</strong> Designed and implemented the first solar studies: placement logic for rooftops and parking lots that keeps panels clear of HVAC units and fire-code setbacks, design logic for solar canopies, and production code for carports.</li>"
      "<li><strong>The Solar API.</strong> Designed and led the integration of Google’s Solar API, the first in Google Earth, for residential and small commercial roofs up to 500 m². It cut the runtime of complex solar analyses by 32%.</li>"
      "<li><strong>Realistic output.</strong> Panel types switch between residential and commercial by building size, so estimates hold up for any project.</li></ul>"
-     f'<div class="figs two">{f.fig("solar-before.jpg", "Solar layout before the Solar API integration", "Before the Solar API integration")}{f.fig("solar-after.jpg", "Solar layout after the Solar API integration", "After")}{f.fig("solar-before-2.jpg", "A second site before the Solar API integration", "Before")}{f.fig("solar-after-2.jpg", "The same site after the Solar API integration", "After")}</div>'),
+     f'<div class="figs">{f.video("solar-before-after.mp4", "solar-before-after-poster.jpg", "Animation alternating solar layouts before and after the Solar API integration, for two sites", "Before and after the Solar API integration, on two sites.")}</div>'),
     ('<div class="stat"><div><b>7.9 GW</b><span>of potential solar generation identified in the first year</span></div><div><b>17.1 Mt</b><span>of potential carbon mitigation in the first year</span></div></div>'
      "<p>Solar studies are live in Google Earth for rooftops and parking lots, with three carport options and expected output, savings and payback for each design.</p>"
      f'<div class="figs">{f.video("solar-studies.mp4", "solar-studies-poster.jpg", "Screen recording of starting a solar study in Google Earth", "Starting a solar study alongside Earth’s other site studies.")}</div>'
@@ -177,18 +177,18 @@ P[-1]["chapters"] = [
 # 05 Intelligent City
 f = project(slug="computational-design", num="05", title="Mass-timber buildings, generated", thumb="fig-ic.svg", contain=True,
     eyebrow="Intelligent City · 2021–22 · Computational design", card_label="Intelligent City · Computational design",
-    card="Sketch gestural lines in Rhino, get a real mass-timber building made from a set panel system, with its carbon and cost estimated automatically.",
-    dek="Intelligent City designs and manufactures mass-timber housing from a set system of panels. Designers sketched loose, gestural lines in Rhino, and the generator turned them into a real building made of those panels, with its carbon and cost estimated automatically.",
+    card="Draw a simple line in Rhino, get a full mass-timber building made from a set panel system, floor plans laid out, with its carbon and cost estimated automatically.",
+    dek="Intelligent City designs and manufactures mass-timber housing from a set system of panels. A designer draws a simple line in Rhino, and the generator turns it into a full building made of those panels, floor plans laid out, with its carbon and cost estimated automatically.",
     meta=[("Role", "Computational designer"), ("Product", "Parametric building platform"), ("Timeline", "2021–22"),
           ("Links", '<a href="https://intelligent-city.com">Intelligent City ↗</a>')])
 P[-1]["lead"] = f.fig("fig-ic.svg", "Diagram: site, program and the timber system feed a parametric generator that produces many building forms, each measured for materials, cost and emissions",
-    "Three steps: lines in Rhino, a building from the panel system, then carbon and cost.", lazy=False)
+    "From one line to a costed building: draw it, generate it, lay out every floor, extract the data.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>Intelligent City builds with a set system of mass-timber panels made in its own factory. Every design has to be buildable from those panels, which makes designing by hand slow, and makes it hard to compare options on carbon and cost early on.</p>"),
-    ("<ul><li><strong>Gestures in, building out.</strong> A designer sketches loose, gestural lines in Rhino, not plans. The generator turns them into a real design built from the set panel system. This work increased the range of generatable building forms by 200%.</li>"
+    ("<ul><li><strong>A line in, a building out.</strong> A designer draws a simple line in Rhino, a few segments long. The generator turns it into a full building made from the set panel system, with every floor plan already laid out. This work increased the range of generatable building forms by 200%.</li>"
      "<li><strong>Every design, measured.</strong> Quantities of timber, concrete and steel are pulled out of each generated design automatically and joined with outside data.</li>"
-     "<li><strong>A carbon and cost dashboard</strong>, designed and built solo, that turns those quantities into embodied carbon and cost estimates for clients.</li></ul>"
-     f'<div class="figs">{f.fig("intelligent-city-process.jpg", "Original diagram of parametric building generation, data extraction and dashboard creation", "The original process diagram from the time: generate the building, extract its data, build the dashboard.")}{f.fig("intelligent-city.jpg", "Intelligent City’s technology stack, from design and data to parametric software, automated manufacturing and on-site assembly", "Where it sat in Intelligent City’s pipeline, from design to manufacturing to site assembly.")}</div>'),
+     "<li><strong>A carbon and cost dashboard</strong>, designed and built solo, that turns those quantities into embodied carbon and cost estimates for clients.</li></ul>"),
+
     ('<div class="stat"><div><b>200%</b><span>increase in the range of generatable building forms</span></div></div>'
      "<p>Designers could go from a sketch to a buildable design with carbon and cost numbers in one step, and compare options while they still mattered. That range became the base for the company’s design evaluation and optimization at the time.</p>"),
 ]
@@ -200,7 +200,7 @@ f = project(slug="estimating-pedestrian-activity", num="06", title="Estimating p
     dek="Generative design tools need good data about streets. This pipeline estimates street-level foot traffic from census data and feeds it straight in.",
     meta=[("Role", "Computational design summer associate"), ("Product", "Generative design tools"), ("Timeline", "Summer 2019"), ("Team", "Generative Design, Sidewalk Labs")])
 P[-1]["lead"] = f.fig("fig-ped.svg", "Diagram: one census count for an area is split across its buildings, then turned into estimated activity on each street",
-    "The method: split census counts down to buildings, then estimate activity on each street.", lazy=False)
+    "One census count, split across buildings by floor area and use, then turned into how busy each street is.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>Generative design tools score thousands of building and street options against goals like walkability. To do that well, they need data about who is actually around a site.</p>"
      "<p>Getting geospatial data into those tools was slow and manual, which kept them stuck on narrow test cases. The first step was research into which use cases mattered most, and which standard datasets, like pedestrian activity and transit access, they needed.</p>"),
