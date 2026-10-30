@@ -94,12 +94,12 @@ def project(**k): P.append(k); return Figs()
 # 01 Marquee map selection
 f = project(slug="marquee-selection", num="01", title="Marquee map selection", thumb="fig-select.svg", contain=True,
     eyebrow="Google Earth · 2026 · Interaction design, front end", card_label="Google Earth · Interaction design, front end",
-    card="One drag on the map to select any number of features, instead of a click per feature. The first way to select in bulk directly on Google Earth’s 3D map.",
-    dek="One drag on the map to select any number of features, instead of a click per feature. The first way to select in bulk directly on Google Earth’s 3D map, built to fit with every existing way to select, on web and mobile.",
+    card="Drag a box on the map to select any number of features at once, then restyle, hide, copy or delete them together. The first way to select in bulk directly on Google Earth’s 3D map.",
+    dek="One drag on the map selects every feature inside it, instead of a click per feature. The first way to select in bulk directly on Google Earth’s 3D map, built to fit with every existing way to select, on web and mobile.",
     meta=[("Role", "Interaction design and front-end engineering, sole engineer"), ("Product", "Google Earth, web"), ("Timeline", "2026, live"),
           ("Links", '<a href="https://developers.google.com/maps/documentation/earth/style-your-places#bulk_styling">Bulk styling docs ↗</a>')])
 P[-1]["lead"] = f.fig("fig-select.svg", "Diagram: a dashed box dragged over map points selects them, and the same items appear checked in the project panel",
-    "Drag a box on the map. Every feature inside is selected, and the project panel’s checkboxes update to match.", lazy=False)
+    "Drag a box on the map. Every feature inside is selected, and the project panel updates to match.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>Selecting many features at once already worked in the project panel: tick checkboxes, select all, or drag down the list. But not on the map, where people actually see their sites and how they relate. On the map, it was one click per feature.</p>"
      "<p>Earth also needed a temporary drawing state for features on the way, and marquee selection would be the first thing built on it, so it had to set the pattern.</p>"),
@@ -107,7 +107,9 @@ P[-1]["chapters"] = [
      f'<div class="figs">{f.fig("fig-select-modes.svg", "Four ways to select: checkbox in the panel, click in the panel or on the map, drag in the panel, and the new marquee on the map", "Four ways to select, one shared selection.")}</div>'
      "<p>It also had to work on web and on mobile, where dragging usually moves the map. It had to fit both of Earth’s layouts, the streamlined one for new users and the productivity one for heavy users. And it couldn’t collide with measuring and drawing tools that also work from the middle of the screen.</p>"
      "<p>Each of those was worked out by prototyping, testing and iterating with a UX designer and a PM. The implementation, end to end, was one engineer.</p>"),
-    ("<p>Marquee selection is live in Google Earth on the web. Drag a box on the map, and every feature inside is selected and ready to style together.</p>"
+    ("<p>Marquee selection is live in Google Earth on the web. Drag a box and every feature inside is selected, on the map and in the panel at once. A summary counts what was caught by type, with the center of the points and the total area of the polygons.</p>"
+     "<p>From there the whole selection can be restyled in one edit, placemarks and polygons each with their own settings, or hidden, copied, deleted, zoomed to or handed to Ask Google Earth together. Mixed selections still work: anything that can only be edited on its own is flagged instead of blocking the rest.</p>"
+     f'<div class="figs">{f.video("marquee-web.mp4", "marquee-web-poster.jpg", "Screen recording: dragging a box over Brooklyn parks selects 16 features, then restyling them all at once", "Drag over a cluster of Brooklyn parks, see what was selected, and restyle all of them in one edit.")}</div>'
      "<p>It’s also the first feature built on Earth’s new ephemeral drawing state: shapes drawn on the map that exist only while you’re using them and are never saved to the project. That’s what makes room for other tools that need to draw on the map.</p>"),
 ]
 
