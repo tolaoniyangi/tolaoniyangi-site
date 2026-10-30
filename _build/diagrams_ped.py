@@ -47,7 +47,7 @@ def panel(ox,oy,mode):
 xs=[30,270,510]; oy=60
 for i,x in enumerate(xs): size=panel(x,oy,i)
 titles=[("1. One census count",f"{tot:,} residents and workers for the whole area"),
-        ("2. Split to buildings","By floor area and use; the numbers add up"),
+        ("2. Split to buildings","The numbers still add up"),
         ("3. Estimate foot traffic","From the residents and workers in each building")]
 for x,(t,sub) in zip(xs,titles):
     b.append(T(x,oy+size+28,t,s=13,w=700)); b.append(T(x,oy+size+45,sub,s=10,op=.7))
@@ -59,5 +59,5 @@ b.append(f'<rect x="{xs[2]}" y="{oy+size+58}" width="100" height="6" fill="url(#
 b.append(T(xs[2],oy+size+78,"Quiet",s=9,op=.6)); b.append(T(xs[2]+100,oy+size+78,"Busy",a="end",s=9,op=.6))
 b.append(T(30,34,"THE BUZZ METRIC: FROM CENSUS COUNTS TO AN ESTIMATE OF PEDESTRIAN ACTIVITY",s=11,w=600,op=.6,ls=1))
 b.append(T(30,H-12,"Illustrative numbers",s=9,op=.5))
-open('images/fig-ped.svg','w').write(f'<svg data-thinned="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="Diagram in three steps: one census count of 1,200 people for an area is split across nine blocks by floor area and use, then each street segment is shaded by the people in the blocks beside it">'+"\n".join(b)+'</svg>')
+open('images/fig-ped.svg','w').write(f'<svg data-thinned="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="Diagram in three steps: one census count of 1,200 people for an area is split across nine blocks, then each street segment is shaded by the people in the blocks beside it">'+"\n".join(b)+'</svg>')
 print("ok")

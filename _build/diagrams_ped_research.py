@@ -16,7 +16,7 @@ links={"Weather":["Shadow analysis"],"Buildings":["Shadow analysis","Shading","E
        "Boundaries":["Political modeling","Demographic analysis","Economic conditions","Population"],
        "Census":["Demographic analysis","Population","Political modeling","Housing"],"Roads":["Transportation","Traffic flow"],
        "Bike data":["Transportation"],"Transit":["Transportation","Traffic flow"],"Traffic":["Traffic flow","Accidents"]}
-focus={"Census","Buildings","Roads","Transit"}         # inputs the pedestrian pipeline drew on
+focus=set()
 W=720; top=64; row=46; H=top+len(uses)*row+40
 b=[f'<rect width="{W}" height="{H}" fill="{PAPER}"/>']
 lx,lw=20,230; rx,rw=470,230
@@ -36,6 +36,6 @@ for n,sub in uses:
     b.append(f'<rect x="{rx}" y="{y}" width="{rw}" height="34" rx="17" fill="#fff" stroke="{INK}" stroke-width=".6"/>')
     b.append(T(rx+14,y+15,n,s=11,w=700)); b.append(T(rx+14,y+27,sub,s=9,op=.65))
 b.append(T(lx,40,"DATA SOURCES",s=11,w=600,op=.6,ls=1)); b.append(T(rx,40,"WHAT PLANNERS COULD DO",s=11,w=600,op=.6,ls=1))
-b.append(f'<line x1="{lx}" y1="{H-22}" x2="{lx+24}" y2="{H-22}" stroke="{ACC}" stroke-width="1.2"/>'+T(lx+32,H-18,"Inputs the pedestrian activity pipeline drew on",s=10,op=.7))
+
 open('images/fig-ped-research.svg','w').write(f'<svg data-thinned="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H:.0f}" role="img" aria-label="Flowchart: ten urban data sources, such as weather, buildings, parcels, census, roads and transit, linked to twelve planning analyses, from shadow studies and demographic analysis to transportation, traffic flow and accidents">'+"\n".join(b)+'</svg>')
 print("ok",H)

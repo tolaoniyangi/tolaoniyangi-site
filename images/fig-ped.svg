@@ -1,4 +1,4 @@
-<svg data-thinned="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-label="Diagram in three steps: one census count of 1,200 people for an area is split across nine blocks by floor area and use, then each street segment is shaded by the people in the blocks beside it"><rect width="720" height="360" fill="#EAE6DE"/>
+<svg data-thinned="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-label="Diagram in three steps: one census count of 1,200 people for an area is split across nine blocks, then each street segment is shaded by the people in the blocks beside it"><rect width="720" height="360" fill="#EAE6DE"/>
 <rect x="30" y="60" width="172" height="172" fill="#fff" stroke="#CFCAC0" stroke-width=".6"/>
 <rect x="30" y="60" width="10" height="172" fill="#F1EEE8"/>
 <rect x="30" y="60" width="172" height="10" fill="#F1EEE8"/>
@@ -93,7 +93,7 @@
 <text x="30" y="260" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">1. One census count</text>
 <text x="30" y="277" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">1,200 residents and workers for the whole area</text>
 <text x="270" y="260" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">2. Split to buildings</text>
-<text x="270" y="277" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">By floor area and use; the numbers add up</text>
+<text x="270" y="277" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">The numbers still add up</text>
 <text x="510" y="260" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">3. Estimate foot traffic</text>
 <text x="510" y="277" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">From the residents and workers in each building</text>
 <line x1="216" y1="146.0" x2="250" y2="146.0" stroke="#141413" stroke-width=".7"/><path d="M256 146.0 l-7 -3.5 v7 z" fill="#141413"/>
