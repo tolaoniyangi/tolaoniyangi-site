@@ -130,7 +130,7 @@ P[-1]["chapters"] = [
 ]
 
 # 03 Traffic
-f = project(slug="1p-research-data-layers", num="03", title="Traffic signal level of service", thumb="fig-traffic.svg", contain=True,
+f = project(slug="traffic-level-of-service", num="03", title="Traffic signal level of service", thumb="fig-traffic.svg", contain=True,
     eyebrow="Google Earth · 2025 · Data visualization, UI design", card_label="Google Earth · Data visualization, UI design",
     card="How long do drivers wait at each traffic light? This layer grades every signalized intersection from A to F, hour by hour. Part of a launch that signed up 470+ paying professional users.",
     dek="Google Research measured how long drivers wait at traffic lights. This data layer turns that research into an A–F grade for every signalized intersection, hour by hour.",
@@ -152,10 +152,10 @@ P[-1]["chapters"] = [
 ]
 
 # 04 Solar
-f = project(slug="solar-assessment", num="04", title="Solar layouts and potential", thumb="fig-solar.svg", contain=True,
+f = project(slug="solar-assessment", num="04", title="Solar assessment", thumb="fig-solar.svg", contain=True,
     eyebrow="Google Earth · 2023–24 · Computational design", card_label="Google Earth · Computational design",
-    card="From the first version to the Solar API: estimate a site’s solar potential in minutes, with a panel layout for any building or parking lot.",
-    dek="Estimate a site’s solar potential in minutes: a panel layout for any building or parking lot, with expected output and cost. Built from the first version onward.",
+    card="From the first version to the Solar API: estimate a site’s solar potential in minutes, from a panel layout that fits the real building or parking lot.",
+    dek="Estimate a site’s solar potential in minutes, from a panel layout that fits the real building or parking lot, with expected output and cost. Built from the first version onward.",
     meta=[("Role", "Computational design lead"), ("Product", "Google Earth solar studies"), ("Timeline", "2023–24, live"),
           ("Links", '<a href="https://medium.com/google-earth/evaluate-building-and-solar-design-options-in-minutes-with-google-earth-6b5bc5734351">Launch post ↗</a><br><a href="https://developers.google.com/maps/documentation/earth/generate-designs">How-to docs ↗</a>')])
 P[-1]["lead"] = f.fig("fig-solar.svg", "Roof plan: panels fill both roof planes, darker on the sunnier side, keeping clear of the fire-code setback and HVAC units",
@@ -175,7 +175,7 @@ P[-1]["chapters"] = [
 ]
 
 # 05 Intelligent City
-f = project(slug="computational-design", num="05", title="Mass-timber buildings, generated", thumb="fig-ic.svg", contain=True,
+f = project(slug="intelligent-city", num="05", title="Mass-timber buildings, generated", thumb="fig-ic.svg", contain=True,
     eyebrow="Intelligent City · 2021–22 · Computational design", card_label="Intelligent City · Computational design",
     card="Draw a simple line in Rhino, get a full mass-timber building made from a set panel system, floor plans laid out, with its carbon and cost estimated automatically.",
     dek="Intelligent City designs and manufactures mass-timber housing from a set system of panels. A designer draws a simple line in Rhino, and the generator turns it into a full building made of those panels, floor plans laid out, with its carbon and cost estimated automatically.",
@@ -243,7 +243,7 @@ P[-1]["chapters"] = [
     ('<div class="stat"><div><b>5M+</b><span>voters used the guide in 2020</span></div></div>'),
 ]
 
-f = project(slug="12", num=None, title="wastespace", thumb="wastespace.jpg", year="2019", kind="Architecture",
+f = project(slug="wastespace", num=None, title="wastespace", thumb="wastespace.jpg", year="2019", kind="Architecture",
     eyebrow="Columbia GSAPP · 2019 · Architecture",
     card="A recycling hub in Vieques, Puerto Rico, that turns the island’s plastic waste into products and creates jobs for women.",
     dek="Vieques’ only landfill is nearly full, and women are largely missing from the island’s workforce. wastespace is a community hub that turns plastic waste into products, and trains women to make and sell them.",
@@ -466,4 +466,21 @@ for i, p in enumerate(ALL):
     os.makedirs(f"{ROOT}/{p['slug']}", exist_ok=True)
     open(f"{ROOT}/{p['slug']}/index.html", "w").write(project_page(p, nxt))
 open(f"{ROOT}/index.html", "w").write(home())
+
+# Old Adobe addresses that moved: keep them working with an instant redirect.
+REDIRECTS = {"computational-design": "intelligent-city", "12": "wastespace", "1p-research-data-layers": "traffic-level-of-service"}
+for old, new in REDIRECTS.items():
+    os.makedirs(f"{ROOT}/{old}", exist_ok=True)
+    open(f"{ROOT}/{old}/index.html", "w").write(f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moved</title>
+<meta http-equiv="refresh" content="0; url=../{new}/">
+<link rel="canonical" href="{BASE}{new}/">
+<meta name="robots" content="noindex">
+</head>
+<body><p>This page moved to <a href="../{new}/">{new}</a>.</p></body>
+</html>
+''')
 print("built", len(ALL), "pages + home")

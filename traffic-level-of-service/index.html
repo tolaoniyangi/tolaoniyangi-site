@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Traffic signal level of service · Shakira “Tola” Oniyangi</title>
+<meta name="description" content="Google Research measured how long drivers wait at traffic lights. This data layer turns that research into an A–F grade for every signalized intersection, hour by hour.">
+<meta name="author" content="Shakira “Tola” Oniyangi">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shakira “Tola” Oniyangi">
+<meta property="og:title" content="Traffic signal level of service · Shakira “Tola” Oniyangi">
+<meta property="og:description" content="Google Research measured how long drivers wait at traffic lights. This data layer turns that research into an A–F grade for every signalized intersection, hour by hour.">
+<meta property="og:url" content="https://tolaoniyangi.github.io/tolaoniyangi-site/traffic-level-of-service/">
+<meta property="og:image" content="https://tolaoniyangi.github.io/tolaoniyangi-site/images/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F3F1EC">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="name" href="../">Shakira “Tola” Oniyangi</a>
+    <nav aria-label="Primary">
+      <a class="hide-xs" href="../#work">Work</a>
+      <a class="hide-sm" href="../#about">About</a>
+      <a class="hide-sm" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/preview" target="_blank" rel="noopener">Resume ↗</a>
+      <a class="hello-btn" href="#hello">Say hello</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="p-hero">
+      <a class="back" href="../#work">← All work</a>
+      <div class="eyebrow"><span class="num">03</span><span class="label">Google Earth · 2025 · Data visualization, UI design</span></div>
+      <h1 class="display">Traffic signal level of service</h1>
+      <p class="dek">Google Research measured how long drivers wait at traffic lights. This data layer turns that research into an A–F grade for every signalized intersection, hour by hour.</p>
+    </section>
+
+    <dl class="meta"><div><dt class="label">Role</dt><dd>Visualization strategy and UI design</dd></div><div><dt class="label">Product</dt><dd>Google Earth data layers</dd></div><div><dt class="label">Timeline</dt><dd>2025, live</dd></div><div><dt class="label">Links</dt><dd><a href="https://developers.google.com/maps/documentation/earth/available-data-layers">Data layers docs ↗</a><br><a href="https://www.linkedin.com/posts/googlemapsplatform_gridlock-isnt-an-accident-its-a-data-problem-activity-7429651793367826432-dGZv/">Google Maps Platform post ↗</a></dd></div></dl>
+
+    <div class="lead"><figure><img src="../images/fig-traffic-anim.svg" alt="Animation of a street grid through one day: intersections on the main street turn from A to F during the morning and evening rush" width="720" height="440"><figcaption><b>Fig. 1</b>One day on a street grid. Every intersection gets a grade from A (short waits) to F (long waits), each hour from 06:00 to 22:00.</figcaption></figure></div>
+
+    <section class="chapter"><h2><span class="num">01</span>Context</h2><div class="prose"><p>Google Research had measured how long drivers wait at signalized intersections, from anonymized and aggregated data. It was rigorous, and hard to visualize: raw scores for every intersection, for every hour of the day.</p><p>Traffic engineers and planners needed to act on it in seconds. The research team needed it shown accurately. And it was the first time Google research like this would ship as a paid layer in Earth, so there was no playbook.</p></div></section>
+    <section class="chapter"><h2><span class="num">02</span>Approach</h2><div class="prose"><ul><li><strong>A–F grades from raw scores.</strong> The research arrived as raw scores, so the first job was choosing a bucketing method that stayed true to the research and still read at a glance.</li><li><strong>An hour-by-hour view</strong> from 06:00 to 22:00, so congestion can be followed through the day.</li><li><strong>Consensus between research and engineering.</strong> The visualization had to be faithful to the research scientists’ data and workable for product engineering, and both teams signed off on it.</li></ul><div class="figs"><figure><video src="../images/traffic-add.mp4" poster="../images/traffic-add-poster.jpg" muted loop playsinline preload="none" width="1600" height="814" aria-label="Screen recording: searching the data layers catalog for traffic and adding the layer to a project"></video><figcaption><b>Fig. 2</b>Search the data layers catalog and add the layer to a project.</figcaption></figure><figure><video src="../images/traffic-intersection.mp4" poster="../images/traffic-intersection-poster.jpg" muted loop playsinline preload="none" width="1600" height="814" aria-label="Screen recording: zooming downtown and clicking an intersection graded E, with its grade for every hour"></video><figcaption><b>Fig. 3</b>Zoom in and click one intersection: an E overall, an F at 7 AM, and Es and Fs through the evening rush.</figcaption></figure><figure><video src="../images/traffic-filter.mp4" poster="../images/traffic-filter-poster.jpg" muted loop playsinline preload="none" width="1600" height="814" aria-label="Screen recording: filtering the layer to the lowest scores, narrowing Seattle to its worst intersections"></video><figcaption><b>Fig. 4</b>Filter to the lowest scores, and the city narrows to its worst intersections.</figcaption></figure></div></div></section>
+    <section class="chapter"><h2><span class="num">03</span>Outcome</h2><div class="prose"><div class="stat"><div><b>470+</b><span>paying professional users</span></div><div><b>10%</b><span>conversion in the first two weeks</span></div></div><p>It shipped as part of Google Earth’s first paid professional tier, and set the template for bringing more Google research into Earth as data layers, including inundation history, which started from these initial designs.</p></div></section>
+
+    <a class="next" href="../solar-assessment/">
+      <div><span class="label">Next project</span><h2 class="display">Solar assessment</h2></div>
+      <div class="pic contain"><img src="../images/fig-solar.svg" alt="" width="720" height="440" loading="lazy"></div>
+    </a>
+  </div>
+
+  <section class="hello" id="hello">
+    <div class="wrap">
+      <h2 class="display">Say hello.</h2>
+      <p>Working on something for the built environment? I’d love to hear about it.</p>
+      <div class="ctas">
+        <button class="btn primary" type="button" data-copy="tolaoniyangi@gmail.com" aria-label="Copy email address">Email</button>
+        <a class="btn" href="https://www.linkedin.com/in/tolaoniyangi">LinkedIn</a>
+        <a class="btn" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume (PDF) ↓</a>
+      </div>
+      <div class="foot"><span>© 2026 Shakira “Tola” Oniyangi</span><a href="#top">Back to top ↑</a></div>
+    </div>
+  </section>
+</main>
+
+<script src="../site.js"></script>
+</body>
+</html>
