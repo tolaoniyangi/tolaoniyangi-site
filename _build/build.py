@@ -96,7 +96,7 @@ f = project(slug="marquee-selection", num="01", title="Marquee map selection", t
     eyebrow="Google Earth · 2026 · Interaction design, front end", card_label="Google Earth · Interaction design, front end",
     card="Drag a box on the map to select any number of features at once, then restyle, hide, copy or delete them together. The first way to select in bulk directly on Google Earth’s 3D map.",
     dek="One drag on the map selects every feature inside it, instead of a click per feature. The first way to select in bulk directly on Google Earth’s 3D map, built to fit with every existing way to select, on web and mobile.",
-    meta=[("Role", "Interaction design and front-end engineering, sole engineer"), ("Product", "Google Earth, web"), ("Timeline", "2026, live"),
+    meta=[("Role", "Interaction design and front-end engineering, sole engineer"), ("Product", "Web"), ("Timeline", "2026, live"),
           ("Links", '<a href="https://developers.google.com/maps/documentation/earth/style-your-places#bulk_styling">Bulk styling docs ↗</a>')])
 P[-1]["lead"] = f.fig("fig-select.svg", "Diagram: a dashed box dragged over map points selects them, and the same items appear selected in the project panel",
     "The idea: drag on the map, and the panel updates to match.", lazy=False)
@@ -117,7 +117,7 @@ f = project(slug="cut-and-fill", num="02", title="Cut and fill", thumb="fig-cutf
     eyebrow="Google Earth · 2026 · Back-end engineering", card_label="Google Earth · Back-end engineering",
     card="Draw a site and see how much earth has to be dug out or brought in to level it, and where. One of four terrain analysis tools in Google Earth.",
     dek="An earthwork estimate in Google Earth. Draw a site and see how much soil has to be dug out or brought in to level it, and where.",
-    meta=[("Role", "Back-end design and engineering"), ("Product", "Google Earth terrain analysis"), ("Timeline", "2026, live"),
+    meta=[("Role", "Back-end design and engineering"), ("Product", "Terrain analysis"), ("Timeline", "2026, live"),
           ("Links", '<a href="https://mapsplatform.google.com/resources/blog/a-field-guide-to-terrain-analysis-tools-in-google-earth/">Field guide ↗</a><br><a href="https://developers.google.com/maps/documentation/earth/terrain-analysis">Docs ↗</a>')])
 P[-1]["lead"] = f.fig("fig-cutfill.svg", "Section diagram: soil above the dashed target elevation is cut, the gap below it is filled",
     "The idea in one section. Soil above the target elevation gets dug out, and hollows below it get built up.", lazy=False)
@@ -134,7 +134,7 @@ f = project(slug="traffic-level-of-service", num="03", title="Traffic signal lev
     eyebrow="Google Earth · 2025 · Data visualization, UI design", card_label="Google Earth · Data visualization, UI design",
     card="How long do drivers wait at each traffic light? This layer grades every signalized intersection from A to F, hour by hour. Part of a launch that signed up 470+ paying professional users.",
     dek="Google Research measured how long drivers wait at traffic lights. This data layer turns that research into an A–F grade for every signalized intersection, hour by hour.",
-    meta=[("Role", "Visualization strategy and UI design"), ("Product", "Google Earth data layers"), ("Timeline", "2025, live"),
+    meta=[("Role", "Visualization strategy and UI design"), ("Product", "Data layers"), ("Timeline", "2025, live"),
           ("Links", '<a href="https://developers.google.com/maps/documentation/earth/available-data-layers">Data layers docs ↗</a><br><a href="https://www.linkedin.com/posts/googlemapsplatform_gridlock-isnt-an-accident-its-a-data-problem-activity-7429651793367826432-dGZv/">Google Maps Platform post ↗</a>')])
 P[-1]["lead"] = f.fig("fig-traffic-anim.svg", "Animation of a street grid through one day: intersections on the main street turn from A to F during the morning and evening rush",
     "One day on a street grid. Every intersection gets a grade from A (short waits) to F (long waits), each hour from 06:00 to 22:00.", lazy=False)
@@ -154,9 +154,9 @@ P[-1]["chapters"] = [
 # 04 Solar
 f = project(slug="solar-assessment", num="04", title="Solar assessment", thumb="fig-solar.svg", contain=True,
     eyebrow="Google Earth · 2023–24 · Computational design", card_label="Google Earth · Computational design",
-    card="From the first version to the Solar API: estimate a site’s solar potential in minutes, from a panel layout that fits the real building or parking lot.",
-    dek="Estimate a site’s solar potential in minutes, from a panel layout that fits the real building or parking lot, with expected output and cost. Built from the first version onward.",
-    meta=[("Role", "Computational design lead"), ("Product", "Google Earth solar studies"), ("Timeline", "2023–24, live"),
+    card="Estimate a site’s solar potential in minutes. Built from the first version through the Solar API.",
+    dek="Estimate a site’s solar potential in minutes. Every estimate starts from a panel layout that fits the real roof or parking lot.",
+    meta=[("Role", "Computational design lead"), ("Product", "Solar studies"), ("Timeline", "2023–24, live"),
           ("Links", '<a href="https://medium.com/google-earth/evaluate-building-and-solar-design-options-in-minutes-with-google-earth-6b5bc5734351">Launch post ↗</a><br><a href="https://developers.google.com/maps/documentation/earth/generate-designs">How-to docs ↗</a>')])
 P[-1]["lead"] = f.fig("fig-solar.svg", "Roof plan: panels fill both roof planes, darker on the sunnier side, keeping clear of the fire-code setback and HVAC units",
     "Fire-code setback and HVAC clearance.", lazy=False)
@@ -188,10 +188,10 @@ P[-1]["chapters"] = [
     ("<ul><li><strong>A line in, a building out.</strong> A designer draws a simple line in Rhino, a few segments long. The generator turns it into a full building made from the set panel system, with every floor plan already laid out. This work increased the range of generatable building forms by 200%.</li>"
      "<li><strong>Every design, measured.</strong> Quantities of timber, concrete and steel are pulled out of each generated design automatically and joined with outside data.</li>"
      "<li><strong>A carbon and cost dashboard</strong>, designed and built solo, that turns those quantities into embodied carbon and cost estimates for clients.</li></ul>"
-     f'<div class="figs">{f.fig("intelligent-city-flow.jpg", "Original process diagram: parametric building generation, data extraction, building and other data, and dashboard creation, next to Intelligent City’s technology stack", "The original process diagram from the time, next to the company’s design-to-assembly stack.")}</div>'),
+     f'<div class="figs">{f.fig("intelligent-city-flow.jpg", "End-to-end diagram: parametric building generation, data extraction, building and other data, and dashboard creation, next to Intelligent City’s technology stack", "The end-to-end diagram from the time, next to the company’s design-to-assembly stack.")}</div>'),
 
     ('<div class="stat"><div><b>200%</b><span>increase in the range of generatable building forms</span></div></div>'
-     "<p>Designers could go from a sketch to a buildable design with carbon and cost numbers in one step, and compare options while they still mattered. That range became the base for the company’s design evaluation and optimization at the time.</p>"),
+     "<p>Designers could go from a sketch to a buildable design with carbon and cost numbers in one step, and compare options early, before decisions were locked in. That range became the base for the company’s design evaluation and optimization at the time.</p>"),
 ]
 
 # 06 Pedestrians
@@ -232,7 +232,7 @@ f = project(slug="data-storytelling", num=None, title="Election data for 5M vote
     eyebrow="BallotReady · 2020 · Mapping",
     card="Verified voting locations and mapped what was on the ballot, state by state, for a nonpartisan voter guide used by more than 5 million people.",
     dek="BallotReady is a nonpartisan voter guide used by more than 5 million people in 2020. Its data had to say exactly where and when people could vote.",
-    meta=[("Role", "Elections intern, data team"), ("Product", "BallotReady voter guide"), ("Timeline", "Fall 2020"), ("Links", '<a href="https://www.ballotready.org">BallotReady ↗</a>')])
+    meta=[("Role", "Elections intern, data team"), ("Product", "Voter guide"), ("Timeline", "Fall 2020"), ("Links", '<a href="https://www.ballotready.org">BallotReady ↗</a>')])
 P[-1]["lead"] = f.fig("fig-elections.svg", "Diagram: hundreds of local election offices feed one verified dataset, which powers a voter guide used by more than 5 million voters",
     "Hundreds of local sources, one verified dataset, more than 5 million voters.", lazy=False)
 P[-1]["chapters"] = [
