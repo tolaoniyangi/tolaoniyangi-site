@@ -90,12 +90,12 @@
 <rect x="520" y="178" width="44" height="44" fill="#fff" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
 <rect x="574" y="178" width="44" height="44" fill="#fff" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
 <rect x="628" y="178" width="44" height="44" fill="#fff" stroke="#141413" stroke-width=".5" stroke-opacity=".35"/>
-<text x="30" y="260" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">1  One census count</text>
+<text x="30" y="260" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">1. One census count</text>
 <text x="30" y="277" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">1,200 residents and workers for the whole area</text>
-<text x="270" y="260" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">2  Split to buildings</text>
+<text x="270" y="260" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">2. Split to buildings</text>
 <text x="270" y="277" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">By floor area and use; the numbers add up</text>
-<text x="510" y="260" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">3  Busy streets</text>
-<text x="510" y="277" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">Each street gets the people beside it</text>
+<text x="510" y="260" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">3. Estimate foot traffic</text>
+<text x="510" y="277" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">From the residents and workers in each building</text>
 <line x1="216" y1="146.0" x2="250" y2="146.0" stroke="#141413" stroke-width=".7"/><path d="M256 146.0 l-7 -3.5 v7 z" fill="#141413"/>
 <line x1="456" y1="146.0" x2="490" y2="146.0" stroke="#141413" stroke-width=".7"/><path d="M496 146.0 l-7 -3.5 v7 z" fill="#141413"/>
 <defs><linearGradient id="bz"><stop offset="0" stop-color="#E2512B" stop-opacity=".12"/><stop offset="1" stop-color="#E2512B" stop-opacity=".92"/></linearGradient></defs>

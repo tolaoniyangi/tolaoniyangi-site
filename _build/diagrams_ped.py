@@ -46,9 +46,9 @@ def panel(ox,oy,mode):
     return size
 xs=[30,270,510]; oy=60
 for i,x in enumerate(xs): size=panel(x,oy,i)
-titles=[("1  One census count",f"{tot:,} residents and workers for the whole area"),
-        ("2  Split to buildings","By floor area and use; the numbers add up"),
-        ("3  Busy streets","Each street gets the people beside it")]
+titles=[("1. One census count",f"{tot:,} residents and workers for the whole area"),
+        ("2. Split to buildings","By floor area and use; the numbers add up"),
+        ("3. Estimate foot traffic","From the residents and workers in each building")]
 for x,(t,sub) in zip(xs,titles):
     b.append(T(x,oy+size+28,t,s=13,w=700)); b.append(T(x,oy+size+45,sub,s=10,op=.7))
 for x in xs[:2]:

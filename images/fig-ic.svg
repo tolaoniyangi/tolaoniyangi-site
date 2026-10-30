@@ -137,13 +137,13 @@
 <rect x="618" y="236" width="50" height="4" fill="#141413" fill-opacity=".3"/>
 <rect x="618" y="244" width="38" height="4" fill="#141413" fill-opacity=".3"/>
 <rect x="618" y="252" width="26" height="4" fill="#141413" fill-opacity=".3"/>
-<text x="10" y="308" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">1  Draw a line</text>
+<text x="10" y="308" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">1. Draw a line</text>
 <text x="10" y="325" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">A quick gesture, not a plan</text>
-<text x="190" y="308" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">2  Generate the building</text>
+<text x="190" y="308" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">2. Generate the building</text>
 <text x="190" y="325" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">Parametric building generation</text>
-<text x="370" y="308" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">3  Floor plans, laid out</text>
+<text x="370" y="308" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">3. Floor plans, laid out</text>
 <text x="370" y="325" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">Fully resolved, floor by floor</text>
-<text x="550" y="308" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">4  Extract the data</text>
+<text x="550" y="308" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">4. Extract the data</text>
 <text x="550" y="325" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">Into a carbon and cost dashboard</text>
 <line x1="174" y1="165.0" x2="181" y2="165.0" stroke="#141413" stroke-width=".7"/><path d="M186 165.0 l-6 -3 v6 z" fill="#141413"/>
 <line x1="354" y1="165.0" x2="361" y2="165.0" stroke="#141413" stroke-width=".7"/><path d="M366 165.0 l-6 -3 v6 z" fill="#141413"/>

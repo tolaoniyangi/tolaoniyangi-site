@@ -139,14 +139,14 @@ f = project(slug="1p-research-data-layers", num="03", title="Traffic signal leve
 P[-1]["lead"] = f.fig("fig-traffic-anim.svg", "Animation of a street grid through one day: intersections on the main street turn from A to F during the morning and evening rush",
     "One day on a street grid. Every intersection gets a grade from A (short waits) to F (long waits), each hour from 06:00 to 22:00.", lazy=False)
 P[-1]["chapters"] = [
-    ("<p>Google Research had measured how long drivers wait at signalized intersections, from anonymized and aggregated data. It was rigorous, and hard to read.</p>"
+    ("<p>Google Research had measured how long drivers wait at signalized intersections, from anonymized and aggregated data. It was rigorous, and hard to visualize: raw scores for every intersection, for every hour of the day.</p>"
      "<p>Traffic engineers and planners needed to act on it in seconds. The research team needed it shown accurately. And it was the first time Google research like this would ship as a paid layer in Earth, so there was no playbook.</p>"),
-    ("<ul><li><strong>A–F grading</strong> designed so a dense dataset reads at a glance.</li>"
+    ("<ul><li><strong>A–F grades from raw scores.</strong> The research arrived as raw scores, so the first job was choosing a bucketing method that stayed true to the research and still read at a glance.</li>"
      "<li><strong>An hour-by-hour view</strong> from 06:00 to 22:00, so congestion can be followed through the day.</li>"
-     "<li><strong>One agreed plan.</strong> The work sat between research scientists and product engineering, getting both to sign off on a visualization that was accurate and easy to read.</li></ul>"
-     f'<div class="figs">{f.fig("traffic-layers.jpg", "The data layers catalog in Google Earth", "Start in the data layers catalog, alongside Earth’s other professional layers.")}'
-     f'{f.fig("traffic-detail.jpg", "One intersection selected with its grade and hourly breakdown", "Click an intersection for its grade, percentile and hourly scores.")}'
-     f'{f.fig("traffic-seattle.jpg", "Seattle intersections colored by delay grade in Google Earth", "Zoom out and the whole city is graded: Seattle in Google Earth.")}</div>'),
+     "<li><strong>Consensus between research and engineering.</strong> The visualization had to be faithful to the research scientists’ data and workable for product engineering, and both teams signed off on it.</li></ul>"
+     f'<div class="figs">{f.video("traffic-add.mp4", "traffic-add-poster.jpg", "Screen recording: searching the data layers catalog for traffic and adding the layer to a project", "Search the data layers catalog and add the layer to a project.")}'
+     f'{f.video("traffic-intersection.mp4", "traffic-intersection-poster.jpg", "Screen recording: zooming downtown and clicking an intersection graded E, with its grade for every hour", "Zoom in and click one intersection: an E overall, an F at 7 AM, and Es and Fs through the evening rush.")}'
+     f'{f.video("traffic-filter.mp4", "traffic-filter-poster.jpg", "Screen recording: filtering the layer to the lowest scores, narrowing Seattle to its worst intersections", "Filter to the lowest scores, and the city narrows to its worst intersections.")}</div>'),
     ('<div class="stat"><div><b>470+</b><span>paying professional users</span></div><div><b>10%</b><span>conversion in the first two weeks</span></div></div>'
      "<p>It shipped as part of Google Earth’s first paid professional tier, and set the template for bringing more Google research into Earth as data layers, including inundation history, which started from these initial designs.</p>"),
 ]
@@ -204,8 +204,8 @@ P[-1]["lead"] = f.fig("fig-ped.svg", "Diagram: one census count for an area is s
 P[-1]["chapters"] = [
     ("<p>Generative design tools score thousands of building and street options against goals like walkability. To do that well, they need data about who is actually around a site.</p>"
      "<p>Getting geospatial data into those tools was slow and manual, which kept them stuck on narrow test cases. The first step was research into which use cases mattered most, and which standard datasets, like pedestrian activity and transit access, they needed.</p>"),
-    ("<p>An automated pipeline pulls the data in. Census population and workforce counts come in large areas called block groups, so the pipeline splits them down to individual buildings by size and use, then estimates how busy each street around them is.</p>"
-     f'<div class="figs two">{f.fig("ped-blockgroups.jpg", "Census block groups around the test site", "Census block groups around the test site.")}{f.fig("ped-buildingtypes.jpg", "Buildings by type with activity scores", "Buildings by type, ready to be scored.")}</div>'),
+    ("<p>An automated pipeline pulls the data in. Census population and workforce counts come in large areas called block groups, so the pipeline splits them down to individual buildings by size and use, then estimates how busy each street around them is.</p>"),
+
     ("<p>Built on a test site in New York, then confirmed in other cities and over larger areas. Generative design could now draw on building-level population, workforce and land use, plus a “buzz metric” for pedestrian activity.</p>"
      f'<div class="figs">{f.fig("ped-buzz.gif", "Animated 3D site model with pedestrian activity from residents, then workers", "The buzz metric: estimated activity from residents, then workers, around the site.")}</div>'),
 ]

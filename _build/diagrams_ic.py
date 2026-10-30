@@ -96,8 +96,8 @@ b.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{INK}" stroke
 for k in range(3):
     b.append(f'<rect x="{x4+68}" y="{dy0+62+k*8}" width="{50-k*12}" height="4" fill="{INK}" fill-opacity=".3"/>')
 # stage titles + arrows
-titles=[("1  Draw a line",""),("2  Generate the building","Parametric building generation"),("3  Floor plans, laid out","Fully resolved, floor by floor"),("4  Extract the data","Into a carbon and cost dashboard")]
-titles[0]=("1  Draw a line","A quick gesture, not a plan")
+titles=[("1. Draw a line",""),("2. Generate the building","Parametric building generation"),("3. Floor plans, laid out","Fully resolved, floor by floor"),("4. Extract the data","Into a carbon and cost dashboard")]
+titles[0]=("1. Draw a line","A quick gesture, not a plan")
 for x,(t,sub) in zip(xs,titles):
     b.append(T(x,py+ph+28,t,s=12,w=700)); b.append(T(x,py+ph+45,sub,s=10,op=.7))
 for x in xs[:3]:
