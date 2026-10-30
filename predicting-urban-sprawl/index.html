@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Predicting urban sprawl · Shakira “Tola” Oniyangi</title>
+<meta name="description" content="Can a model learn how cities grow? A neural network trained on 15 years of satellite images of Cairo, Dubai and Wuhan, then asked what comes next.">
+<meta name="author" content="Shakira “Tola” Oniyangi">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shakira “Tola” Oniyangi">
+<meta property="og:title" content="Predicting urban sprawl · Shakira “Tola” Oniyangi">
+<meta property="og:description" content="Can a model learn how cities grow? A neural network trained on 15 years of satellite images of Cairo, Dubai and Wuhan, then asked what comes next.">
+<meta property="og:url" content="https://tolaoniyangi.github.io/tolaoniyangi-site/predicting-urban-sprawl/">
+<meta property="og:image" content="https://tolaoniyangi.github.io/tolaoniyangi-site/images/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F3F1EC">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="name" href="../">Shakira “Tola” Oniyangi</a>
+    <nav aria-label="Primary">
+      <a class="hide-xs" href="../#work">Work</a>
+      <a class="hide-sm" href="../#about">About</a>
+      <a class="hide-sm" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume</a>
+      <a class="hello-btn" href="#hello">Say hello</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="p-hero">
+      <a class="back" href="../#work">← All work</a>
+      <div class="eyebrow"><span class="num">Earlier work</span><span class="label">Columbia GSAPP · 2016 · Machine learning</span></div>
+      <h1 class="display">Predicting urban sprawl</h1>
+      <p class="dek">Can a model learn how cities grow? A neural network trained on 15 years of satellite images of Cairo, Dubai and Wuhan, then asked what comes next.</p>
+    </section>
+
+    <dl class="meta"><div><dt class="label">Role</dt><dd>Data processing and modeling, in a team of four</dd></div><div><dt class="label">Product</dt><dd>Python model</dd></div><div><dt class="label">Status</dt><dd>Fall 2016</dd></div><div><dt class="label">Links</dt><dd><a href="https://github.com/tolaoniyangi/dmc">Code on GitHub ↗</a></dd></div></dl>
+
+    <div class="lead"><figure><img src="../images/sprawl-results.jpg" alt="Satellite images of three cities over time with built and unbuilt areas and predictions" width="1800" height="950"><figcaption><b>Fig. 1</b>Cairo, Dubai and Wuhan: built and unbuilt land over time, and the model’s prediction.</figcaption></figure></div>
+
+    <section class="chapter"><h2><span class="num">01</span>The problem</h2><div class="prose"><p>Three very different cities and one model: a deliberate test of whether patterns of urbanization can be learned at all.</p></div></section>
+    <section class="chapter"><h2><span class="num">02</span>The work</h2><div class="prose"><p>Satellite images from 2000, 2005, 2010 and 2015 were turned into figure-ground maps, cut into 32 × 32 pixel samples, and used to train a convolutional neural network to tell urban from non-urban land, then predict which pixels urbanize next.</p><div class="figs two"><figure><img src="../images/sprawl-training.jpg" alt="Diagram of image processing and training" width="1600" height="845" loading="lazy"><figcaption><b>Fig. 2</b>From satellite image to training samples.</figcaption></figure><figure><img src="../images/sprawl-anim.gif" alt="Animated satellite view of a city over time" width="1280" height="678" loading="lazy"><figcaption><b>Fig. 3</b>One city across the years.</figcaption></figure></div></div></section>
+    <section class="chapter"><h2><span class="num">03</span>The result</h2><div class="prose"><p>Real images exist for every year, so each prediction could be checked against what actually happened. Made with Marwah Garib, Vrinda Sharma and Kun Qian for Danil Nagy’s Data Mining the City.</p></div></section>
+
+    <a class="next" href="../drag-to-select/">
+      <div><span class="label">Next project</span><h2 class="display">Drag to select</h2></div>
+      <div class="pic contain"><img src="../images/fig-select.svg" alt="" width="720" height="440" loading="lazy"></div>
+    </a>
+  </div>
+
+  <section class="hello" id="hello">
+    <div class="wrap">
+      <h2 class="display">Say hello.</h2>
+      <p>Working on something for the built environment? I’d love to hear about it.</p>
+      <div class="ctas">
+        <button class="btn primary" type="button" data-copy="tolaoniyangi@gmail.com" aria-label="Copy email address">Email</button>
+        <a class="btn" href="https://www.linkedin.com/in/tolaoniyangi">LinkedIn</a>
+        <a class="btn" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume (PDF)</a>
+      </div>
+      <div class="foot"><span>© 2026 Shakira “Tola” Oniyangi</span><a href="#top">Back to top ↑</a></div>
+    </div>
+  </section>
+</main>
+
+<script src="../site.js"></script>
+</body>
+</html>

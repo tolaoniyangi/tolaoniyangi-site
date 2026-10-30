@@ -47,7 +47,7 @@ a:hover{color:var(--accent)}
 
 /* ---------- home ---------- */
 .hero{padding:clamp(40px,7vw,96px) 0 clamp(56px,8vw,112px)}
-.hero h1{font-size:clamp(36px,5.2vw,80px);margin:0;max-width:16ch}
+.hero h1{font-size:clamp(30px,4vw,60px);margin:0;max-width:18ch;line-height:1.02}
 .hero h1 em{font-style:italic;color:var(--accent)}
 .hero-foot{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 48px;align-items:end;margin-top:clamp(28px,4vw,48px)}
 .hero p{font-size:clamp(18px,1.6vw,21px);max-width:42ch;margin:0}
@@ -108,7 +108,7 @@ a:hover{color:var(--accent)}
 .p-hero{padding:clamp(32px,5vw,64px) 0 clamp(32px,4vw,48px)}
 .back{display:inline-block;font-size:15px;text-decoration:none;margin-bottom:clamp(32px,5vw,56px)}
 .p-hero .eyebrow{display:flex;gap:14px;align-items:baseline;margin-bottom:14px}
-.p-hero h1{font-size:clamp(36px,5.2vw,80px);margin:0 0 24px;max-width:18ch}
+.p-hero h1{font-size:clamp(32px,4.4vw,68px);margin:0 0 24px;max-width:18ch}
 .p-hero .dek{font-size:clamp(19px,1.8vw,24px);line-height:1.35;max-width:40ch;margin:0}
 .meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px clamp(16px,2.4vw,32px);border-top:1.5px solid var(--ink);padding:14px 0 0;margin:0 0 clamp(40px,5vw,64px)}
 .meta div{min-width:0}
