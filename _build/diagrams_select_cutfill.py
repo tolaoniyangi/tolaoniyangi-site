@@ -56,7 +56,7 @@ o.append(f'''<defs>
 </defs>''')
 o.append(f'<rect width="{W}" height="{H}" fill="{PAPER}"/>')
 o.append(f'<path d="{path} L{W} {H} L0 {H} Z" fill="#D8D2C6"/>')  # earth
-o.append(f'<path d="{path} L{W} {level} L0 {level} Z" fill="{ACC}" clip-path="url(#above)"/>')  # cut
+o.append(f'<path d="{path} L{W} {level} L0 {level} Z" fill="{ACC}" fill-opacity=".6" clip-path="url(#above)"/>')  # cut
 o.append(f'<path d="{path} L{W} {level} L0 {level} Z" fill="url(#hatch)" clip-path="url(#below)"/>')  # fill
 o.append(f'<path d="{path}" fill="none" stroke="{INK}" stroke-width="2"/>')
 o.append(f'<line x1="0" y1="{level}" x2="{W}" y2="{level}" stroke="{INK}" stroke-width="1.5" stroke-dasharray="8 6"/>')

@@ -101,16 +101,14 @@ f = project(slug="marquee-selection", num="01", title="Marquee map selection", t
 P[-1]["lead"] = f.fig("fig-select.svg", "Diagram: a dashed box dragged over map points selects them, and the same items appear checked in the project panel",
     "Drag a box on the map. Every feature inside is selected, and the project panel’s checkboxes update to match.", lazy=False)
 P[-1]["chapters"] = [
-    ("<p>Google Earth projects hold the places people care about: sites, parcels, buildings, routes. On the map, those features could only be picked one at a time. The alternative was ticking them off in a list in the project panel, away from the map where the work happens.</p>"
-     "<p>Styling dozens of features meant dozens of clicks, and anything more complex hit a wall. Earth also needed a temporary drawing state for features on the way, and marquee selection would be the first thing built on it, so it had to set the pattern.</p>"),
-    ("<p>Selection already worked three ways, and marquee selection had to become the fourth without breaking any of them. Select on the map and the panel updates. Change the panel and the map follows.</p>"
-     f'<div class="figs">{f.fig("fig-select-modes.svg", "Four ways to select: checkbox and drag in the panel, click and marquee on the map", "Four ways to select, one shared selection.")}</div>'
-     "<p>The hard part was everything around the gesture:</p>"
-     "<ul><li><strong>Web and mobile.</strong> A mouse drag and a touch drag mean different things, and on mobile a drag usually moves the map.</li>"
-     "<li><strong>Streamlined and productivity layouts.</strong> Simple by default for new users, fast for people managing hundreds of features.</li>"
-     "<li><strong>Screen-centered drawing tools.</strong> Measuring and drawing also claim the middle of the map, so the gestures can’t collide.</li></ul>"
-     "<p>Every conflict was worked out by prototyping, testing and iterating with a UX designer and a PM. The implementation, end to end, was one engineer.</p>"),
-    ("<p>Marquee selection is live in Google Earth on the web. Select a whole neighborhood of features in one motion, then style them together. As the first feature on Earth’s new drawing state, it laid the groundwork for the drawing tools to come.</p>"),
+    ("<p>Selecting many features at once already worked in the project panel: tick checkboxes, select all, or drag down the list. But not on the map, where people actually see their sites and how they relate. On the map, it was one click per feature.</p>"
+     "<p>Earth also needed a temporary drawing state for features on the way, and marquee selection would be the first thing built on it, so it had to set the pattern.</p>"),
+    ("<p>A fourth way to select had to agree with the other three. Select on the map and the panel updates. Change the panel and the map follows.</p>"
+     f'<div class="figs">{f.fig("fig-select-modes.svg", "Four ways to select: checkbox in the panel, click in the panel or on the map, drag in the panel, and the new marquee on the map", "Four ways to select, one shared selection.")}</div>'
+     "<p>It also had to work on web and on mobile, where dragging usually moves the map. It had to fit both of Earth’s layouts, the streamlined one for new users and the productivity one for heavy users. And it couldn’t collide with measuring and drawing tools that also work from the middle of the screen.</p>"
+     "<p>Each of those was worked out by prototyping, testing and iterating with a UX designer and a PM. The implementation, end to end, was one engineer.</p>"),
+    ("<p>Marquee selection is live in Google Earth on the web. Drag a box on the map, and every feature inside is selected and ready to style together.</p>"
+     "<p>It’s also the first feature built on Earth’s new ephemeral drawing state: shapes drawn on the map that exist only while you’re using them and are never saved to the project. That’s what makes room for other tools that need to draw on the map.</p>"),
 ]
 
 # 02 Cut and fill
@@ -178,20 +176,20 @@ P[-1]["chapters"] = [
 # 05 Intelligent City
 f = project(slug="computational-design", num="05", title="Mass-timber buildings, generated", thumb="fig-ic.svg", contain=True,
     eyebrow="Intelligent City · 2021–22 · Computational design", card_label="Intelligent City · Computational design",
-    card="Expanded the parametric software behind Intelligent City’s mass-timber housing, and measured the materials, cost and emissions of every design it produced.",
-    dek="Intelligent City designs and manufactures mass-timber housing. In 2021–22, its parametric building generator was expanded to produce far more building forms, all compatible with its manufacturing system, and every design was measured for materials, cost and emissions.",
+    card="Draw lines in Rhino, get a real mass-timber building made from a set panel system, with its carbon and cost estimated automatically.",
+    dek="Intelligent City designs and manufactures mass-timber housing from a set system of panels. Designers drew lines in Rhino, and the generator turned them into a real building made of those panels, with its carbon and cost estimated automatically.",
     meta=[("Role", "Computational designer"), ("Product", "Parametric building platform"), ("Timeline", "2021–22"),
           ("Links", '<a href="https://intelligent-city.com">Intelligent City ↗</a>')])
 P[-1]["lead"] = f.fig("fig-ic.svg", "Diagram: site, program and the timber system feed a parametric generator that produces many building forms, each measured for materials, cost and emissions",
-    "From rules to buildings to numbers: the generator and the data around it.", lazy=False)
+    "Three steps: lines in Rhino, a building from the panel system, then carbon and cost.", lazy=False)
 P[-1]["chapters"] = [
-    ("<p>At the time, the range of buildings the generator could produce limited what the company could evaluate and optimize, and pulling data out of each design, like material quantities, was manual.</p>"),
-    ("<ul><li><strong>A bigger generator.</strong> New methods for generating buildings automatically, all compatible with the company’s mass-timber manufacturing system, which sped up the path from design to production.</li>"
-     "<li><strong>Automatic data extraction</strong> from every design, down to material quantities, joined with outside data sources so building performance could be checked with numbers.</li>"
-     "<li><strong>A client-facing dashboard</strong>, designed and built solo, that turned each design into cost and emissions estimates.</li></ul>"
+    ("<p>Intelligent City builds with a set system of mass-timber panels made in its own factory. Every design has to be buildable from those panels, which makes designing by hand slow, and makes it hard to compare options on carbon and cost early on.</p>"),
+    ("<ul><li><strong>Lines in, building out.</strong> A designer draws simple lines in Rhino for the footprint and floors. The generator turns them into a real design built from the set panel system. This work grew the range of forms it could produce by 200%.</li>"
+     "<li><strong>Every design, measured.</strong> Quantities of timber, concrete and steel are pulled out of each generated design automatically and joined with outside data.</li>"
+     "<li><strong>A carbon and cost dashboard</strong>, designed and built solo, that turns those quantities into embodied carbon and cost estimates for clients.</li></ul>"
      f'<div class="figs">{f.fig("intelligent-city.jpg", "Intelligent City’s technology stack, from design and data to parametric software, automated manufacturing and on-site assembly", "Intelligent City’s pipeline at the time, from design to manufacturing to site assembly.")}{f.fig("intelligent-city-process.jpg", "Diagram of parametric generation, data extraction and dashboard creation", "Generate the building, extract its data, show it to the client.")}</div>'),
     ('<div class="stat"><div><b>200%</b><span>more building forms the generator could produce</span></div></div>'
-     "<p>That range became the base for the company’s design evaluation and optimization at the time, and each design came with instant cost and emissions estimates.</p>"),
+     "<p>Designers could go from a sketch to a buildable design with carbon and cost numbers in one step, and compare options while they still mattered. That range became the base for the company’s design evaluation and optimization at the time.</p>"),
 ]
 
 # 06 Pedestrians

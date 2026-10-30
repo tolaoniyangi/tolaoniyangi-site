@@ -51,7 +51,7 @@ for k in range(-6,9):
     pts=" ".join(f"{x},{180+k*34+28*math.sin(x/110)+12*math.sin(x/37):.1f}" for x in range(0,561,10))
     b.append(f'<polyline clip-path="url(#sheet)" points="{pts}" fill="none" stroke="{MUTED}" stroke-width="{1.4 if k%4==0 else .7}" stroke-opacity=".7"/>')
 # inside site: split cut (upper-left, high ground) vs fill
-b.append(f'<g clip-path="url(#site)"><path d="M0 0 H560 V0 L560 120 C 460 160, 380 140, 300 210 S 140 300, 0 260 Z" fill="{ACC}" fill-opacity=".85"/><path d="M560 120 C 460 160, 380 140, 300 210 S 140 300, 0 260 V420 H560 Z" fill="url(#h2)"/></g>')
+b.append(f'<g clip-path="url(#site)"><path d="M0 0 H560 V0 L560 120 C 460 160, 380 140, 300 210 S 140 300, 0 260 Z" fill="{ACC}" fill-opacity=".55"/><path d="M560 120 C 460 160, 380 140, 300 210 S 140 300, 0 260 V420 H560 Z" fill="url(#h2)"/></g>')
 b.append(f'<path d="M120 90 L430 60 L500 250 L380 360 L140 330 Z" fill="none" stroke="{INK}" stroke-width="2.5"/>')
 for x,y in [(120,90),(430,60),(500,250),(380,360),(140,330)]:
     b.append(f'<rect x="{x-4}" y="{y-4}" width="8" height="8" fill="#fff" stroke="{INK}" stroke-width="1.5"/>')
@@ -60,7 +60,7 @@ b.append(T(330,300,"FILL",s=15,w=800,ls=1.5))
 # legend
 lx=580
 b.append(T(lx,96,"Site boundary",w=600)); b.append(f'<line x1="{lx}" y1="106" x2="{lx+40}" y2="106" stroke="{INK}" stroke-width="2.5"/>')
-b.append(T(lx,146,"Cut",w=600)); b.append(f'<rect x="{lx}" y="154" width="40" height="18" fill="{ACC}" fill-opacity=".85"/>')
+b.append(T(lx,146,"Cut",w=600)); b.append(f'<rect x="{lx}" y="154" width="40" height="18" fill="{ACC}" fill-opacity=".55"/>')
 b.append(T(lx,196,"Fill",w=600)); b.append(f'<rect x="{lx}" y="204" width="40" height="18" fill="url(#h2)" stroke="{INK}" stroke-width=".5"/>')
 b.append(T(lx,246,"Contours",w=600)); b.append(f'<line x1="{lx}" y1="258" x2="{lx+40}" y2="258" stroke="{MUTED}" stroke-width="1.4"/>')
 b.append(T(20,H-16,"PLAN · NOT TO SCALE",s=11,op=.6,ls=1))
