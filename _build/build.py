@@ -98,12 +98,12 @@ f = project(slug="marquee-selection", num="01", title="Marquee map selection", t
     dek="One drag on the map selects every feature inside it, instead of a click per feature. The first way to select in bulk directly on Google Earth’s 3D map, built to fit with every existing way to select, on web and mobile.",
     meta=[("Role", "Interaction design and front-end engineering, sole engineer"), ("Product", "Google Earth, web"), ("Timeline", "2026, live"),
           ("Links", '<a href="https://developers.google.com/maps/documentation/earth/style-your-places#bulk_styling">Bulk styling docs ↗</a>')])
-P[-1]["lead"] = f.video("marquee-web.mp4", "marquee-web-poster.jpg", "Screen recording: dragging a box over Brooklyn parks selects 16 features, then restyling them all at once",
-    "Drag a box over a cluster of Brooklyn parks, then restyle all of them in one edit.")
+P[-1]["lead"] = f.fig("fig-select.svg", "Diagram: a dashed box dragged over map points selects them, and the same items appear selected in the project panel",
+    "The idea: drag on the map, and the panel updates to match.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>Selecting many features at once already worked in the project panel: checkboxes, select all, or dragging down the list. What you couldn’t do was select them on the map itself, where you actually see your sites and how they sit next to each other. There, it was one click per feature.</p>"
      "<p>Earth also needed a temporary drawing state for features on the way, and marquee selection would be the first thing built on it, so it had to set the pattern.</p>"
-     f'<div class="figs">{f.fig("fig-select.svg", "Diagram: a dashed box dragged over map points selects them, and the same items appear selected in the project panel", "The idea: drag on the map, and the panel updates to match.")}</div>'),
+     f'<div class="figs">{f.video("marquee-web.mp4", "marquee-web-poster.jpg", "Screen recording: dragging a box over Brooklyn parks selects 16 features, then restyling them all at once", "Drag a box over a cluster of Brooklyn parks, then restyle all of them in one edit.")}</div>'),
     ("<p>Marquee selection joined three ways of selecting that already existed, and all four had to share one selection. Drag over features on the map and they light up in the panel. Tick another one in the panel and it joins what you dragged.</p>"
      f'<div class="figs">{f.fig("fig-select-modes.svg", "Four ways to select: checkbox in the panel, click in the panel or on the map, drag in the panel, and the new marquee on the map", "Four ways to select, one shared selection.")}</div>'
      "<p>It also had to work on web and on mobile, where dragging usually moves the map. It had to fit both of Earth’s layouts, the streamlined one for new users and the productivity one for heavy users. And it couldn’t collide with measuring and drawing tools that also work from the middle of the screen.</p>"
@@ -119,8 +119,8 @@ f = project(slug="cut-and-fill", num="02", title="Cut and fill", thumb="fig-cutf
     dek="An earthwork estimate in Google Earth. Draw a site and see how much soil has to be dug out or brought in to level it, and where.",
     meta=[("Role", "Back-end design and engineering"), ("Product", "Google Earth terrain analysis"), ("Timeline", "2026, live"),
           ("Links", '<a href="https://mapsplatform.google.com/resources/blog/a-field-guide-to-terrain-analysis-tools-in-google-earth/">Field guide ↗</a><br><a href="https://developers.google.com/maps/documentation/earth/terrain-analysis">Docs ↗</a>')])
-P[-1]["lead"] = f.fig("fig-cutfill-combined.svg", "Plan and section of a site: in plan, an area to cut and an area to fill; in section along A to A prime, soil above the target elevation is cut and hollows below it are filled",
-    "Plan and section: where the site gets dug out, where it gets built up, and the one target elevation that balances them.", lazy=False)
+P[-1]["lead"] = f.fig("fig-cutfill.svg", "Section diagram: soil above the dashed target elevation is cut, the gap below it is filled",
+    "The idea in one section. Soil above the target elevation gets dug out, and hollows below it get built up.", lazy=False)
 P[-1]["chapters"] = [
     ("<p>Before a site can be graded, someone has to estimate how much soil comes out and how much goes back in. It’s one of the first numbers on any construction project, it drives the grading budget, and getting it usually means survey data and CAD software.</p>"
      "<p>An early estimate doesn’t replace a survey. It tells a team what the ground is doing soon enough to shape the survey, the building footprint and the questions they take to the field.</p>"),

@@ -48,10 +48,19 @@ for i,(n,sub) in enumerate(names):
             b.append(f'<circle cx="{px:.0f}" cy="{py:.0f}" r="5" fill="{ACC if on else "#fff"}" stroke="{"#fff" if on else INK}" stroke-width="1.3"/>')
             if on: cursor(px+2,py+2)
     if i==3:
-        bx,by,bw,bh=x0+30,y0+40,82,70
-        for dx,dy in dots:
-            px,py=x0+dx,y0+dy+8; sel=bx<px<bx+bw and by<py<by+bh
-            b.append(f'<circle cx="{px:.0f}" cy="{py:.0f}" r="5" fill="{ACC if sel else "#fff"}" stroke="{"#fff" if sel else INK}" stroke-width="1.3"/>')
+        # same split as the click tile: panel rows on the left, map on the right
+        mx=x0+pw/2
+        b.append(f'<line x1="{mx}" y1="{y0}" x2="{mx}" y2="{y0+160}" stroke="{LINE}"/>')
+        sel_rows={1,2,3,4}
+        for r in range(6):
+            yy=y0+18+r*22; on=r in sel_rows
+            if on: b.append(f'<rect x="{x0+4}" y="{yy-4}" width="{pw/2-8}" height="20" fill="{ACC}" fill-opacity=".14"/>')
+            b.append(f'<rect x="{x0+10}" y="{yy+3}" width="{40+(r*13)%22}" height="6" rx="3" fill="{INK if on else LINE}" fill-opacity="{.7 if on else 1}"/>')
+        inside=[(mx+18,y0+52),(mx+40,y0+64),(mx+24,y0+86),(mx+48,y0+94)]
+        outside=[(mx+62,y0+30),(mx+12,y0+126),(mx+56,y0+136),(mx+71,y0+78)]
+        for px,py in outside: b.append(f'<circle cx="{px:.0f}" cy="{py:.0f}" r="5" fill="#fff" stroke="{INK}" stroke-width="1.3"/>')
+        for px,py in inside: b.append(f'<circle cx="{px:.0f}" cy="{py:.0f}" r="5" fill="{ACC}" stroke="#fff" stroke-width="1.3"/>')
+        bx,by,bw,bh=mx+8,y0+40,52,66
         b.append(f'<rect x="{bx}" y="{by}" width="{bw}" height="{bh}" fill="{ACC}" fill-opacity=".1" stroke="{ACC}" stroke-width="1.6" stroke-dasharray="5 4"/>')
         cursor(bx+bw,by+bh)
     b.append(T(x0,y0+186,n,s=14,w=700,fill=ACC if new else INK))
