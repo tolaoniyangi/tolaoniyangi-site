@@ -1,7 +1,7 @@
 """Builds index.html and every project page from one data source."""
 import os, re, subprocess, html, json
 ROOT = "/Users/tolaoniyangi/Documents/tolaoniyangi-site"
-BASE = "https://tolaoniyangi.github.io/tolaoniyangi-site/"  # switch to https://tolaoniyangi.com/ at the DNS move
+BASE = "https://tolaoniyangi.com/"
 NAME = "Shakira Tola Oniyangi"
 TAGLINE = "Senior UX Engineer and Computational Designer"
 RESUME = "https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/preview"
