@@ -4,8 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Estimating pedestrian activity · Shakira “Tola” Oniyangi</title>
-<meta name="description" content="An automated pipeline at Sidewalk Labs that estimates street-level pedestrian activity for generative design.">
+<meta name="description" content="Generative design tools need good data about streets. This pipeline estimates street-level foot traffic and feeds it straight in.">
+<meta name="author" content="Shakira “Tola” Oniyangi">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shakira “Tola” Oniyangi">
+<meta property="og:title" content="Estimating pedestrian activity · Shakira “Tola” Oniyangi">
+<meta property="og:description" content="Generative design tools need good data about streets. This pipeline estimates street-level foot traffic and feeds it straight in.">
+<meta property="og:url" content="https://tolaoniyangi.github.io/tolaoniyangi-site/estimating-pedestrian-activity/">
+<meta property="og:image" content="https://tolaoniyangi.github.io/tolaoniyangi-site/images/og.png">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#F3F1EC">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
@@ -29,20 +38,22 @@
   <div class="wrap">
     <section class="p-hero">
       <a class="back" href="../#work">← All work</a>
-      <div class="eyebrow"><span class="num">08</span><span class="label">Sidewalk Labs · Summer 2019 · Computational design</span></div>
+      <div class="eyebrow"><span class="num">06</span><span class="label">Sidewalk Labs · 2019 · Computational design</span></div>
       <h1 class="display">Estimating pedestrian activity</h1>
-      <p class="dek">Generative design tools need good data about streets. I built a pipeline that estimates street-level foot traffic and feeds it straight in.</p>
+      <p class="dek">Generative design tools need good data about streets. This pipeline estimates street-level foot traffic and feeds it straight in.</p>
     </section>
 
-    <dl class="meta"><div><dt class="label">Role</dt><dd>Computational design summer associate</dd></div><div><dt class="label">Team</dt><dd>Generative Design, Sidewalk Labs</dd></div><div><dt class="label">When</dt><dd>Summer 2019</dd></div><div><dt class="label">Tools</dt><dd>Python, GIS</dd></div></dl>
+    <dl class="meta"><div><dt class="label">Role</dt><dd>Computational design summer associate</dd></div><div><dt class="label">Product</dt><dd>Generative design tools</dd></div><div><dt class="label">Status</dt><dd>Summer 2019</dd></div><div><dt class="label">Team</dt><dd>Generative Design, Sidewalk Labs</dd></div></dl>
 
     <div class="lead"><figure><img src="../images/ped-buzz.jpg" alt="3D site model with pedestrian activity colored by intensity" width="1400" height="875"><figcaption><b>Fig. 1</b>The “buzz metric”: estimated pedestrian activity from residents and workers around a site.</figcaption></figure></div>
 
-    <section class="chapter"><h2><span class="num">01</span>The bottleneck</h2><div class="prose"><p>Getting geospatial data into generative design was slow and manual, which kept the tools stuck on narrow test cases. I researched which use cases mattered most and which standard datasets, like pedestrian activity and transit access, they needed.</p><div class="figs"><figure><img src="../images/ped-research.gif" alt="Animated diagram of use-case research" width="512" height="301" loading="lazy"><figcaption><b>Fig. 2</b>Mapping use cases to the data they need.</figcaption></figure></div></div></section><section class="chapter"><h2><span class="num">02</span>The pipeline</h2><div class="prose"><p>I automated pulling the data in. Then I split census population and workforce counts down to individual buildings to estimate activity at street level. I built it on a test site and confirmed it held up in other cities and over larger areas.</p><div class="figs two"><figure><img src="../images/ped-site.jpg" alt="Map of New York with the test site highlighted" width="667" height="1200" loading="lazy"><figcaption><b>Fig. 3</b>The test site.</figcaption></figure><figure><img src="../images/ped-volume.jpg" alt="Buildings colored by estimated population volume" width="1400" height="1066" loading="lazy"><figcaption><b>Fig. 4</b>Population split down to each building.</figcaption></figure><div class="wide"><figure><img src="../images/ped-mockup.gif" alt="Animated mockup of choosing a place and loading its data" width="512" height="320" loading="lazy"><figcaption><b>Fig. 5</b>Pick a place and its data loads automatically.</figcaption></figure></div></div></div></section>
+    <section class="chapter"><h2><span class="num">01</span>The problem</h2><div class="prose"><p>Getting geospatial data into generative design was slow and manual, which kept the tools stuck on narrow test cases. The first step was research into which use cases mattered most, and which standard datasets, like pedestrian activity and transit access, they needed.</p><div class="figs"><figure><img src="../images/ped-research.gif" alt="Animated diagram of use-case research" width="512" height="301" loading="lazy"><figcaption><b>Fig. 2</b>Mapping use cases to the data they need.</figcaption></figure></div></div></section>
+    <section class="chapter"><h2><span class="num">02</span>The work</h2><div class="prose"><p>An automated pipeline pulls the data in. Census population and workforce counts are then split down to individual buildings to estimate activity at street level.</p><div class="figs two"><figure><img src="../images/ped-site.jpg" alt="Map of New York with the test site highlighted" width="667" height="1200" loading="lazy"><figcaption><b>Fig. 3</b>The test site.</figcaption></figure><figure><img src="../images/ped-volume.jpg" alt="Buildings colored by estimated population volume" width="1400" height="1066" loading="lazy"><figcaption><b>Fig. 4</b>Population split down to each building.</figcaption></figure></div></div></section>
+    <section class="chapter"><h2><span class="num">03</span>The result</h2><div class="prose"><p>Built on a test site, then confirmed in other cities and over larger areas. Generative design can now draw on building-level population, workforce and land use, plus a “buzz metric” for pedestrian activity.</p><div class="figs"><figure><img src="../images/ped-mockup.gif" alt="Animated mockup of choosing a place and loading its data" width="512" height="320" loading="lazy"><figcaption><b>Fig. 5</b>Pick a place and its data loads automatically.</figcaption></figure></div></div></section>
 
-    <a class="next" href="../drag-to-select/">
-      <div><span class="label">Next project</span><h2 class="display">Drag to select</h2></div>
-      <div class="pic contain"><img src="../images/fig-select.svg" alt="" width="720" height="440" loading="lazy"></div>
+    <a class="next" href="../beyond-the-blue-dot/">
+      <div><span class="label">Next project</span><h2 class="display">Beyond the Blue Dot</h2></div>
+      <div class="pic"><img src="../images/bluedot.jpg" alt="" width="1800" height="1012" loading="lazy"></div>
     </a>
   </div>
 
@@ -51,8 +62,7 @@
       <h2 class="display">Say hello.</h2>
       <p>Working on something for the built environment? I’d love to hear about it.</p>
       <div class="ctas">
-        <a class="btn primary" href="mailto:tolaoniyangi@gmail.com">Email me</a>
-        <button class="btn" type="button" data-copy="tolaoniyangi@gmail.com">Copy email address</button>
+        <button class="btn primary" type="button" data-copy="tolaoniyangi@gmail.com">Copy email address</button>
         <a class="btn" href="https://www.linkedin.com/in/tolaoniyangi">LinkedIn</a>
         <a class="btn" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume (PDF)</a>
       </div>

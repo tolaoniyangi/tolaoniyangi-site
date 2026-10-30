@@ -4,8 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cut and fill · Shakira “Tola” Oniyangi</title>
-<meta name="description" content="An earthwork estimate in Google Earth: how much soil to cut and fill to level a site.">
+<meta name="description" content="An earthwork estimate in Google Earth. Draw a site and see how much soil has to be dug out or brought in to level it, and where.">
+<meta name="author" content="Shakira “Tola” Oniyangi">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shakira “Tola” Oniyangi">
+<meta property="og:title" content="Cut and fill · Shakira “Tola” Oniyangi">
+<meta property="og:description" content="An earthwork estimate in Google Earth. Draw a site and see how much soil has to be dug out or brought in to level it, and where.">
+<meta property="og:url" content="https://tolaoniyangi.github.io/tolaoniyangi-site/cut-and-fill/">
+<meta property="og:image" content="https://tolaoniyangi.github.io/tolaoniyangi-site/images/og.png">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#F3F1EC">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
@@ -31,14 +40,16 @@
       <a class="back" href="../#work">← All work</a>
       <div class="eyebrow"><span class="num">02</span><span class="label">Google Earth · Back-end design, engineering</span></div>
       <h1 class="display">Cut and fill</h1>
-      <p class="dek">How much earth does a site need moved? Draw a boundary in Google Earth and it tells you, and shows where to dig and where to fill.</p>
+      <p class="dek">An earthwork estimate in Google Earth. Draw a site and see how much soil has to be dug out or brought in to level it, and where.</p>
     </section>
 
-    <dl class="meta"><div><dt class="label">Role</dt><dd>Back-end design and engineering</dd></div><div><dt class="label">Product</dt><dd>Google Earth terrain analysis</dd></div><div><dt class="label">Status</dt><dd>Live</dd></div><div><dt class="label">Read</dt><dd><a href="https://mapsplatform.google.com/resources/blog/a-field-guide-to-terrain-analysis-tools-in-google-earth/">Field guide ↗</a><br><a href="https://developers.google.com/maps/documentation/earth/terrain-analysis">Docs ↗</a></dd></div></dl>
+    <dl class="meta"><div><dt class="label">Role</dt><dd>Back-end design and engineering</dd></div><div><dt class="label">Product</dt><dd>Google Earth terrain analysis</dd></div><div><dt class="label">Status</dt><dd>Live</dd></div><div><dt class="label">Links</dt><dd><a href="https://mapsplatform.google.com/resources/blog/a-field-guide-to-terrain-analysis-tools-in-google-earth/">Field guide ↗</a><br><a href="https://developers.google.com/maps/documentation/earth/terrain-analysis">Docs ↗</a></dd></div></dl>
 
-    <div class="lead"><figure><img src="../images/fig-cutfill.svg" alt="Section diagram: soil above the dashed target level is cut, the gap below it is filled" width="720" height="330"><figcaption><b>Fig. 1</b>The whole idea in one section. Soil above the target level gets dug out, and hollows below it get built up.</figcaption></figure></div>
+    <div class="lead"><figure><img src="../images/fig-cutfill.svg" alt="Section diagram: soil above the dashed target level is cut, the gap below it is filled" width="720" height="330"><figcaption><b>Fig. 1</b>The idea in one section. Soil above the target level gets dug out, and hollows below it get built up.</figcaption></figure></div>
 
-    <section class="chapter"><h2><span class="num">01</span>The question</h2><div class="prose"><p>Before a site can be graded, someone has to estimate how much soil comes out and how much goes back in. It’s one of the first numbers on any construction project, and it usually takes survey data and CAD software.</p></div></section><section class="chapter"><h2><span class="num">02</span>What it does</h2><div class="prose"><p>Pick or draw a site in Earth. Cut and fill finds the elevation where cut equals fill, or calculates the volumes for any target elevation you set, and maps where the earth has to move.</p><div class="figs"><figure><video src="../images/cut-and-fill.mp4" poster="../images/cutfill-poster.jpg" muted loop playsinline preload="none" width="1600" height="901" aria-label="Screen recording of the cut and fill tool in Google Earth"></video><figcaption><b>Fig. 2</b>The tool in Google Earth: choose a site, set a target elevation, get the volumes.</figcaption></figure></div></div></section><section class="chapter"><h2><span class="num">03</span>My part</h2><div class="prose"><p>I designed and implemented the back end: the calculations behind the volumes and the cut and fill map the interface draws.</p><p>It’s one of four terrain analysis tools now live in Google Earth.</p></div></section>
+    <section class="chapter"><h2><span class="num">01</span>The problem</h2><div class="prose"><p>Before a site can be graded, someone has to estimate how much soil comes out and how much goes back in. It’s one of the first numbers on any construction project, and getting it usually means survey data and CAD software.</p></div></section>
+    <section class="chapter"><h2><span class="num">02</span>The work</h2><div class="prose"><p>The back end calculates cut and fill volumes for a site and produces the map of where earth has to move. It can find the elevation where cut equals fill, or calculate the volumes for any target elevation a user sets.</p><div class="figs"><figure><video src="../images/cut-and-fill.mp4" poster="../images/cutfill-poster.jpg" muted loop playsinline preload="none" width="1600" height="901" aria-label="Screen recording of the cut and fill tool in Google Earth"></video><figcaption><b>Fig. 2</b>The tool in Google Earth: choose a site, set a target elevation, get the volumes.</figcaption></figure></div></div></section>
+    <section class="chapter"><h2><span class="num">03</span>The result</h2><div class="prose"><p>Cut and fill is live in Google Earth, one of four terrain analysis tools alongside elevation contours, slope and aspect.</p></div></section>
 
     <a class="next" href="../1p-research-data-layers/">
       <div><span class="label">Next project</span><h2 class="display">Traffic signal level of service</h2></div>
@@ -51,8 +62,7 @@
       <h2 class="display">Say hello.</h2>
       <p>Working on something for the built environment? I’d love to hear about it.</p>
       <div class="ctas">
-        <a class="btn primary" href="mailto:tolaoniyangi@gmail.com">Email me</a>
-        <button class="btn" type="button" data-copy="tolaoniyangi@gmail.com">Copy email address</button>
+        <button class="btn primary" type="button" data-copy="tolaoniyangi@gmail.com">Copy email address</button>
         <a class="btn" href="https://www.linkedin.com/in/tolaoniyangi">LinkedIn</a>
         <a class="btn" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume (PDF)</a>
       </div>

@@ -4,8 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Drag to select · Shakira “Tola” Oniyangi</title>
-<meta name="description" content="Drag to select in Google Earth: draw a box on the map to select many places at once.">
+<meta name="description" content="Draw a box on the map, select every place inside it, and style them all at once. Before this, places on the map could only be picked one at a time.">
+<meta name="author" content="Shakira “Tola” Oniyangi">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shakira “Tola” Oniyangi">
+<meta property="og:title" content="Drag to select · Shakira “Tola” Oniyangi">
+<meta property="og:description" content="Draw a box on the map, select every place inside it, and style them all at once. Before this, places on the map could only be picked one at a time.">
+<meta property="og:url" content="https://tolaoniyangi.github.io/tolaoniyangi-site/drag-to-select/">
+<meta property="og:image" content="https://tolaoniyangi.github.io/tolaoniyangi-site/images/og.png">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#F3F1EC">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
@@ -31,14 +40,16 @@
       <a class="back" href="../#work">← All work</a>
       <div class="eyebrow"><span class="num">01</span><span class="label">Google Earth · Interaction design, front end</span></div>
       <h1 class="display">Drag to select</h1>
-      <p class="dek">Draw a box on the map to select as many places as you want at once. Before this, Google Earth only let you pick them one at a time. I designed it and wrote all of the code.</p>
+      <p class="dek">Draw a box on the map, select every place inside it, and style them all at once. Before this, places on the map could only be picked one at a time.</p>
     </section>
 
-    <dl class="meta"><div><dt class="label">Role</dt><dd>Design and front-end engineering</dd></div><div><dt class="label">Team</dt><dd>Me, with a PM and a UX designer</dd></div><div><dt class="label">Platform</dt><dd>Google Earth, web</dd></div><div><dt class="label">Docs</dt><dd><a href="https://developers.google.com/maps/documentation/earth/style-your-places#bulk_styling">Bulk styling ↗</a></dd></div></dl>
+    <dl class="meta"><div><dt class="label">Role</dt><dd>Interaction design and front-end engineering, sole engineer</dd></div><div><dt class="label">Product</dt><dd>Google Earth, web</dd></div><div><dt class="label">Status</dt><dd>Live</dd></div><div><dt class="label">Links</dt><dd><a href="https://developers.google.com/maps/documentation/earth/style-your-places#bulk_styling">Bulk styling docs ↗</a></dd></div></dl>
 
-    <div class="lead"><figure><img src="../images/fig-select.svg" alt="Diagram: a dashed box dragged over map points selects them, and the same items appear checked in the project panel" width="720" height="440"><figcaption><b>Fig. 1</b>Drag a box on the map. Everything inside is selected, and the project panel’s checkboxes update to match. <span class="tag">Diagram, recording coming soon</span></figcaption></figure></div>
+    <div class="lead"><figure><img src="../images/fig-select.svg" alt="Diagram: a dashed box dragged over map points selects them, and the same items appear checked in the project panel" width="720" height="440"><figcaption><b>Fig. 1</b>Drag a box on the map. Everything inside is selected, and the project panel’s checkboxes update to match.</figcaption></figure></div>
 
-    <section class="chapter"><h2><span class="num">01</span>Before</h2><div class="prose"><p>You could click one place on the map, or tick several in the project panel. Nothing in between. For anyone with more than a handful of places, it was slow, unintuitive, and a dead end for more complex work.</p></div></section><section class="chapter"><h2><span class="num">02</span>Why now</h2><div class="prose"><p>Earth needed a temporary drawing state for features on the way. Drag to select was the first thing to use it, so it had to set the pattern for what came after.</p></div></section><section class="chapter"><h2><span class="num">03</span>The hard part</h2><div class="prose"><p>Selection already worked three ways: checkboxes, dragging in the panel, and clicking items. The new gesture had to get along with all of them.</p><ul><li><strong>Web and mobile.</strong> One idea, two very different inputs.</li><li><strong>Streamlined and productivity layouts.</strong> Simple by default, fast for power users.</li><li><strong>Screen-centered drawing tools.</strong> Other tools also claim the middle of the map, so the gestures can’t collide.</li></ul><p>There were a lot of ways to get it wrong. I worked through them by building, testing and going back and forth with the designer and PM.</p></div></section><section class="chapter"><h2><span class="num">04</span>Result</h2><div class="prose"><p>You can now drag over as many places as you want and style them all at once, without leaving the map.</p></div></section>
+    <section class="chapter"><h2><span class="num">01</span>The problem</h2><div class="prose"><p>Places could be selected one at a time on the map, or several at once from the project panel. It was slow and unintuitive, and a real limit for power users and complex work.</p><p>Google Earth also needed a temporary drawing state for features on the way. Drag to select would be the first to use it, so it had to set the pattern.</p></div></section>
+    <section class="chapter"><h2><span class="num">02</span>The work</h2><div class="prose"><p>Selection already worked three ways: checkboxes, dragging in the panel, and clicking items. The new gesture had to fit with all of them, across:</p><ul><li><strong>Web and mobile.</strong> One idea, two very different kinds of input.</li><li><strong>Streamlined and productivity layouts.</strong> Simple by default, fast for power users.</li><li><strong>Screen-centered drawing tools.</strong> Other tools also claim the middle of the map, so the gestures can’t collide.</li></ul><p>Each of these was worked out by prototyping, testing and iterating closely with a UX designer and a PM. All of the implementation was one engineer.</p></div></section>
+    <section class="chapter"><h2><span class="num">03</span>The result</h2><div class="prose"><p>Drag to select is live in Google Earth on the web, and it’s the first feature built on Earth’s new drawing state.</p></div></section>
 
     <a class="next" href="../cut-and-fill/">
       <div><span class="label">Next project</span><h2 class="display">Cut and fill</h2></div>
@@ -51,8 +62,7 @@
       <h2 class="display">Say hello.</h2>
       <p>Working on something for the built environment? I’d love to hear about it.</p>
       <div class="ctas">
-        <a class="btn primary" href="mailto:tolaoniyangi@gmail.com">Email me</a>
-        <button class="btn" type="button" data-copy="tolaoniyangi@gmail.com">Copy email address</button>
+        <button class="btn primary" type="button" data-copy="tolaoniyangi@gmail.com">Copy email address</button>
         <a class="btn" href="https://www.linkedin.com/in/tolaoniyangi">LinkedIn</a>
         <a class="btn" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume (PDF)</a>
       </div>

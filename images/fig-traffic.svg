@@ -1,119 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-label="Abstract street grid where each intersection is colored by its A to F delay grade, with one intersection’s grade shown changing hour by hour">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-label="Street grid where each intersection is colored by its A to F delay grade; one busy corridor stands out, and one intersection’s grade is shown across the day">
 <rect width="720" height="440" fill="#EAE6DE"/>
-<line x1="40" y1="20" x2="40" y2="350" stroke="#fff" stroke-width="7"/>
-<line x1="94" y1="20" x2="94" y2="350" stroke="#fff" stroke-width="7"/>
-<line x1="148" y1="20" x2="148" y2="350" stroke="#fff" stroke-width="7"/>
-<line x1="202" y1="20" x2="202" y2="350" stroke="#fff" stroke-width="7"/>
-<line x1="256" y1="20" x2="256" y2="350" stroke="#fff" stroke-width="7"/>
-<line x1="310" y1="20" x2="310" y2="350" stroke="#fff" stroke-width="7"/>
-<line x1="364" y1="20" x2="364" y2="350" stroke="#fff" stroke-width="7"/>
-<line x1="418" y1="20" x2="418" y2="350" stroke="#fff" stroke-width="7"/>
-<line x1="20" y1="40" x2="490" y2="40" stroke="#fff" stroke-width="7"/>
-<line x1="20" y1="88" x2="490" y2="88" stroke="#fff" stroke-width="7"/>
-<line x1="20" y1="136" x2="490" y2="136" stroke="#fff" stroke-width="7"/>
-<line x1="20" y1="184" x2="490" y2="184" stroke="#fff" stroke-width="7"/>
-<line x1="20" y1="232" x2="490" y2="232" stroke="#fff" stroke-width="7"/>
-<line x1="20" y1="280" x2="490" y2="280" stroke="#fff" stroke-width="7"/>
-<line x1="20" y1="328" x2="490" y2="328" stroke="#fff" stroke-width="7"/>
-<line x1="20" y1="300" x2="490" y2="60" stroke="#fff" stroke-width="12"/>
-<circle cx="40" cy="40" r="9" fill="#F3E3D3" stroke="#fff" stroke-width="1.5"/>
-<circle cx="40" cy="88" r="9" fill="#F1C3A0" stroke="#fff" stroke-width="1.5"/>
-<circle cx="40" cy="136" r="9" fill="#E2512B" stroke="#fff" stroke-width="1.5"/>
-<circle cx="40" cy="184" r="9" fill="#E2512B" stroke="#fff" stroke-width="1.5"/>
-<circle cx="40" cy="232" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="40" cy="280" r="9" fill="#5E1C0C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="40" cy="328" r="9" fill="#E2512B" stroke="#fff" stroke-width="1.5"/>
-<circle cx="94" cy="40" r="9" fill="#F1C3A0" stroke="#fff" stroke-width="1.5"/>
-<circle cx="94" cy="88" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<circle cx="94" cy="136" r="9" fill="#E2512B" stroke="#fff" stroke-width="1.5"/>
-<circle cx="94" cy="184" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<circle cx="94" cy="232" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="94" cy="280" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="94" cy="328" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="148" cy="40" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<circle cx="148" cy="88" r="9" fill="#F1C3A0" stroke="#fff" stroke-width="1.5"/>
-<circle cx="148" cy="136" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="148" cy="184" r="9" fill="#5E1C0C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="148" cy="232" r="9" fill="#5E1C0C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="148" cy="280" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="148" cy="328" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<circle cx="202" cy="40" r="9" fill="#F3E3D3" stroke="#fff" stroke-width="1.5"/>
-<circle cx="202" cy="88" r="9" fill="#E2512B" stroke="#fff" stroke-width="1.5"/>
-<circle cx="202" cy="136" r="9" fill="#E2512B" stroke="#fff" stroke-width="1.5"/>
-<circle cx="202" cy="184" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="202" cy="232" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="202" cy="280" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<circle cx="202" cy="328" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<circle cx="256" cy="40" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<circle cx="256" cy="88" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="256" cy="136" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="256" cy="184" r="9" fill="#5E1C0C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="256" cy="232" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="256" cy="280" r="9" fill="#E2512B" stroke="#fff" stroke-width="1.5"/>
-<circle cx="256" cy="328" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<circle cx="310" cy="40" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<circle cx="310" cy="88" r="9" fill="#5E1C0C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="310" cy="136" r="9" fill="#5E1C0C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="310" cy="184" r="12" fill="#5E1C0C" stroke="#141413" stroke-width="2.5"/>
-<circle cx="310" cy="232" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="310" cy="280" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<circle cx="310" cy="328" r="9" fill="#F1C3A0" stroke="#fff" stroke-width="1.5"/>
-<circle cx="364" cy="40" r="9" fill="#E2512B" stroke="#fff" stroke-width="1.5"/>
-<circle cx="364" cy="88" r="9" fill="#E2512B" stroke="#fff" stroke-width="1.5"/>
-<circle cx="364" cy="136" r="9" fill="#5E1C0C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="364" cy="184" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="364" cy="232" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="364" cy="280" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<circle cx="364" cy="328" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<circle cx="418" cy="40" r="9" fill="#5E1C0C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="418" cy="88" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="418" cy="136" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="418" cy="184" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<circle cx="418" cy="232" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<circle cx="418" cy="280" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<circle cx="418" cy="328" r="9" fill="#F3E3D3" stroke="#fff" stroke-width="1.5"/>
-<text x="520" y="52" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#141413" fill-opacity="1">Grade</text>
-<circle cx="530" cy="76" r="9" fill="#F3E3D3" stroke="#fff" stroke-width="1.5"/>
-<text x="530" y="104" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1">A</text>
-<circle cx="558" cy="76" r="9" fill="#F1C3A0" stroke="#fff" stroke-width="1.5"/>
-<text x="558" y="104" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1">B</text>
-<circle cx="586" cy="76" r="9" fill="#EC9467" stroke="#fff" stroke-width="1.5"/>
-<text x="586" y="104" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1">C</text>
-<circle cx="614" cy="76" r="9" fill="#E2512B" stroke="#fff" stroke-width="1.5"/>
-<text x="614" y="104" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1">D</text>
-<circle cx="642" cy="76" r="9" fill="#A93A1C" stroke="#fff" stroke-width="1.5"/>
-<text x="642" y="104" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1">E</text>
-<circle cx="670" cy="76" r="9" fill="#5E1C0C" stroke="#fff" stroke-width="1.5"/>
-<text x="670" y="104" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1">F</text>
-<text x="520" y="126" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#141413" fill-opacity="0.7">A = little delay · F = long waits</text>
-<line x1="322" y1="184" x2="516" y2="254" stroke="#141413" stroke-width="1"/>
-<text x="520" y="258" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#141413" fill-opacity="1">One intersection,</text>
-<text x="520" y="274" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#141413" fill-opacity="1">across the day ↓</text>
-<rect x="40.0" y="378" width="35.6" height="22" fill="#F3E3D3"/>
-<text x="57.82352941176471" y="416" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7">06:00</text>
-<rect x="77.6" y="378" width="35.6" height="22" fill="#F1C3A0"/>
-<rect x="115.3" y="378" width="35.6" height="22" fill="#E2512B"/>
-<text x="133.11764705882354" y="416" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7">08:00</text>
-<rect x="152.9" y="378" width="35.6" height="22" fill="#A93A1C"/>
-<rect x="190.6" y="378" width="35.6" height="22" fill="#E2512B"/>
-<text x="208.41176470588235" y="416" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7">10:00</text>
-<rect x="228.2" y="378" width="35.6" height="22" fill="#EC9467"/>
-<rect x="265.9" y="378" width="35.6" height="22" fill="#F1C3A0"/>
-<text x="283.70588235294116" y="416" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7">12:00</text>
-<rect x="303.5" y="378" width="35.6" height="22" fill="#F1C3A0"/>
-<rect x="341.2" y="378" width="35.6" height="22" fill="#EC9467"/>
-<text x="359.0" y="416" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7">14:00</text>
-<rect x="378.8" y="378" width="35.6" height="22" fill="#EC9467"/>
-<rect x="416.5" y="378" width="35.6" height="22" fill="#EC9467"/>
-<text x="434.29411764705884" y="416" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7">16:00</text>
-<rect x="454.1" y="378" width="35.6" height="22" fill="#E2512B"/>
-<rect x="491.8" y="378" width="35.6" height="22" fill="#A93A1C"/>
-<text x="509.5882352941176" y="416" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7">18:00</text>
-<rect x="529.4" y="378" width="35.6" height="22" fill="#5E1C0C"/>
-<rect x="567.1" y="378" width="35.6" height="22" fill="#A93A1C"/>
-<text x="584.8823529411766" y="416" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7">20:00</text>
-<rect x="604.7" y="378" width="35.6" height="22" fill="#EC9467"/>
-<rect x="642.4" y="378" width="35.6" height="22" fill="#F1C3A0"/>
-<text x="660.1764705882354" y="416" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7">22:00</text>
-<text x="40" y="370" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1">06:00 → 22:00</text>
+<line x1="70" y1="30" x2="70" y2="350" stroke="#fff" stroke-width="8"/>
+<line x1="160" y1="30" x2="160" y2="350" stroke="#fff" stroke-width="8"/>
+<line x1="250" y1="30" x2="250" y2="350" stroke="#fff" stroke-width="8"/>
+<line x1="340" y1="30" x2="340" y2="350" stroke="#fff" stroke-width="8"/>
+<line x1="430" y1="30" x2="430" y2="350" stroke="#fff" stroke-width="8"/>
+<line x1="30" y1="70" x2="470" y2="70" stroke="#fff" stroke-width="8"/>
+<line x1="30" y1="150" x2="470" y2="150" stroke="#fff" stroke-width="8"/>
+<line x1="30" y1="230" x2="470" y2="230" stroke="#fff" stroke-width="8"/>
+<line x1="30" y1="310" x2="470" y2="310" stroke="#fff" stroke-width="8"/>
+<line x1="30" y1="150" x2="470" y2="150" stroke="#fff" stroke-width="16"/>
+<circle cx="70" cy="70" r="11" fill="#F1E6DA" stroke="#fff" stroke-width="2"/>
+<circle cx="70" cy="150" r="11" fill="#EE9E73" stroke="#fff" stroke-width="2"/>
+<circle cx="70" cy="230" r="11" fill="#F1E6DA" stroke="#fff" stroke-width="2"/>
+<circle cx="70" cy="310" r="11" fill="#F1E6DA" stroke="#fff" stroke-width="2"/>
+<circle cx="160" cy="70" r="11" fill="#F1E6DA" stroke="#fff" stroke-width="2"/>
+<circle cx="160" cy="150" r="11" fill="#B5381B" stroke="#fff" stroke-width="2"/>
+<circle cx="160" cy="230" r="11" fill="#F1E6DA" stroke="#fff" stroke-width="2"/>
+<circle cx="160" cy="310" r="11" fill="#F1E6DA" stroke="#fff" stroke-width="2"/>
+<circle cx="250" cy="70" r="11" fill="#EE9E73" stroke="#fff" stroke-width="2"/>
+<circle cx="250" cy="150" r="15" fill="#B5381B" stroke="#141413" stroke-width="2.5"/>
+<circle cx="250" cy="230" r="11" fill="#EE9E73" stroke="#fff" stroke-width="2"/>
+<circle cx="250" cy="310" r="11" fill="#F1E6DA" stroke="#fff" stroke-width="2"/>
+<circle cx="340" cy="70" r="11" fill="#F1E6DA" stroke="#fff" stroke-width="2"/>
+<circle cx="340" cy="150" r="11" fill="#EE9E73" stroke="#fff" stroke-width="2"/>
+<circle cx="340" cy="230" r="11" fill="#F1E6DA" stroke="#fff" stroke-width="2"/>
+<circle cx="340" cy="310" r="11" fill="#F1E6DA" stroke="#fff" stroke-width="2"/>
+<circle cx="430" cy="70" r="11" fill="#F1E6DA" stroke="#fff" stroke-width="2"/>
+<circle cx="430" cy="150" r="11" fill="#F1E6DA" stroke="#fff" stroke-width="2"/>
+<circle cx="430" cy="230" r="11" fill="#F1E6DA" stroke="#fff" stroke-width="2"/>
+<circle cx="430" cy="310" r="11" fill="#F1E6DA" stroke="#fff" stroke-width="2"/>
+<text x="470" y="140" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#141413" fill-opacity="0.6" letter-spacing="0">Main street</text>
+<defs><linearGradient id="gr"><stop offset="0" stop-color="#F1E6DA"/><stop offset=".5" stop-color="#EE9E73"/><stop offset="1" stop-color="#B5381B"/></linearGradient></defs>
+<text x="520" y="62" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Delay grade</text>
+<rect x="520" y="74" width="160" height="12" fill="url(#gr)"/>
+<text x="520" y="104" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#141413" fill-opacity="0.75" letter-spacing="0">A  little delay</text>
+<text x="680" y="104" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#141413" fill-opacity="0.75" letter-spacing="0">F  long waits</text>
+<line x1="265" y1="150" x2="514" y2="196" stroke="#141413" stroke-width="1"/>
+<text x="520" y="200" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#141413" fill-opacity="1" letter-spacing="0">Pick one intersection</text>
+<text x="520" y="216" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#141413" fill-opacity="1" letter-spacing="0">to see its day ↓</text>
+<text x="40" y="372" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="1" letter-spacing="0">Its grade, hour by hour</text>
+<rect x="40.0" y="382" width="35.6" height="20" fill="#F1E6DA"/>
+<rect x="77.6" y="382" width="35.6" height="20" fill="#F1E6DA"/>
+<rect x="115.3" y="382" width="35.6" height="20" fill="#EE9E73"/>
+<rect x="152.9" y="382" width="35.6" height="20" fill="#B5381B"/>
+<rect x="190.6" y="382" width="35.6" height="20" fill="#EE9E73"/>
+<rect x="228.2" y="382" width="35.6" height="20" fill="#F1E6DA"/>
+<rect x="265.9" y="382" width="35.6" height="20" fill="#F1E6DA"/>
+<rect x="303.5" y="382" width="35.6" height="20" fill="#F1E6DA"/>
+<rect x="341.2" y="382" width="35.6" height="20" fill="#F1E6DA"/>
+<rect x="378.8" y="382" width="35.6" height="20" fill="#F1E6DA"/>
+<rect x="416.5" y="382" width="35.6" height="20" fill="#EE9E73"/>
+<rect x="454.1" y="382" width="35.6" height="20" fill="#EE9E73"/>
+<rect x="491.8" y="382" width="35.6" height="20" fill="#B5381B"/>
+<rect x="529.4" y="382" width="35.6" height="20" fill="#B5381B"/>
+<rect x="567.1" y="382" width="35.6" height="20" fill="#EE9E73"/>
+<rect x="604.7" y="382" width="35.6" height="20" fill="#F1E6DA"/>
+<rect x="642.4" y="382" width="35.6" height="20" fill="#F1E6DA"/>
+<text x="134.11764705882354" y="420" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">Morning rush</text>
+<text x="510.5882352941176" y="420" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">Evening rush</text>
+<text x="40" y="420" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">06:00</text>
+<text x="680" y="420" text-anchor="end" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#141413" fill-opacity="0.7" letter-spacing="0">22:00</text>
 </svg>
