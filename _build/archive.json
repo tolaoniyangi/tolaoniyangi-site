@@ -1,0 +1,134 @@
+{
+ "note": "Wayback Machine snapshots of every external link and the old Adobe portfolio, saved 2026-10-30. If a live link dies, swap it in _build/build.py for its snapshot.",
+ "not_archived": {
+  "https://developers.google.com/maps/documentation/earth/terrain-analysis": "Archive could not reach it; official Google docs",
+  "https://www.linkedin.com/posts/googlemapsplatform_gridlock-isnt-an-accident-its-a-data-problem-activity-7429651793367826432-dGZv/": "LinkedIn blocks archiving",
+  "https://www.linkedin.com/in/tolaoniyangi": "Own profile, behind login"
+ },
+ "snapshots": {
+  "https://blogs.ei.columbia.edu/2019/12/06/proposals-resilience-vieques-puerto-rico/": {
+   "snapshot": "https://web.archive.org/web/20210227151908/https://blogs.ei.columbia.edu/2019/12/06/proposals-resilience-vieques-puerto-rico/",
+   "timestamp": "20210227151908"
+  },
+  "https://buellcenter.columbia.edu/projects/3c803455-dbd0-4491-9c68-dec1004d1b30/": {
+   "snapshot": "https://web.archive.org/web/20220122053355/https://buellcenter.columbia.edu/projects/3c803455-dbd0-4491-9c68-dec1004d1b30/",
+   "timestamp": "20220122053355"
+  },
+  "https://c4sr.columbia.edu/projects/homophily-urban-history-algorithm": {
+   "snapshot": "https://web.archive.org/web/20251211204859/https://c4sr.columbia.edu/projects/homophily-urban-history-algorithm",
+   "timestamp": "20251211204859"
+  },
+  "https://developers.google.com/maps/documentation/earth/available-data-layers": {
+   "snapshot": "https://web.archive.org/web/20260806035213/https://developers.google.com/maps/documentation/earth/available-data-layers",
+   "timestamp": "20260806035213"
+  },
+  "https://developers.google.com/maps/documentation/earth/generate-designs": {
+   "snapshot": "https://web.archive.org/web/20260410175923/https://developers.google.com/maps/documentation/earth/generate-designs",
+   "timestamp": "20260410175923"
+  },
+  "https://developers.google.com/maps/documentation/earth/style-your-places#bulk_styling": {
+   "snapshot": "https://web.archive.org/web/20260421051913/https://developers.google.com/maps/documentation/earth/style-your-places",
+   "timestamp": "20260421051913"
+  },
+  "https://github.com/tolaoniyangi/dmc": {
+   "snapshot": "https://web.archive.org/web/20261030150815/https://github.com/tolaoniyangi/dmc",
+   "timestamp": "20261030150815"
+  },
+  "https://intelligent-city.com": {
+   "snapshot": "https://web.archive.org/web/20261030150939/https://intelligent-city.com",
+   "timestamp": "20261030150939"
+  },
+  "https://mapsplatform.google.com/resources/blog/a-field-guide-to-terrain-analysis-tools-in-google-earth/": {
+   "snapshot": "https://web.archive.org/web/20261030151010/https://mapsplatform.google.com/resources/blog/a-field-guide-to-terrain-analysis-tools-in-google-earth/",
+   "timestamp": "20261030151010"
+  },
+  "https://medium.com/@BallotReady/today-is-the-day-but-what-happens-next-ff73b3bf9a4e": {
+   "snapshot": "https://web.archive.org/web/20210615150838/https://medium.com/@BallotReady/today-is-the-day-but-what-happens-next-ff73b3bf9a4e",
+   "timestamp": "20210615150838"
+  },
+  "https://medium.com/@BallotReady/what-are-candidates-talking-about-this-year-2a9a9463ca50": {
+   "snapshot": "https://web.archive.org/web/20210615150856/https://medium.com/@BallotReady/what-are-candidates-talking-about-this-year-2a9a9463ca50",
+   "timestamp": "20210615150856"
+  },
+  "https://medium.com/@BallotReady/whats-on-the-ballot-75da87973a50": {
+   "snapshot": "https://web.archive.org/web/20210615150841/https://medium.com/@BallotReady/whats-on-the-ballot-75da87973a50",
+   "timestamp": "20210615150841"
+  },
+  "https://medium.com/google-earth/evaluate-building-and-solar-design-options-in-minutes-with-google-earth-6b5bc5734351": {
+   "snapshot": "https://web.archive.org/web/20260225154807/https://medium.com/google-earth/evaluate-building-and-solar-design-options-in-minutes-with-google-earth-6b5bc5734351",
+   "timestamp": "20260225154807"
+  },
+  "https://news.columbia.edu/news/tola-oniyangi-graduates-dual-degree-architecture-urban-planning": {
+   "snapshot": "https://web.archive.org/web/20260505061514/https://news.columbia.edu/news/tola-oniyangi-graduates-dual-degree-architecture-urban-planning",
+   "timestamp": "20260505061514"
+  },
+  "https://rdottle.github.io/dv-final-project/index.html": {
+   "snapshot": "https://web.archive.org/web/2026/https://rdottle.github.io/dv-final-project/index.html",
+   "timestamp": "2026 (saved 2026-10-30)"
+  },
+  "https://tolaoniyangi.com/": {
+   "snapshot": "https://web.archive.org/web/20261030151305/https://tolaoniyangi.com/",
+   "timestamp": "20261030151305"
+  },
+  "https://tolaoniyangi.com/12": {
+   "snapshot": "https://web.archive.org/web/20261030151331/https://tolaoniyangi.com/12",
+   "timestamp": "20261030151331"
+  },
+  "https://tolaoniyangi.com/1p-research-data-layers": {
+   "snapshot": "https://web.archive.org/web/20261030151358/https://tolaoniyangi.com/1p-research-data-layers",
+   "timestamp": "20261030151358"
+  },
+  "https://tolaoniyangi.com/airbnb-analysis": {
+   "snapshot": "https://web.archive.org/web/20261030151424/https://tolaoniyangi.com/airbnb-analysis",
+   "timestamp": "20261030151424"
+  },
+  "https://tolaoniyangi.com/beyond-the-blue-dot": {
+   "snapshot": "https://web.archive.org/web/20261030151559/https://tolaoniyangi.com/beyond-the-blue-dot",
+   "timestamp": "20261030151559"
+  },
+  "https://tolaoniyangi.com/citi-bike-access": {
+   "snapshot": "https://web.archive.org/web/20261030151623/https://tolaoniyangi.com/citi-bike-access",
+   "timestamp": "20261030151623"
+  },
+  "https://tolaoniyangi.com/computational-design": {
+   "snapshot": "https://web.archive.org/web/20261030151649/https://tolaoniyangi.com/computational-design",
+   "timestamp": "20261030151649"
+  },
+  "https://tolaoniyangi.com/data-storytelling": {
+   "snapshot": "https://web.archive.org/web/20261030151718/https://tolaoniyangi.com/data-storytelling",
+   "timestamp": "20261030151718"
+  },
+  "https://tolaoniyangi.com/estimating-pedestrian-activity": {
+   "snapshot": "https://web.archive.org/web/20261030151826/https://tolaoniyangi.com/estimating-pedestrian-activity",
+   "timestamp": "20261030151826"
+  },
+  "https://tolaoniyangi.com/in-the-news": {
+   "snapshot": "https://web.archive.org/web/20261030151851/https://tolaoniyangi.com/in-the-news",
+   "timestamp": "20261030151851"
+  },
+  "https://tolaoniyangi.com/library": {
+   "snapshot": "https://web.archive.org/web/20261030151918/https://tolaoniyangi.com/library",
+   "timestamp": "20261030151918"
+  },
+  "https://tolaoniyangi.com/predicting-urban-sprawl": {
+   "snapshot": "https://web.archive.org/web/20261030152032/https://tolaoniyangi.com/predicting-urban-sprawl",
+   "timestamp": "20261030152032"
+  },
+  "https://tolaoniyangi.com/resume": {
+   "snapshot": "https://web.archive.org/web/20261030152211/https://tolaoniyangi.com/resume",
+   "timestamp": "20261030152211"
+  },
+  "https://tolaoniyangi.com/solar-assessment": {
+   "snapshot": "https://web.archive.org/web/20261030152329/https://tolaoniyangi.com/solar-assessment",
+   "timestamp": "20261030152329"
+  },
+  "https://www.ballotready.org": {
+   "snapshot": "https://web.archive.org/web/20261030152454/https://www.ballotready.org/",
+   "timestamp": "20261030152454"
+  },
+  "https://www.civilbeat.org/2020/01/can-fixing-our-parking-rules-make-honolulu-more-affordable/": {
+   "snapshot": "https://web.archive.org/web/20261030152537/https://www.civilbeat.org/2020/01/can-fixing-our-parking-rules-make-honolulu-more-affordable/",
+   "timestamp": "20261030152537"
+  }
+ }
+}
