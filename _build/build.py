@@ -47,6 +47,7 @@ def head(title, desc, url, pre, extra=""):
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#F3F1EC">
 <link rel="icon" href="{pre}favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{pre}apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
