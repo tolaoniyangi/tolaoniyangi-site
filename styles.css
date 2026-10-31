@@ -143,6 +143,10 @@ a:hover{color:var(--accent)}
 .figs{display:grid;gap:clamp(16px,2vw,28px)}
 .figs.two{grid-template-columns:1fr 1fr}
 .figs.two .wide{grid-column:1/-1}
+/* A row of small images at one shared height, never wider than they were made */
+.figs.strip{display:flex;align-items:flex-start;max-width:620px}
+.figs.strip figure{flex:var(--r) 1 0;min-width:0}
+.figs.strip img{width:100%;height:auto}
 figure{margin:0}
 figure img,figure video{width:100%;background:var(--plate)}
 figcaption{margin-top:10px;font-size:14px;color:var(--ink-2);max-width:62ch}
