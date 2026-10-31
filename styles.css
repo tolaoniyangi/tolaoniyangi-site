@@ -125,7 +125,7 @@ a:hover{color:var(--accent)}
 .lead{margin-bottom:clamp(72px,10vw,128px);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);column-gap:clamp(24px,4vw,64px)}
 .lead > *{grid-column:2}
 @media (max-width:900px){.lead{display:block}}
-.chapter{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:20px clamp(24px,4vw,64px);margin-bottom:clamp(72px,10vw,128px)}
+.chapter{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:20px clamp(24px,4vw,64px);margin-bottom:clamp(40px,5.5vw,76px)}
 .chapter > h2{position:sticky;top:96px;align-self:start;margin:0;font-size:clamp(22px,2.2vw,30px);letter-spacing:-.02em;font-variation-settings:"wdth" 115;font-weight:700;line-height:1.1}
 .chapter > h2 .num{display:block;margin-bottom:10px}
 .prose p{font-size:clamp(17px,1.35vw,19px);margin:0 0 1em;max-width:58ch}
@@ -145,6 +145,9 @@ a:hover{color:var(--accent)}
 .figs.two .wide{grid-column:1/-1}
 /* A row of small images at one shared height, never wider than they were made */
 .figs.strip{display:flex;align-items:flex-start;max-width:620px}
+/* Small source images shown up to about 1.5x, the most they take before going soft */
+.figs.grow,.figs.strip.grow{max-width:760px}
+.figs.grow img{width:100%}
 .figs.strip figure{flex:var(--r) 1 0;min-width:0}
 .figs.strip img{width:100%;height:auto}
 figure{margin:0}

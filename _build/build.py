@@ -18,7 +18,7 @@ def dims(f):
 
 class Figs:
     def __init__(self, pre="../"): self.n = 0; self.pre = pre
-    def fig(self, src, alt, cap, cls="", lazy=True, strip=False):
+    def fig(self, src, alt, cap, cls="", lazy=True, strip=False, grow=False):
         self.n += 1; w, h = dims(src)
         c = f' class="{cls}"' if cls else ""
         if strip:  # one row at equal height: each figure grows by its aspect ratio
@@ -26,7 +26,7 @@ class Figs:
             return f'<figure{c}><img src="{self.pre}images/{src}" alt="{html.escape(alt)}" width="{w}" height="{h}" loading="lazy"><figcaption><b>Fig. {self.n}</b>{cap}</figcaption></figure>'
 
         ld = ' loading="lazy"' if lazy else ""
-        st = f' style="max-width:{w}px"' if int(w) < 1000 and not src.endswith(".svg") else ""
+        st = f' style="max-width:{w}px"' if int(w) < 1000 and not src.endswith(".svg") and not grow else ""  # grow: allowed past native size, capped by .figs.grow
         return f'<figure{c}><img src="{self.pre}images/{src}" alt="{html.escape(alt)}" width="{w}" height="{h}"{ld}{st}><figcaption><b>Fig. {self.n}</b>{cap}</figcaption></figure>'
     def video(self, src, poster, label, cap):
         self.n += 1; w, h = dims(poster)
@@ -226,11 +226,11 @@ P[-1]["chapters"] = [
      "<p>Getting geospatial data into those tools was slow and manual, which kept them stuck on narrow test cases. The first step was research into which use cases mattered most, and which standard datasets, like pedestrian activity and transit access, they needed.</p>"
      f'<div class="figs">{f.fig("fig-ped-research.svg", "Flowchart linking ten urban data sources to twelve planning analyses", "The research: which data sources feed which planning questions.")}</div>'),
     ("<p>An automated pipeline pulls the data in. Census population and workforce counts come in large areas called block groups, so the pipeline splits them down to individual buildings then estimates pedestrian activity on the streets around them.</p>"
-     f'<div class="figs strip">{f.fig("ped-blockgroups.jpg", "Map of Manhattan with the test site highlighted", "The test site in Manhattan.", strip=True)}{f.fig("ped-units-map.jpg", "Map of Manhattan block groups by population", "Census counts, block group by block group.", strip=True)}{f.fig("ped-units.gif", "Animated map of units per building on the test site", "Split down to units in each building.", strip=True)}</div>'
-     f'<div class="figs">{f.fig("ped-buildingtypes.jpg", "3D model of buildings by type with activity", "Buildings by type, ready to be scored.")}</div>'),
+     f'<div class="figs strip grow">{f.fig("ped-blockgroups.jpg", "Map of Manhattan with the test site highlighted", "The test site in Manhattan.", strip=True)}{f.fig("ped-units-map.jpg", "Map of Manhattan block groups by population", "Census counts, block group by block group.", strip=True)}{f.fig("ped-units.gif", "Animated map of units per building on the test site", "Split down to units in each building.", strip=True)}</div>'
+     f'<div class="figs grow">{f.fig("ped-buildingtypes.jpg", "3D model of buildings by type with activity", "Buildings by type, ready to be scored.", grow=True)}</div>'),
 
     ("<p>The result was a repeatable, automated pipeline, built and tested on a site in Manhattan. It produces building-level population, workforce and land use, plus a “buzz metric” that shows pedestrian activity from residents and workers. It was built to plug into the generative design workflow, so the tools would not be limited to narrow test cases.</p>"
-     f'<div class="figs">{f.fig("ped-buzz.gif", "Animated 3D site model with pedestrian activity from residents, then workers", "The buzz metric: estimated activity from residents, then workers, around the site.")}</div>'),
+     f'<div class="figs grow">{f.fig("ped-buzz.gif", "Animated 3D site model with pedestrian activity from residents, then workers", "The buzz metric: estimated activity from residents, then workers, around the site.", grow=True)}</div>'),
 ]
 
 # Earlier work with their own pages
