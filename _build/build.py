@@ -50,14 +50,14 @@ def head(title, desc, url, pre, extra=""):
 <link rel="apple-touch-icon" href="{pre}apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{pre}styles.css">{extra}
 </head>
 <body>
 
 <header class="top" id="top">
   <div class="top-in">
-    <a class="name" href="{pre or './'}">{NAME}</a>
+    <a class="name" href="{pre or './'}">{NAME}<span class="sub">{mode(["design"])} · {mode(["engineering"])} · {mode(["research"])}</span></a>
     <nav aria-label="Primary">
       <a class="hide-xs" href="{pre}#work">Work</a>
       <a class="hide-sm" href="{pre}#about">About</a>
@@ -68,7 +68,20 @@ def head(title, desc, url, pre, extra=""):
 </header>
 '''
 
-def foot(pre):
+def foot(pre, hello=True):
+    if not hello:
+        return f'''
+  <footer class="hello">
+    <div class="wrap">
+      <div class="foot"><span>© 2026 {NAME} · designed by me</span><a href="#top">Back to top ↑</a></div>
+    </div>
+  </footer>
+</main>
+
+<script src="{pre}site.js"></script>
+</body>
+</html>
+'''
     return f'''
   <section class="hello" id="hello">
     <div class="wrap">
@@ -79,7 +92,7 @@ def foot(pre):
         <a class="btn" href="{LINKEDIN}">LinkedIn</a>
         <a class="btn" href="{RESUME_PDF}">Resume (PDF) ↓</a>
       </div>
-      <div class="foot"><span>© 2026 {NAME}</span><a href="#top">Back to top ↑</a></div>
+      <div class="foot"><span>© 2026 {NAME} · designed by me</span><a href="#top">Back to top ↑</a></div>
     </div>
   </section>
 </main>
@@ -267,6 +280,24 @@ P[-1]["chapters"] = [
      '<p>The project was featured in <a href="https://blogs.ei.columbia.edu/2019/12/06/proposals-resilience-vieques-puerto-rico/">13 proposals to boost resilience in Vieques, Puerto Rico</a>.</p>'),
 ]
 
+f = project(slug="liminal-space", num=None, title="Liminal Space", thumb="liminal-space.gif", year="2019", kind="Generative design",
+    eyebrow="Columbia GSAPP · 2019 · Generative design",
+    card="Could a model design a space that’s never quite open or closed?",
+    dek="Could a model design a space that’s never quite open and never quite closed?",
+    meta=[("Role", "Everything: the idea, the model, the drawings"), ("Course", "Generative Design, with Danil Nagy"), ("Timeline", "Spring 2019"),
+          ("Links", '<a href="https://www.youtube.com/watch?v=Gtk0qCYoK30">Video ↗</a>')])
+P[-1]["lead"] = f.fig("liminal-space.gif", "Animated generated design: a hexagonal volume of pink cells, solids and voids shifting", "One of the designs I kept, cycling through its solids and voids.", lazy=False)
+P[-1]["chapters"] = [
+    ("<p>I kept thinking about in-between spaces, the ones that feel exposed one moment and sheltered the next, where light, air and what you can see keep changing as you move. I wanted to see if a model could make one, and whether it would surprise me.</p>"),
+    ("<p>I started with an empty box and scattered points through it, split it into cells, and let the model choose which cells turned solid and which stayed open. Then I drew a path through the middle, so a person could actually move through it.</p>"
+     f'<div class="figs">{f.fig("liminal-description.jpg", "Five steps: empty volume, points, partitioned regions, solids and voids, refined for movement", "How the model builds a space, from an empty box to cells shaped around someone walking through.")}</div>'
+     "<p>I gave it three things to want: enough solid to feel enclosed, enough open space to breathe, and a path that stays clear. They pull against each other, which was the point.</p>"
+     f'<div class="figs">{f.fig("liminal-evaluation.jpg", "Three goals combining into an optimized design", "Three goals pulling against each other, and where they landed.")}{f.fig("liminal-iterations.jpg", "Fifteen generated iterations of the model", "A few of the many versions it tried.")}</div>'),
+    ("<p>Keeping the frame fixed held everything together, but it also limited how different the designs could get. So I spent a lot of time nudging parameters and running new generations to see what came out.</p>"
+     "<p>No design got everything it wanted. The ones I kept are the best compromises, and side by side they show the model working the trade-offs out.</p>"
+     f'<div class="figs">{f.fig("liminal-optimization.jpg", "Scatter plot of designs by voids and path intersections, next to eight selected designs", "Every design it made, plotted by how open it is and how clear the path stays, and the eight I picked.")}</div>'),
+]
+
 f = project(slug="library", num=None, title="The 20-minute library", thumb="lib-icon-pink.jpg", year="2018", kind="Architecture",
     eyebrow="Columbia GSAPP · 2018 · Architecture",
     card="A Brooklyn library whose program came from researching who lives, works and visits within a 20-minute walk.",
@@ -275,9 +306,9 @@ f = project(slug="library", num=None, title="The 20-minute library", thumb="lib-
 P[-1]["lead"] = '<div class="figs two">' + f.fig("lib-icon-blue.jpg", "Rendering of the library as a steel frame around a soft pink inner volume", "A solid steel frame around a softer, translucent inner volume.", lazy=False) + f.fig("lib-icon-pink.jpg", "Rendering of the library frame in pink", "The same frame, lit from within.", lazy=False) + '</div>'
 P[-1]["chapters"] = [
     ("<p>Who would actually use a library here? Dumbo is residential, packed with tech companies and schools, about a 10-minute walk from the subway, and busy with tourists.</p>"
-     f'<div class="figs">{f.fig("lib-access.jpg", "Map of Brooklyn libraries and walking zones around the site", "Zones of access: five-minute walking intervals, out to a 20-minute walk.")}<div class="figs two">{f.fig("lib-zones.jpg", "Map of walking rings around the site", "The site’s own rings, in five-minute steps.")}{f.fig("lib-character.jpg", "Maps of innovation, education and land use around the site", "The area’s character: tech, schools and land use.")}</div></div>'),
+     f'<div class="figs">{f.fig("lib-access.jpg", "Map of Brooklyn libraries and walking zones around the site", "Zones of access: five-minute walking intervals, out to a 20-minute walk.")}<div class="figs two">{f.fig("lib-zones.jpg", "Map of walking rings around the site", "How far you can walk from the site in 5, 10, 15 and 20 minutes.")}{f.fig("lib-character.jpg", "Maps of innovation, education and land use around the site", "The area’s character: tech, schools and land use.")}</div></div>'),
     ("<p>Inside that zone, a close look at how people get around, the neighborhood’s character, wealth and commute times showed a mix of residents, tech workers and visitors. Two parks border the site, so the concept pulls Dumbo’s waterfront open space into the building.</p>"
-     f'<div class="figs two">{f.fig("lib-transport.jpg", "Map of bike, bus, subway and ferry access to the site", "Every way to get there.")}{f.fig("lib-program.jpg", "Diagram of circulation and program", "Circulation and program, shaped by who comes.")}{f.fig("lib-leisure.jpg", "Map of the population with the most access to the library", "Who has the most access.")}{f.fig("lib-mobile.jpg", "Map of the mobile population", "The mobile population.")}{f.fig("lib-wealthy.jpg", "Map of the wealthy population", "The wealthy population.")}{f.fig("lib-openspace-1.jpg", "Map extending open space from the waterfront into the site", "Pulling the waterfront’s open space inland.")}{f.fig("lib-openspace-2.jpg", "Map of open space around the site", "Open space nearby.")}</div><div class="figs">{f.fig("lib-structure.jpg", "Diagram of the steel frame and the inner volume combining", "The frame and the inner volume, combined.")}{f.fig("lib-plan-section.jpg", "Plan and section drawing of the library", "Plan and section.")}</div>'),
+     f'<div class="figs two">{f.fig("lib-transport.jpg", "Map of bike, bus, subway and ferry access to the site", "Every way to get there.")}{f.fig("lib-leisure.jpg", "Map of the population with the most access to the library", "Who has the most access.")}{f.fig("lib-mobile.jpg", "Map of the mobile population", "The mobile population.")}{f.fig("lib-wealthy.jpg", "Map of the wealthy population", "The wealthy population.")}{f.fig("lib-openspace-1.jpg", "Map extending open space from the waterfront into the site", "Pulling the waterfront’s open space inland.")}</div><div class="figs">{f.fig("lib-structure.jpg", "Diagram of the steel frame and the inner volume combining", "The frame and the inner volume, combined.")}{f.fig("lib-plan-section.jpg", "Plan and section drawing of the library", "Plan and section.")}</div>'),
     ("<p>A building meant to be open to regulars and passersby alike. A transparent exterior grid lets every floor have a different floor plate, while the interior, almost free of structure, is full of mixing spaces between related programs.</p>"
      "<p>The design leans on tactility to make the library feel approachable, carries a strong identity into its branding, and includes rooms patrons can program themselves, so they control their own experience.</p>"
      f'<div class="figs">{f.fig("lib-postcard.jpg", "Postcard of interior views in different light colors: control your experience", "Control your experience: one interior, many moods.")}<div class="figs two">{f.fig("lib-model-zoom.jpg", "Close-up photograph of the physical model", "The final model, up close.")}{f.fig("lib-plans.gif", "Animated floor plans, one floor at a time", "Floor by floor.")}</div><div class="figs two">{f.fig("lib-model-1.jpg", "Model photograph close up", "The frame, close up.")}{f.fig("lib-model-3.jpg", "Model photograph", "Two studies side by side.")}</div></div>'),
@@ -327,10 +358,60 @@ P[-1]["chapters"] = [
     ("<p>Real images exist for every year, so each prediction could be checked against what actually happened. Made with Marwah Garib, Vrinda Sharma and Kun Qian for Danil Nagy’s Data Mining the City.</p>"),
 ]
 
+# From the 2017 site: tag each project (now design, engineering, research), and lead selected work with a question on hover.
+MODES = {
+    "marquee-selection": ("design", "engineering"), "cut-and-fill": ("engineering",), "traffic-level-of-service": ("design", "engineering", "research"),
+    "solar-assessment": ("design", "engineering", "research"), "intelligent-city": ("design", "engineering"), "estimating-pedestrian-activity": ("engineering", "research"),
+    "beyond-the-blue-dot": ("research",), "data-storytelling": ("research",), "wastespace": ("design",), "liminal-space": ("design",),
+    "library": ("design",), "citi-bike-access": ("research",), "airbnb-analysis": ("research",), "predicting-urban-sprawl": ("research",),
+}
+QUESTIONS = {
+    "cut-and-fill": "How much ground has to move before anything gets built?",
+    "traffic-level-of-service": "How long do drivers wait at each light, hour by hour?",
+    "intelligent-city": "What if a single line could become a whole building, down to every floor panel?",
+    "estimating-pedestrian-activity": "Can census data tell you how busy a sidewalk is?",
+}
+for p in P: p["mode"], p["q"] = MODES[p["slug"]], QUESTIONS.get(p["slug"])
+P[-1]["early_thumb"] = "sprawl-intro.gif"
+
+def mode(ms, words=None): return " ".join(f'<span class="mode {m}">{(words or {}).get(m, m)}</span>' for m in ms)
+
 EARLY_ADOBE = []
 
+# Drawings: architecture work shown big, drawing first. wastespace and the library keep their full pages.
+for p in P:
+    if p["slug"] == "wastespace": p["tile"] = "ws-render.jpg"
+    if p["slug"] == "library": p["tile"] = "lib-plan-section.jpg"
+def drawing(**k):
+    k.update(num=None, mode=("design",), thumb=k["tile"], drawing=True); P.append(k)
+drawing(slug="hydro-habitat", title="Hydro-habitat", year="2017", org="Columbia GSAPP", tile="hh-sections.jpg",
+    course="Core I, Fall 2017. Critic: Tei Carpenter",
+    dek="A pier on Manhattan’s East River edge that treats the river as something to be in, not just look at. You move from rooms about water and pollution into a pool sunk into the river itself, its walls filtering the water around you.",
+    figs=[("hh-pool.jpg", "Rendering of a figure stepping down into the pool", "The pool, inside the river."),
+          ("hh-sections.jpg", "Sections through the pier’s chain of spheres, with a detail of the filtering wall", "Sections through the spheres. The pool’s wall filters river water as it comes in."),
+          [("hh-site.jpg", "Map of sewer overflows along the East River, with the site", "Sewer overflows along the East River, and the site between them."),
+           ("hh-plan.jpg", "Plan of the pier’s spheres on the riverbank", "The plan, stepping from the park out into the river.")],
+          [("hh-typology.jpg", "Typology diagram: spheres intersecting, joining and subtracting", "One shape, three ways to combine it."),
+           ("hh-program.jpg", "Isometric of the program: social, educational and experiential spaces", "Social, educational and experiential spaces, in order.")]])
+drawing(slug="deconstructed-jenga", title="Deconstructed Jenga", year="2017", org="Columbia GSAPP", tile="cj-states.jpg",
+    course="Core I, Fall 2017. Critic: Tei Carpenter",
+    dek="A stack of platforms on a city corner that rearranges itself through the day. When it’s quiet they pull apart into small, closed-off places to sit alone. When it’s social they cross into shared spaces for groups. When it’s busy the whole thing opens up.",
+    figs=[("cj-axon.jpg", "Axonometric of the stacked timber platforms with people on them", "The whole stack, people and all."),
+          ("cj-states.jpg", "Plans and elevations of the platforms in quiet, social and busy states", "The same platforms through the day. When it’s quiet, they pull apart into small spaces to be alone. When it’s social, they cross and join up for groups. When it’s busy, they open out and make room to move.")])
+drawing(slug="subway-entrance", title="Brighter below", year="2017", org="Columbia GSAPP", tile="pp-peek.jpg",
+    course="Core I, Fall 2017. Critic: Tei Carpenter",
+    dek="A subway entrance you discover like a maze. The ground folds up into a roof, then a wall, and peeling the layers apart makes narrow bright spaces and wide dark ones. Above ground it barely shows. Below, it opens up, and only the bright spaces lead to the platforms.",
+    figs=[("pp-elevation.jpg", "Street elevation: the entrance barely rises above the sidewalk"), ("pp-site.jpg", "Site plan"), ("pp-plan.jpg", "Plan"),
+          ("pp-cross.jpg", "Cross section"), ("pp-section-1.jpg", "Long section with a view of the space inside"), ("pp-section-2.jpg", "Second section with a view of the space inside")])
+drawing(slug="ferry-landing", title="Sea legs", year="2014", org="Barnard College", tile="bb-cross.jpg",
+    course="Architectural Design I, Fall 2014. Critic: Leah Meisterlin",
+    dek="A bridge and gangplank for the East River Ferry at North 5th Street in Brooklyn. Its roof and floor undulate and its roof narrows the wind, so the walk from solid ground to the boat feels like the shift from land to sea.",
+    figs=[("bb-long.jpg", "Long section: a rippling roof hung from masts over an undulating deck"), ("bb-site.jpg", "Site plan"), ("bb-plan.jpg", "Plan and section"),
+          ("bb-cross.jpg", "Cross section against the Manhattan skyline"), ("bb-render.jpg", "Rendering from the water"), ("bb-inside.jpg", "Rendering from the deck")])
+
 SELECTED = [p for p in P if p["num"]]
-EARLIER = [p for p in P if not p["num"]]
+EARLIER = [p for p in P if not p["num"] and not p.get("tile")]
+DRAWINGS = sorted([p for p in P if p.get("tile")], key=lambda p: p["year"], reverse=True)
 
 def project_page(p, nxt):
     f = Figs()
@@ -339,7 +420,7 @@ def project_page(p, nxt):
     chapters = "\n    ".join(
         f'<section class="chapter"><h2><span class="num">{i+1:02d}</span>{names[i]}</h2><div class="prose">{body}</div></section>'
         for i, body in enumerate(p["chapters"]))
-    num = f'<span class="num">{p["num"]}</span>' if p["num"] else '<span class="num">Earlier work</span>'
+    num = f'<span class="num">{p["num"]}</span>' if p["num"] else f'<span class="num">{"Drawings" if p.get("tile") else "Earlier work"}</span>'
     nc = " contain" if nxt.get("contain") else ""
     w, h = dims(nxt["thumb"])
     url = f'{BASE}{p["slug"]}/'
@@ -349,7 +430,7 @@ def project_page(p, nxt):
   <div class="wrap">
     <section class="p-hero">
       <a class="back" href="../#work">← All work</a>
-      <div class="eyebrow">{num}<span class="label">{p["eyebrow"]}</span></div>
+      <div class="eyebrow">{num}<span class="label">{mode(p["mode"])} · {" · ".join(p["eyebrow"].split(" · ")[:2])}</span></div>
       <h1 class="display">{p["title"]}</h1>
       <p class="dek">{p["dek"]}</p>
     </section>
@@ -367,21 +448,65 @@ def project_page(p, nxt):
   </div>
 ''' + foot("../")
 
+def drawing_page(p, nxt):
+    sheets = ""
+    def sheet(src, alt, cap="", size=None, lazy=True):
+        w, h = dims(src)
+        r = int(w) / int(h)
+        size = size or ("tall" if r < 1 else "square" if r < 1.4 else "wide")
+        ld = ' loading="lazy"' if lazy else ""
+        fc = f"<figcaption>{cap}</figcaption>" if cap else ""
+        return f'<figure class="sheet {size}" style="--w:{w}px"><img src="../images/{src}" alt="{html.escape(alt)}" width="{w}" height="{h}"{ld}>{fc}</figure>', r
+    for i, f in enumerate(p["figs"]):
+        if isinstance(f, list):
+            pair = [sheet(*x, size="in-pair") for x in f]
+            cols = " ".join(f"{r:.3f}fr" for _, r in pair)
+            sheets += f'<div class="pair" style="grid-template-columns:{cols}">' + "".join(h for h, _ in pair) + "</div>"
+        else:
+            sheets += sheet(*f, lazy=bool(i))[0]
+    nc = " contain" if nxt.get("contain") else ""
+    w, h = dims(nxt["thumb"])
+    return head(f'{p["title"]} · {NAME}', p["dek"], f'{BASE}{p["slug"]}/', "../") + f'''
+<main>
+  <div class="wrap">
+    <section class="p-hero">
+      <a class="back" href="../#drawings">← All work</a>
+      <div class="eyebrow"><span class="num">Drawings</span><span class="label">{mode(p["mode"])} · {p["org"]} · {p["year"]}</span></div>
+      <h1 class="display">{p["title"]}</h1>
+      <p class="dek">{p["dek"]}</p>
+      <p class="label course">{p["course"]}</p>
+    </section>
+
+    <div class="sheets">{sheets}</div>
+
+    <a class="next" href="../{nxt["slug"]}/">
+      <div><span class="label">Next project</span><h2 class="display">{nxt["title"]}</h2></div>
+      <div class="pic{nc}"><img src="../images/{nxt["thumb"]}" alt="" width="{w}" height="{h}" loading="lazy"></div>
+    </a>
+  </div>
+''' + foot("../")
+
+def tile(p):
+    w, h = dims(p["tile"])
+    r = int(w) / int(h)
+    # justified rows: each tile grows by its aspect ratio, so a row shares one height
+    return f'''        <a class="tile" href="{p["slug"]}/" style="flex:{r:.3f} 1 calc({r:.3f} * var(--row))"><img src="images/{p["tile"]}" alt="" width="{w}" height="{h}" loading="lazy"><span class="tile-text"><b>{p["title"]}</b><span class="label">{p["year"]}</span></span></a>'''
+
 def card(p):
     w, h = dims(p["thumb"])
     c = " contain" if p.get("contain") else ""
+    q = f'<span class="q display" aria-hidden="true">{p["q"]}</span>' if p["q"] else ""
     return f'''        <a class="card" href="{p["slug"]}/">
-          <div class="pic{c}"><img src="images/{p["thumb"]}" alt="" width="{w}" height="{h}" loading="lazy"></div>
-          <div class="card-text"><span class="num">{p["num"]}</span><h3 class="display">{p["title"]}</h3><p>{p["card"]}</p><span class="label">{p["card_label"]}</span></div>
+          <div class="pic{c}"><img src="images/{p["thumb"]}" alt="" width="{w}" height="{h}" loading="lazy">{q}</div>
+          <div class="card-text"><span class="num">{p["num"]}</span><h3 class="display">{p["title"]}</h3><p>{p["card"]}</p><span class="label">{mode(p["mode"])} · {p["card_label"].split(" · ")[0]}</span></div>
         </a>'''
 
 def early_row(href, img, title, line, when):
     w, h = dims(img)
-    return f'''        <tr>
-          <td class="thumb{' contain' if img.endswith('.svg') else ''}"><a href="{href}" tabindex="-1" aria-hidden="true"><img src="images/{img}" alt="" loading="lazy" width="{w}" height="{h}"></a></td>
-          <td><h3><a href="{href}">{title}</a></h3><p>{line}</p></td>
-          <td class="when label">{when}</td>
-        </tr>'''
+    return f'''        <li>
+          <a class="thumb{' contain' if img.endswith('.svg') else ''}" href="{href}" tabindex="-1" aria-hidden="true"><img src="images/{img}" alt="" loading="lazy" width="{w}" height="{h}"></a>
+          <div><h3><a href="{href}">{title}</a></h3><p>{line}</p><span class="label">{when}</span></div>
+        </li>'''
 
 person = {
     "@context": "https://schema.org", "@type": "Person",
@@ -395,8 +520,10 @@ person = {
 
 def home():
     cards = "\n".join(card(p) for p in SELECTED)
-    rows = "\n".join([early_row(f'{p["slug"]}/', p["thumb"], p["title"], p["card"], f'{p["kind"]} · {p["year"]}') for p in EARLIER]
-                     + [early_row(*r) for r in EARLY_ADOBE])
+    tiles = "\n".join(tile(p) for p in DRAWINGS)
+    rows = [(p["year"], early_row(f'{p["slug"]}/', p.get("early_thumb", p["thumb"]), p["title"], p["card"], f'{mode(p["mode"])} · {p["year"]}')) for p in EARLIER]
+    rows += [(r[-1][-4:], early_row(*r)) for r in EARLY_ADOBE]
+    rows = "\n".join(r for _, r in sorted(rows, key=lambda r: r[0], reverse=True))
     desc = f"{NAME} is a senior UX engineer and computational designer on Google Earth, with a background in architecture and urban planning from Columbia GSAPP."
     ld = f'\n<script type="application/ld+json">{json.dumps(person, ensure_ascii=False)}</script>'
     return head(f"{NAME} · {TAGLINE}", desc, BASE, "", ld).replace('<a class="name" href="./">', '<a class="name" href="./">') + f'''
@@ -405,10 +532,10 @@ def home():
     <section class="hero">
       <h1 class="display">I design and build software for the <em>built environment.</em></h1>
       <div class="hero-foot">
-        <p>I’m a senior UX engineer and computational designer on Google Earth, with a background in architecture and urban planning from Columbia University. I build the tools that researchers, planners, architects, engineers and developers use to understand a site and what they’re building on it.</p>
+        <p>I’m a senior UX engineer and computational designer on Google Earth. I build the tools that researchers, planners, architects, engineers and developers use to understand a site and what they’re building on it.</p>
         <div class="ctas">
           <a class="btn primary" href="#hello">Say hello</a>
-          <a class="btn" href="#work">See the work ↓</a>
+          <a class="btn" href="#work">See my work ↓</a>
         </div>
       </div>
     </section>
@@ -420,63 +547,80 @@ def home():
       </div>
     </section>
 
-    <section class="block" aria-labelledby="earlier">
-      <div class="sec-head"><h2 class="label" id="earlier">Earlier work</h2><span class="label">Columbia GSAPP and internships, 2016–20</span></div>
-      <table class="early">
-{rows}
-      </table>
-    </section>
-
     <section class="about block" id="about">
       <div class="sec-head" style="grid-column:1/-1;margin-bottom:0"><h2 class="label">About</h2></div>
-      <div></div>
+      <div class="about-lead"><p class="big">I studied architecture and urban planning, and I think in sites, sections and systems. Now I do the same thinking in code, on a 3D map of the world. I still care about <em>how people move through space, at every scale.</em></p>
+        <div class="reach" id="hello">
+          <p>Working on something for the built environment? I’d love to hear about it.</p>
+          <p class="links"><button class="linkish" type="button" data-copy="{EMAIL}" aria-label="Copy email address">Email</button> · <a href="{LINKEDIN}">LinkedIn ↗</a> · <a href="{RESUME_PDF}">Resume (PDF) ↓</a></p>
+        </div></div>
       <div>
-        <p class="big">I trained in architecture and urban planning, and I still think in sites, sections and systems. Now I build software for the people who design and construct places, and I keep looking for ways to bring it closer to the work on the ground.</p>
 
         <h3 class="label">Experience</h3>
         <ul class="list">
           <li><span>Google, Senior Computational Designer (UX Engineer)<small>Google Earth, and Delve by Sidewalk Labs before it joined Earth. Site analysis and building design tools, map interactions and data layers.</small></span><span class="label">2022–now</span></li>
           <li><span>Intelligent City, Computational Designer<small>Mass-timber housing. Parametric building generation and design data tools.</small></span><span class="label">2021–22</span></li>
-          <li><span>Columbia GSAPP, Graduate Researcher and Teaching Assistant<small>Center for Spatial Research. Teaching assistant for GIS across the school, and for Urban Analytics in the planning program.</small></span><span class="label">2017–20</span></li>
-          <li><span>Buell Center, Columbia GSAPP, Research Assistant<small>Exhibition research for <em>Living in America</em>.</small></span><span class="label">2016</span></li>
+          <li><span>Columbia GSAPP, Researcher and Teaching Assistant<small>Center for Spatial Research, and exhibition research for <em>Living in America</em> at the Buell Center. Teaching assistant for GIS and Urban Analytics.</small></span><span class="label">2016–20</span></li>
         </ul>
 
         <h3 class="label">Education</h3>
         <ul class="list">
-          <li><span>Columbia GSAPP, Master of Architecture and MS Urban Planning</span><span class="label">2020</span></li>
+          <li><span>Columbia University, Master of Architecture and MS Urban Planning</span><span class="label">2020</span></li>
           <li><span>Barnard College, Columbia University, BA Architecture</span><span class="label">2016</span></li>
         </ul>
 
-        <h3 class="label">Teaching and mentoring</h3>
+        <h3 class="label">Teaching and recognition</h3>
         <ul class="list">
-          <li><span>Mentorship Program, Columbia GSAPP<small>Mentor to an MS Urban Planning student, class of 2027</small></span><span class="label">2026–27</span></li>
-          <li><span>Guest Lecturer, Columbia GSAPP<small><em>Prototyping in Urban Tech</em>, taught by James Piacentini</small></span><span class="label">2026</span></li>
+          <li><span>Mentor, Columbia GSAPP Mentorship Program</span><span class="label">2026–27</span></li>
+          <li><span>Guest Lecturer, <em>Prototyping in Urban Tech</em>, Columbia GSAPP</span><span class="label">2026</span></li>
+          <li><span>Honorable Mention, Google Geo Makers Hackathon, for Earth Canvas</span><span class="label">2025</span></li>
         </ul>
 
-        <h3 class="label">Recognition</h3>
-        <ul class="list">
-          <li><span>Honorable Mention, Analytics, Geo Makers Hackathon at Google<small>Came up with the idea and built the prototype with two teammates</small></span><span class="label">2025</span></li>
-        </ul>
+      </div>
+    </section>
 
-        <h3 class="label">Mentions</h3>
-        <ul class="list">
+    <section class="block" aria-labelledby="earlier">
+      <div class="sec-head"><h2 class="label" id="earlier">Earlier work</h2><span class="label">Graduate school and internships, 2016–20</span></div>
+      <ul class="early">
+{rows}
+      </ul>
+    </section>
+
+    <section class="block" aria-labelledby="drawings">
+      <div class="sec-head"><h2 class="label" id="drawings">Drawings</h2><span class="label">Undergraduate and graduate school, 2014–19</span></div>
+      <div class="drawings">
+{tiles}
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="mentions">
+      <div class="sec-head"><h2 class="label" id="mentions">Mentions</h2></div>
+      <ul class="list">
           <li><a href="https://news.columbia.edu/news/tola-oniyangi-graduates-dual-degree-architecture-urban-planning">Three degrees later, this graduate is ready to move on</a><span class="label">Columbia News · 2020</span></li>
           <li><a href="https://www.civilbeat.org/2020/01/can-fixing-our-parking-rules-make-honolulu-more-affordable/">Can fixing parking rules make Honolulu more affordable?</a><span class="label">Civil Beat · 2020</span></li>
           <li><span>Researcher, <a href="https://c4sr.columbia.edu/projects/homophily-urban-history-algorithm"><em>Homophily: The Urban History of an Algorithm</em></a></span><span class="label">Chicago Architecture Biennial · 2019</span></li>
           <li><a href="https://blogs.ei.columbia.edu/2019/12/06/proposals-resilience-vieques-puerto-rico/">13 proposals to boost resilience in Vieques, Puerto Rico</a><span class="label">Columbia Climate School · 2019</span></li>
           <li><span>Researcher, <a href="https://buellcenter.columbia.edu/projects/3c803455-dbd0-4491-9c68-dec1004d1b30/"><em>Living in America: Frank Lloyd Wright, Harlem &amp; Modern Housing</em></a></span><span class="label">Buell Center · 2017</span></li>
         </ul>
-      </div>
     </section>
-  </div>
-''' + foot("")
 
-ALL = SELECTED + EARLIER
+  </div>
+''' + foot("", hello=False)
+
+# Screen readers skip the arrows; links out get a spoken hint instead.
+ARROW_HINTS = {"↗": " (external link)", "↓": "", "←": "", "↑": ""}
+def a11y(page):
+    for arrow, hint in ARROW_HINTS.items():
+        spoken = f'<span class="vh">{hint}</span>' if hint else ""
+        page = page.replace(arrow, f'<span aria-hidden="true">{arrow}</span>{spoken}')
+    return page
+
+ALL = SELECTED + EARLIER + DRAWINGS
 for i, p in enumerate(ALL):
     nxt = ALL[(i + 1) % len(ALL)]
     os.makedirs(f"{ROOT}/{p['slug']}", exist_ok=True)
-    open(f"{ROOT}/{p['slug']}/index.html", "w").write(project_page(p, nxt))
-open(f"{ROOT}/index.html", "w").write(home())
+    open(f"{ROOT}/{p['slug']}/index.html", "w").write(a11y((drawing_page if p.get("drawing") else project_page)(p, nxt)))
+open(f"{ROOT}/index.html", "w").write(a11y(home()))
 
 # Old Adobe addresses that moved: keep them working with an instant redirect.
 REDIRECTS = {"computational-design": "intelligent-city/", "12": "wastespace/", "1p-research-data-layers": "traffic-level-of-service/",

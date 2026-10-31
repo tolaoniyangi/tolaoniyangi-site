@@ -19,18 +19,18 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
 <header class="top" id="top">
   <div class="top-in">
-    <a class="name" href="../">Shakira Tola Oniyangi</a>
+    <a class="name" href="../">Shakira Tola Oniyangi<span class="sub"><span class="mode design">design</span> · <span class="mode engineering">engineering</span> · <span class="mode research">research</span></span></a>
     <nav aria-label="Primary">
       <a class="hide-xs" href="../#work">Work</a>
       <a class="hide-sm" href="../#about">About</a>
-      <a class="hide-sm" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/preview" target="_blank" rel="noopener">Resume ↗</a>
+      <a class="hide-sm" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/preview" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span><span class="vh"> (external link)</span></a>
       <a class="hello-btn" href="#hello">Say hello</a>
     </nav>
   </div>
@@ -39,13 +39,13 @@
 <main>
   <div class="wrap">
     <section class="p-hero">
-      <a class="back" href="../#work">← All work</a>
-      <div class="eyebrow"><span class="num">Earlier work</span><span class="label">Columbia GSAPP · 2016 · Machine learning</span></div>
+      <a class="back" href="../#work"><span aria-hidden="true">←</span> All work</a>
+      <div class="eyebrow"><span class="num">Earlier work</span><span class="label"><span class="mode research">research</span> · Columbia GSAPP · 2016</span></div>
       <h1 class="display">Predicting urban sprawl</h1>
       <p class="dek">Can a model learn how cities grow? A neural network trained on 15 years of satellite images of Cairo, Dubai and Wuhan, then asked what comes next.</p>
     </section>
 
-    <dl class="meta"><div><dt class="label">Role</dt><dd>Data processing and modeling, in a team of four</dd></div><div><dt class="label">Product</dt><dd>Python model</dd></div><div><dt class="label">Timeline</dt><dd>Fall 2016</dd></div><div><dt class="label">Links</dt><dd><a href="https://github.com/tolaoniyangi/dmc">Code on GitHub ↗</a></dd></div></dl>
+    <dl class="meta"><div><dt class="label">Role</dt><dd>Data processing and modeling, in a team of four</dd></div><div><dt class="label">Product</dt><dd>Python model</dd></div><div><dt class="label">Timeline</dt><dd>Fall 2016</dd></div><div><dt class="label">Links</dt><dd><a href="https://github.com/tolaoniyangi/dmc">Code on GitHub <span aria-hidden="true">↗</span><span class="vh"> (external link)</span></a></dd></div></dl>
 
     <div class="lead"><figure><img src="../images/sprawl-results.jpg" alt="Satellite images of three cities over time with built and unbuilt areas and predictions" width="2400" height="1267"><figcaption><b>Fig. 1</b>Cairo, Dubai and Wuhan: built and unbuilt land over time, and the model’s prediction.</figcaption></figure></div>
 
@@ -53,9 +53,9 @@
     <section class="chapter"><h2><span class="num">02</span>Approach</h2><div class="prose"><p>Satellite images from 2000, 2005, 2010 and 2015 were turned into figure-ground maps, cut into 32 × 32 pixel samples, and used to train a convolutional neural network to tell urban from non-urban land, then predict which pixels urbanize next.</p><div class="figs"><figure><img src="../images/sprawl-prep.jpg" alt="Diagram of machine data sample preparation: satellite image to figure-ground to cropped samples" width="2200" height="658" loading="lazy"><figcaption><b>Fig. 2</b>Machine data sample preparation: satellite image, figure-ground, then cropped samples.</figcaption></figure><figure><img src="../images/sprawl-training.jpg" alt="Diagram of image processing and training" width="2400" height="1267" loading="lazy"><figcaption><b>Fig. 3</b>From satellite image to training samples.</figcaption></figure><figure><img src="../images/sprawl-anim.gif" alt="Animated satellite view of a city over time" width="1280" height="678" loading="lazy"><figcaption><b>Fig. 4</b>One city across the years.</figcaption></figure></div></div></section>
     <section class="chapter"><h2><span class="num">03</span>Outcome</h2><div class="prose"><p>Real images exist for every year, so each prediction could be checked against what actually happened. Made with Marwah Garib, Vrinda Sharma and Kun Qian for Danil Nagy’s Data Mining the City.</p></div></section>
 
-    <a class="next" href="../marquee-selection/">
-      <div><span class="label">Next project</span><h2 class="display">Marquee map selection</h2></div>
-      <div class="pic contain"><img src="../images/fig-select.svg" alt="" width="720" height="440" loading="lazy"></div>
+    <a class="next" href="../wastespace/">
+      <div><span class="label">Next project</span><h2 class="display">wastespace</h2></div>
+      <div class="pic"><img src="../images/wastespace.jpg" alt="" width="2400" height="1350" loading="lazy"></div>
     </a>
   </div>
 
@@ -66,9 +66,9 @@
       <div class="ctas">
         <button class="btn primary" type="button" data-copy="tolaoniyangi@gmail.com" aria-label="Copy email address">Email</button>
         <a class="btn" href="https://www.linkedin.com/in/tolaoniyangi">LinkedIn</a>
-        <a class="btn" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume (PDF) ↓</a>
+        <a class="btn" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume (PDF) <span aria-hidden="true">↓</span></a>
       </div>
-      <div class="foot"><span>© 2026 Shakira Tola Oniyangi</span><a href="#top">Back to top ↑</a></div>
+      <div class="foot"><span>© 2026 Shakira Tola Oniyangi · designed by me</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div>
     </div>
   </section>
 </main>

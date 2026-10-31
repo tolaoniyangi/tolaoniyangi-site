@@ -63,10 +63,8 @@ o.append(f'<line x1="0" y1="{level}" x2="{W}" y2="{level}" stroke="{INK}" stroke
 o.append(f'<text x="16" y="34" {F} font-size="13" font-weight="700" fill="{INK}">Target elevation <tspan font-weight="400" fill-opacity=".7">(dashed): where cut volume = fill volume</tspan></text>')
 # labels
 xc=min(xs,key=lambda x:ground(x)); xf=max(xs,key=lambda x:ground(x))
-o.append(f'<text x="{xc}" y="{ground(xc)-30:.0f}" text-anchor="middle" {F} font-size="15" font-weight="800" letter-spacing="1.5" fill="{INK}">CUT</text>')
-o.append(f'<text x="{xc}" y="{ground(xc)-14:.0f}" text-anchor="middle" {F} font-size="12" fill="{INK}">dig this out</text>')
+o.append(f'<text x="{xc}" y="{ground(xc)-16:.0f}" text-anchor="middle" {F} font-size="15" font-weight="800" letter-spacing="1.5" fill="{INK}">CUT</text>')
 o.append(f'<text x="{xf}" y="{ground(xf)+28:.0f}" text-anchor="middle" {F} font-size="15" font-weight="800" letter-spacing="1.5" fill="{INK}">FILL</text>')
-o.append(f'<text x="{xf}" y="{ground(xf)+44:.0f}" text-anchor="middle" {F} font-size="12" fill="{INK}">build this up</text>')
 o.append(f'<text x="16" y="{H-14}" {F} font-size="11" letter-spacing="1" fill="{INK}" fill-opacity=".6">SITE SECTION · NOT TO SCALE</text>')
 o.append('</svg>')
 open('images/fig-cutfill.svg','w').write("\n".join(o))

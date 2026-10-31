@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Shakira Tola Oniyangi", "alternateName": ["Shakira Oniyangi", "Tola Oniyangi", "Shakirat Ibitola Oniyangi"], "jobTitle": "Senior UX Engineer and Computational Designer", "worksFor": {"@type": "Organization", "name": "Google"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Columbia University Graduate School of Architecture, Planning and Preservation"}, {"@type": "CollegeOrUniversity", "name": "Barnard College"}], "knowsAbout": ["UX engineering", "Computational design", "Architecture", "Urban planning", "GIS", "Geospatial data visualization"], "url": "https://tolaoniyangi.com/", "sameAs": ["https://www.linkedin.com/in/tolaoniyangi"]}</script>
 </head>
@@ -27,11 +27,11 @@
 
 <header class="top" id="top">
   <div class="top-in">
-    <a class="name" href="./">Shakira Tola Oniyangi</a>
+    <a class="name" href="./">Shakira Tola Oniyangi<span class="sub"><span class="mode design">design</span> · <span class="mode engineering">engineering</span> · <span class="mode research">research</span></span></a>
     <nav aria-label="Primary">
       <a class="hide-xs" href="#work">Work</a>
       <a class="hide-sm" href="#about">About</a>
-      <a class="hide-sm" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/preview" target="_blank" rel="noopener">Resume ↗</a>
+      <a class="hide-sm" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/preview" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span><span class="vh"> (external link)</span></a>
       <a class="hello-btn" href="#hello">Say hello</a>
     </nav>
   </div>
@@ -42,10 +42,10 @@
     <section class="hero">
       <h1 class="display">I design and build software for the <em>built environment.</em></h1>
       <div class="hero-foot">
-        <p>I’m a senior UX engineer and computational designer on Google Earth, with a background in architecture and urban planning from Columbia University. I build the tools that researchers, planners, architects, engineers and developers use to understand a site and what they’re building on it.</p>
+        <p>I’m a senior UX engineer and computational designer on Google Earth. I build the tools that researchers, planners, architects, engineers and developers use to understand a site and what they’re building on it.</p>
         <div class="ctas">
           <a class="btn primary" href="#hello">Say hello</a>
-          <a class="btn" href="#work">See the work ↓</a>
+          <a class="btn" href="#work">See my work <span aria-hidden="true">↓</span></a>
         </div>
       </div>
     </section>
@@ -55,127 +55,123 @@
       <div class="index">
         <a class="card" href="marquee-selection/">
           <div class="pic contain"><img src="images/fig-select.svg" alt="" width="720" height="440" loading="lazy"></div>
-          <div class="card-text"><span class="num">01</span><h3 class="display">Marquee map selection</h3><p>Drag a box on the map to select any number of features at once, then restyle, hide, copy or delete them together. The first way to select in bulk directly on Google Earth’s 3D map.</p><span class="label">Google Earth · Interaction design, front end</span></div>
+          <div class="card-text"><span class="num">01</span><h3 class="display">Marquee map selection</h3><p>Drag a box on the map to select any number of features at once, then restyle, hide, copy or delete them together. The first way to select in bulk directly on Google Earth’s 3D map.</p><span class="label"><span class="mode design">design</span> <span class="mode engineering">engineering</span> · Google Earth</span></div>
         </a>
         <a class="card" href="cut-and-fill/">
-          <div class="pic contain"><img src="images/fig-cutfill.svg" alt="" width="720" height="330" loading="lazy"></div>
-          <div class="card-text"><span class="num">02</span><h3 class="display">Cut and fill</h3><p>Draw a site and see how much earth has to be dug out or brought in to level it, and where. One of four terrain analysis tools in Google Earth.</p><span class="label">Google Earth · Back-end engineering</span></div>
+          <div class="pic contain"><img src="images/fig-cutfill.svg" alt="" width="720" height="330" loading="lazy"><span class="q display" aria-hidden="true">How much ground has to move before anything gets built?</span></div>
+          <div class="card-text"><span class="num">02</span><h3 class="display">Cut and fill</h3><p>Draw a site and see how much earth has to be dug out or brought in to level it, and where. One of four terrain analysis tools in Google Earth.</p><span class="label"><span class="mode engineering">engineering</span> · Google Earth</span></div>
         </a>
         <a class="card" href="traffic-level-of-service/">
-          <div class="pic contain"><img src="images/fig-traffic.svg" alt="" width="720" height="440" loading="lazy"></div>
-          <div class="card-text"><span class="num">03</span><h3 class="display">Traffic signal level of service</h3><p>How long do drivers wait at each traffic light? This layer grades every signalized intersection from A to F, hour by hour. Part of a launch that signed up 470+ paying professional users.</p><span class="label">Google Earth · Data visualization, UI design</span></div>
+          <div class="pic contain"><img src="images/fig-traffic.svg" alt="" width="720" height="440" loading="lazy"><span class="q display" aria-hidden="true">How long do drivers wait at each light, hour by hour?</span></div>
+          <div class="card-text"><span class="num">03</span><h3 class="display">Traffic signal level of service</h3><p>How long do drivers wait at each traffic light? This layer grades every signalized intersection from A to F, hour by hour. Part of a launch that signed up 470+ paying professional users.</p><span class="label"><span class="mode design">design</span> <span class="mode engineering">engineering</span> <span class="mode research">research</span> · Google Earth</span></div>
         </a>
         <a class="card" href="solar-assessment/">
           <div class="pic contain"><img src="images/fig-solar.svg" alt="" width="720" height="440" loading="lazy"></div>
-          <div class="card-text"><span class="num">04</span><h3 class="display">Solar assessment</h3><p>Estimate a site’s solar potential in minutes. Built from the first version through the Solar API.</p><span class="label">Google Earth · Computational design</span></div>
+          <div class="card-text"><span class="num">04</span><h3 class="display">Solar assessment</h3><p>Estimate a site’s solar potential in minutes. Built from the first version through the Solar API.</p><span class="label"><span class="mode design">design</span> <span class="mode engineering">engineering</span> <span class="mode research">research</span> · Google Earth</span></div>
         </a>
         <a class="card" href="intelligent-city/">
-          <div class="pic contain"><img src="images/fig-ic.svg" alt="" width="720" height="380" loading="lazy"></div>
-          <div class="card-text"><span class="num">05</span><h3 class="display">Mass-timber buildings, generated</h3><p>Draw a simple line in Rhino, get a full mass-timber building made from a set panel system, floor plans laid out, with its carbon and cost estimated automatically.</p><span class="label">Intelligent City · Computational design</span></div>
+          <div class="pic contain"><img src="images/fig-ic.svg" alt="" width="720" height="380" loading="lazy"><span class="q display" aria-hidden="true">What if a single line could become a whole building, down to every floor panel?</span></div>
+          <div class="card-text"><span class="num">05</span><h3 class="display">Mass-timber buildings, generated</h3><p>Draw a simple line in Rhino, get a full mass-timber building made from a set panel system, floor plans laid out, with its carbon and cost estimated automatically.</p><span class="label"><span class="mode design">design</span> <span class="mode engineering">engineering</span> · Intelligent City</span></div>
         </a>
         <a class="card" href="estimating-pedestrian-activity/">
-          <div class="pic contain"><img src="images/fig-ped.svg" alt="" width="720" height="360" loading="lazy"></div>
-          <div class="card-text"><span class="num">06</span><h3 class="display">Estimating pedestrian activity</h3><p>A pipeline that estimates street-level foot traffic from census data and feeds it straight into generative design tools.</p><span class="label">Sidewalk Labs · Computational design</span></div>
+          <div class="pic contain"><img src="images/fig-ped.svg" alt="" width="720" height="360" loading="lazy"><span class="q display" aria-hidden="true">Can census data tell you how busy a sidewalk is?</span></div>
+          <div class="card-text"><span class="num">06</span><h3 class="display">Estimating pedestrian activity</h3><p>A pipeline that estimates street-level foot traffic from census data and feeds it straight into generative design tools.</p><span class="label"><span class="mode engineering">engineering</span> <span class="mode research">research</span> · Sidewalk Labs</span></div>
         </a>
       </div>
     </section>
 
-    <section class="block" aria-labelledby="earlier">
-      <div class="sec-head"><h2 class="label" id="earlier">Earlier work</h2><span class="label">Columbia GSAPP and internships, 2016–20</span></div>
-      <table class="early">
-        <tr>
-          <td class="thumb"><a href="beyond-the-blue-dot/" tabindex="-1" aria-hidden="true"><img src="images/bluedot.jpg" alt="" loading="lazy" width="1440" height="810"></a></td>
-          <td><h3><a href="beyond-the-blue-dot/">Beyond the Blue Dot</a></h3><p>Can data generate empathy? A prototype that turns census data into short stories about the people who live and work in a place.</p></td>
-          <td class="when label">Urban planning · 2020</td>
-        </tr>
-        <tr>
-          <td class="thumb contain"><a href="data-storytelling/" tabindex="-1" aria-hidden="true"><img src="images/fig-elections.svg" alt="" loading="lazy" width="720" height="440"></a></td>
-          <td><h3><a href="data-storytelling/">Election data for 5M voters</a></h3><p>Verified voting locations and mapped what was on the ballot, state by state, for a nonpartisan voter guide used by more than 5 million people.</p></td>
-          <td class="when label">Mapping · 2020</td>
-        </tr>
-        <tr>
-          <td class="thumb"><a href="wastespace/" tabindex="-1" aria-hidden="true"><img src="images/wastespace.jpg" alt="" loading="lazy" width="2400" height="1350"></a></td>
-          <td><h3><a href="wastespace/">wastespace</a></h3><p>A recycling hub in Vieques, Puerto Rico, that turns the island’s plastic waste into products and creates jobs for women.</p></td>
-          <td class="when label">Architecture · 2019</td>
-        </tr>
-        <tr>
-          <td class="thumb"><a href="library/" tabindex="-1" aria-hidden="true"><img src="images/lib-icon-pink.jpg" alt="" loading="lazy" width="1275" height="1275"></a></td>
-          <td><h3><a href="library/">The 20-minute library</a></h3><p>A Brooklyn library whose program came from researching who lives, works and visits within a 20-minute walk.</p></td>
-          <td class="when label">Architecture · 2018</td>
-        </tr>
-        <tr>
-          <td class="thumb"><a href="citi-bike-access/" tabindex="-1" aria-hidden="true"><img src="images/citibike.jpg" alt="" loading="lazy" width="1020" height="1320"></a></td>
-          <td><h3><a href="citi-bike-access/">Citi Bike access</a></h3><p>Who can reach Citi Bike on foot or by subway, and who it leaves out.</p></td>
-          <td class="when label">Mapping · 2017</td>
-        </tr>
-        <tr>
-          <td class="thumb"><a href="airbnb-analysis/" tabindex="-1" aria-hidden="true"><img src="images/airbnb.jpg" alt="" loading="lazy" width="2400" height="1612"></a></td>
-          <td><h3><a href="airbnb-analysis/">Airbnb analysis</a></h3><p>How hosts and guests describe the same New York neighborhoods differently.</p></td>
-          <td class="when label">Mapping · 2017</td>
-        </tr>
-        <tr>
-          <td class="thumb"><a href="predicting-urban-sprawl/" tabindex="-1" aria-hidden="true"><img src="images/sprawl.jpg" alt="" loading="lazy" width="2400" height="1267"></a></td>
-          <td><h3><a href="predicting-urban-sprawl/">Predicting urban sprawl</a></h3><p>A neural network trained on satellite images of Cairo, Dubai and Wuhan to forecast where cities grow.</p></td>
-          <td class="when label">Machine learning · 2016</td>
-        </tr>
-      </table>
-    </section>
-
     <section class="about block" id="about">
       <div class="sec-head" style="grid-column:1/-1;margin-bottom:0"><h2 class="label">About</h2></div>
-      <div></div>
+      <div class="about-lead"><p class="big">I studied architecture and urban planning, and I think in sites, sections and systems. Now I do the same thinking in code, on a 3D map of the world. I still care about <em>how people move through space, at every scale.</em></p>
+        <div class="reach" id="hello">
+          <p>Working on something for the built environment? I’d love to hear about it.</p>
+          <p class="links"><button class="linkish" type="button" data-copy="tolaoniyangi@gmail.com" aria-label="Copy email address">Email</button> · <a href="https://www.linkedin.com/in/tolaoniyangi">LinkedIn <span aria-hidden="true">↗</span><span class="vh"> (external link)</span></a> · <a href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume (PDF) <span aria-hidden="true">↓</span></a></p>
+        </div></div>
       <div>
-        <p class="big">I trained in architecture and urban planning, and I still think in sites, sections and systems. Now I build software for the people who design and construct places, and I keep looking for ways to bring it closer to the work on the ground.</p>
 
         <h3 class="label">Experience</h3>
         <ul class="list">
           <li><span>Google, Senior Computational Designer (UX Engineer)<small>Google Earth, and Delve by Sidewalk Labs before it joined Earth. Site analysis and building design tools, map interactions and data layers.</small></span><span class="label">2022–now</span></li>
           <li><span>Intelligent City, Computational Designer<small>Mass-timber housing. Parametric building generation and design data tools.</small></span><span class="label">2021–22</span></li>
-          <li><span>Columbia GSAPP, Graduate Researcher and Teaching Assistant<small>Center for Spatial Research. Teaching assistant for GIS across the school, and for Urban Analytics in the planning program.</small></span><span class="label">2017–20</span></li>
-          <li><span>Buell Center, Columbia GSAPP, Research Assistant<small>Exhibition research for <em>Living in America</em>.</small></span><span class="label">2016</span></li>
+          <li><span>Columbia GSAPP, Researcher and Teaching Assistant<small>Center for Spatial Research, and exhibition research for <em>Living in America</em> at the Buell Center. Teaching assistant for GIS and Urban Analytics.</small></span><span class="label">2016–20</span></li>
         </ul>
 
         <h3 class="label">Education</h3>
         <ul class="list">
-          <li><span>Columbia GSAPP, Master of Architecture and MS Urban Planning</span><span class="label">2020</span></li>
+          <li><span>Columbia University, Master of Architecture and MS Urban Planning</span><span class="label">2020</span></li>
           <li><span>Barnard College, Columbia University, BA Architecture</span><span class="label">2016</span></li>
         </ul>
 
-        <h3 class="label">Teaching and mentoring</h3>
+        <h3 class="label">Teaching and recognition</h3>
         <ul class="list">
-          <li><span>Mentorship Program, Columbia GSAPP<small>Mentor to an MS Urban Planning student, class of 2027</small></span><span class="label">2026–27</span></li>
-          <li><span>Guest Lecturer, Columbia GSAPP<small><em>Prototyping in Urban Tech</em>, taught by James Piacentini</small></span><span class="label">2026</span></li>
+          <li><span>Mentor, Columbia GSAPP Mentorship Program</span><span class="label">2026–27</span></li>
+          <li><span>Guest Lecturer, <em>Prototyping in Urban Tech</em>, Columbia GSAPP</span><span class="label">2026</span></li>
+          <li><span>Honorable Mention, Google Geo Makers Hackathon, for Earth Canvas</span><span class="label">2025</span></li>
         </ul>
 
-        <h3 class="label">Recognition</h3>
-        <ul class="list">
-          <li><span>Honorable Mention, Analytics, Geo Makers Hackathon at Google<small>Came up with the idea and built the prototype with two teammates</small></span><span class="label">2025</span></li>
-        </ul>
+      </div>
+    </section>
 
-        <h3 class="label">Mentions</h3>
-        <ul class="list">
+    <section class="block" aria-labelledby="earlier">
+      <div class="sec-head"><h2 class="label" id="earlier">Earlier work</h2><span class="label">Graduate school and internships, 2016–20</span></div>
+      <ul class="early">
+        <li>
+          <a class="thumb" href="beyond-the-blue-dot/" tabindex="-1" aria-hidden="true"><img src="images/bluedot.jpg" alt="" loading="lazy" width="1440" height="810"></a>
+          <div><h3><a href="beyond-the-blue-dot/">Beyond the Blue Dot</a></h3><p>Can data generate empathy? A prototype that turns census data into short stories about the people who live and work in a place.</p><span class="label"><span class="mode research">research</span> · 2020</span></div>
+        </li>
+        <li>
+          <a class="thumb contain" href="data-storytelling/" tabindex="-1" aria-hidden="true"><img src="images/fig-elections.svg" alt="" loading="lazy" width="720" height="440"></a>
+          <div><h3><a href="data-storytelling/">Election data for 5M voters</a></h3><p>Verified voting locations and mapped what was on the ballot, state by state, for a nonpartisan voter guide used by more than 5 million people.</p><span class="label"><span class="mode research">research</span> · 2020</span></div>
+        </li>
+        <li>
+          <a class="thumb" href="liminal-space/" tabindex="-1" aria-hidden="true"><img src="images/liminal-space.gif" alt="" loading="lazy" width="768" height="512"></a>
+          <div><h3><a href="liminal-space/">Liminal Space</a></h3><p>Could a model design a space that’s never quite open or closed?</p><span class="label"><span class="mode design">design</span> · 2019</span></div>
+        </li>
+        <li>
+          <a class="thumb" href="citi-bike-access/" tabindex="-1" aria-hidden="true"><img src="images/citibike.jpg" alt="" loading="lazy" width="1020" height="1320"></a>
+          <div><h3><a href="citi-bike-access/">Citi Bike access</a></h3><p>Who can reach Citi Bike on foot or by subway, and who it leaves out.</p><span class="label"><span class="mode research">research</span> · 2017</span></div>
+        </li>
+        <li>
+          <a class="thumb" href="airbnb-analysis/" tabindex="-1" aria-hidden="true"><img src="images/airbnb.jpg" alt="" loading="lazy" width="2400" height="1612"></a>
+          <div><h3><a href="airbnb-analysis/">Airbnb analysis</a></h3><p>How hosts and guests describe the same New York neighborhoods differently.</p><span class="label"><span class="mode research">research</span> · 2017</span></div>
+        </li>
+        <li>
+          <a class="thumb" href="predicting-urban-sprawl/" tabindex="-1" aria-hidden="true"><img src="images/sprawl-intro.gif" alt="" loading="lazy" width="466" height="247"></a>
+          <div><h3><a href="predicting-urban-sprawl/">Predicting urban sprawl</a></h3><p>A neural network trained on satellite images of Cairo, Dubai and Wuhan to forecast where cities grow.</p><span class="label"><span class="mode research">research</span> · 2016</span></div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="block" aria-labelledby="drawings">
+      <div class="sec-head"><h2 class="label" id="drawings">Drawings</h2><span class="label">Undergraduate and graduate school, 2014–19</span></div>
+      <div class="drawings">
+        <a class="tile" href="wastespace/" style="flex:1.544 1 calc(1.544 * var(--row))"><img src="images/ws-render.jpg" alt="" width="2400" height="1554" loading="lazy"><span class="tile-text"><b>wastespace</b><span class="label">2019</span></span></a>
+        <a class="tile" href="library/" style="flex:1.890 1 calc(1.890 * var(--row))"><img src="images/lib-plan-section.jpg" alt="" width="2200" height="1164" loading="lazy"><span class="tile-text"><b>The 20-minute library</b><span class="label">2018</span></span></a>
+        <a class="tile" href="hydro-habitat/" style="flex:1.705 1 calc(1.705 * var(--row))"><img src="images/hh-sections.jpg" alt="" width="1800" height="1056" loading="lazy"><span class="tile-text"><b>Hydro-habitat</b><span class="label">2017</span></span></a>
+        <a class="tile" href="deconstructed-jenga/" style="flex:1.000 1 calc(1.000 * var(--row))"><img src="images/cj-states.jpg" alt="" width="1800" height="1800" loading="lazy"><span class="tile-text"><b>Deconstructed Jenga</b><span class="label">2017</span></span></a>
+        <a class="tile" href="subway-entrance/" style="flex:1.500 1 calc(1.500 * var(--row))"><img src="images/pp-peek.jpg" alt="" width="1800" height="1200" loading="lazy"><span class="tile-text"><b>Brighter below</b><span class="label">2017</span></span></a>
+        <a class="tile" href="ferry-landing/" style="flex:1.852 1 calc(1.852 * var(--row))"><img src="images/bb-cross.jpg" alt="" width="1800" height="972" loading="lazy"><span class="tile-text"><b>Sea legs</b><span class="label">2014</span></span></a>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="mentions">
+      <div class="sec-head"><h2 class="label" id="mentions">Mentions</h2></div>
+      <ul class="list">
           <li><a href="https://news.columbia.edu/news/tola-oniyangi-graduates-dual-degree-architecture-urban-planning">Three degrees later, this graduate is ready to move on</a><span class="label">Columbia News · 2020</span></li>
           <li><a href="https://www.civilbeat.org/2020/01/can-fixing-our-parking-rules-make-honolulu-more-affordable/">Can fixing parking rules make Honolulu more affordable?</a><span class="label">Civil Beat · 2020</span></li>
           <li><span>Researcher, <a href="https://c4sr.columbia.edu/projects/homophily-urban-history-algorithm"><em>Homophily: The Urban History of an Algorithm</em></a></span><span class="label">Chicago Architecture Biennial · 2019</span></li>
           <li><a href="https://blogs.ei.columbia.edu/2019/12/06/proposals-resilience-vieques-puerto-rico/">13 proposals to boost resilience in Vieques, Puerto Rico</a><span class="label">Columbia Climate School · 2019</span></li>
           <li><span>Researcher, <a href="https://buellcenter.columbia.edu/projects/3c803455-dbd0-4491-9c68-dec1004d1b30/"><em>Living in America: Frank Lloyd Wright, Harlem &amp; Modern Housing</em></a></span><span class="label">Buell Center · 2017</span></li>
         </ul>
-      </div>
     </section>
+
   </div>
 
-  <section class="hello" id="hello">
+  <footer class="hello">
     <div class="wrap">
-      <h2 class="display">Say hello.</h2>
-      <p>Working on something for the built environment? I’d love to hear about it.</p>
-      <div class="ctas">
-        <button class="btn primary" type="button" data-copy="tolaoniyangi@gmail.com" aria-label="Copy email address">Email</button>
-        <a class="btn" href="https://www.linkedin.com/in/tolaoniyangi">LinkedIn</a>
-        <a class="btn" href="https://docs.google.com/document/d/1PsYkoxXYiOl4ZxGXRmqG97AJ3HAt2X0ppgQ0ddp8kbU/export?format=pdf">Resume (PDF) ↓</a>
-      </div>
-      <div class="foot"><span>© 2026 Shakira Tola Oniyangi</span><a href="#top">Back to top ↑</a></div>
+      <div class="foot"><span>© 2026 Shakira Tola Oniyangi · designed by me</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div>
     </div>
-  </section>
+  </footer>
 </main>
 
 <script src="site.js"></script>
