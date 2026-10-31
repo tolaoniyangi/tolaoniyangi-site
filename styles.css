@@ -125,7 +125,7 @@ a:hover{color:var(--accent)}
 .lead{margin-bottom:clamp(40px,5vw,64px);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);column-gap:clamp(24px,4vw,64px)}
 .lead > *{grid-column:2}
 @media (max-width:900px){.lead{display:block}}
-.chapter{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:20px clamp(24px,4vw,64px);margin-bottom:clamp(40px,5.5vw,76px)}
+.chapter{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:20px clamp(24px,4vw,64px);margin-bottom:clamp(48px,7vw,96px)}
 .chapter .prose > :last-child{margin-bottom:0}
 .chapter > h2{position:sticky;top:96px;align-self:start;margin:0;font-size:clamp(22px,2.2vw,30px);letter-spacing:-.02em;font-variation-settings:"wdth" 115;font-weight:700;line-height:1.1}
 .chapter > h2 .num{display:block;margin-bottom:10px}
