@@ -1,99 +1,99 @@
-<svg data-thinned="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 610" role="img" aria-label="Flowchart: ten urban data sources, such as weather, buildings, parcels, census, roads and transit, linked to twelve planning analyses, from shadow studies and demographic analysis to transportation, traffic flow and accidents"><rect width="900" height="610" fill="#EAE6DE"/>
-<path d="M240 88.0 C 350 88.0, 330 85.0, 440 85.0" fill="none" stroke="#8A857B" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 138.6 C 350 138.6, 330 85.0, 440 85.0" fill="none" stroke="#D29A12" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 138.6 C 350 138.6, 330 131.0, 440 131.0" fill="none" stroke="#D29A12" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 138.6 C 350 138.6, 330 177.0, 440 177.0" fill="none" stroke="#D29A12" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 138.6 C 350 138.6, 330 223.0, 440 223.0" fill="none" stroke="#D29A12" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 138.6 C 350 138.6, 330 269.0, 440 269.0" fill="none" stroke="#D29A12" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 189.2 C 350 189.2, 330 269.0, 440 269.0" fill="none" stroke="#D29A12" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 189.2 C 350 189.2, 330 223.0, 440 223.0" fill="none" stroke="#D29A12" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 239.8 C 350 239.8, 330 223.0, 440 223.0" fill="none" stroke="#E2512B" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 239.8 C 350 239.8, 330 269.0, 440 269.0" fill="none" stroke="#E2512B" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 239.8 C 350 239.8, 330 315.0, 440 315.0" fill="none" stroke="#E2512B" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 239.8 C 350 239.8, 330 361.0, 440 361.0" fill="none" stroke="#E2512B" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 290.4 C 350 290.4, 330 315.0, 440 315.0" fill="none" stroke="#C7356B" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 290.4 C 350 290.4, 330 361.0, 440 361.0" fill="none" stroke="#C7356B" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 290.4 C 350 290.4, 330 223.0, 440 223.0" fill="none" stroke="#C7356B" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 290.4 C 350 290.4, 330 407.0, 440 407.0" fill="none" stroke="#C7356B" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 341.0 C 350 341.0, 330 361.0, 440 361.0" fill="none" stroke="#6E9E2E" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 341.0 C 350 341.0, 330 407.0, 440 407.0" fill="none" stroke="#6E9E2E" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 341.0 C 350 341.0, 330 315.0, 440 315.0" fill="none" stroke="#6E9E2E" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 391.6 C 350 391.6, 330 453.0, 440 453.0" fill="none" stroke="#1597AC" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 391.6 C 350 391.6, 330 499.0, 440 499.0" fill="none" stroke="#1597AC" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 442.2 C 350 442.2, 330 453.0, 440 453.0" fill="none" stroke="#2E78C8" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 492.8 C 350 492.8, 330 453.0, 440 453.0" fill="none" stroke="#5B4FC4" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 492.8 C 350 492.8, 330 499.0, 440 499.0" fill="none" stroke="#5B4FC4" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 543.4 C 350 543.4, 330 499.0, 440 499.0" fill="none" stroke="#8C3BAE" stroke-width=".8" stroke-opacity=".7"/>
-<path d="M240 543.4 C 350 543.4, 330 545.0, 440 545.0" fill="none" stroke="#8C3BAE" stroke-width=".8" stroke-opacity=".7"/>
-<rect x="20" y="70.0" width="220" height="36" rx="4" fill="#fff" stroke="#8A857B" stroke-width=".9"/>
-<text x="30" y="85.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#8A857B" fill-opacity="1" letter-spacing="0">Weather</text>
-<text x="30" y="99.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Historical, real-time, forecasts</text>
-<rect x="20" y="120.6" width="220" height="36" rx="4" fill="#fff" stroke="#D29A12" stroke-width=".9"/>
-<text x="30" y="135.6" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#D29A12" fill-opacity="1" letter-spacing="0">Buildings</text>
-<text x="30" y="149.6" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Occupancy, geometry, type, rent</text>
-<rect x="20" y="171.2" width="220" height="36" rx="4" fill="#fff" stroke="#D29A12" stroke-width=".9"/>
-<text x="30" y="186.2" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#D29A12" fill-opacity="1" letter-spacing="0">Land use</text>
-<text x="30" y="200.2" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Current and historical</text>
-<rect x="20" y="221.8" width="220" height="36" rx="4" fill="#fff" stroke="#E2512B" stroke-width=".9"/>
-<text x="30" y="236.8" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#E2512B" fill-opacity="1" letter-spacing="0">Parcels</text>
-<text x="30" y="250.8" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Units, tax lots, zoning</text>
-<rect x="20" y="272.4" width="220" height="36" rx="4" fill="#fff" stroke="#C7356B" stroke-width=".9"/>
-<text x="30" y="287.4" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#C7356B" fill-opacity="1" letter-spacing="0">Boundaries</text>
-<text x="30" y="301.4" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Administrative, political, social, economic</text>
-<rect x="20" y="323.0" width="220" height="36" rx="4" fill="#fff" stroke="#6E9E2E" stroke-width=".9"/>
-<text x="30" y="338.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#6E9E2E" fill-opacity="1" letter-spacing="0">Census</text>
-<text x="30" y="352.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Income, housing, education, commute</text>
-<rect x="20" y="373.6" width="220" height="36" rx="4" fill="#fff" stroke="#1597AC" stroke-width=".9"/>
-<text x="30" y="388.6" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#1597AC" fill-opacity="1" letter-spacing="0">Roads</text>
-<text x="30" y="402.6" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Intersections, curbs, road types, lanes</text>
-<rect x="20" y="424.2" width="220" height="36" rx="4" fill="#fff" stroke="#2E78C8" stroke-width=".9"/>
-<text x="30" y="439.2" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#2E78C8" fill-opacity="1" letter-spacing="0">Bike data</text>
-<text x="30" y="453.2" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Racks, paths, suggested routes</text>
-<rect x="20" y="474.8" width="220" height="36" rx="4" fill="#fff" stroke="#5B4FC4" stroke-width=".9"/>
-<text x="30" y="489.8" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#5B4FC4" fill-opacity="1" letter-spacing="0">Transit</text>
-<text x="30" y="503.8" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Parking, stations, schedules</text>
-<rect x="20" y="525.4000000000001" width="220" height="36" rx="4" fill="#fff" stroke="#8C3BAE" stroke-width=".9"/>
-<text x="30" y="540.4000000000001" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#8C3BAE" fill-opacity="1" letter-spacing="0">Traffic</text>
-<text x="30" y="554.4000000000001" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Congestion, accidents, live flow</text>
-<rect x="440" y="68" width="220" height="34" rx="17" fill="#fff" stroke="#141413" stroke-width=".6"/>
-<text x="454" y="83" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Shadow analysis</text>
-<text x="454" y="95" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Sun and weather on buildings</text>
-<rect x="440" y="114" width="220" height="34" rx="17" fill="#fff" stroke="#141413" stroke-width=".6"/>
-<text x="454" y="129" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Shading</text>
-<text x="454" y="141" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Glare, views, daylight</text>
-<rect x="440" y="160" width="220" height="34" rx="17" fill="#fff" stroke="#141413" stroke-width=".6"/>
-<text x="454" y="175" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Environment</text>
-<text x="454" y="187" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Emissions, watersheds, pollution</text>
-<rect x="440" y="206" width="220" height="34" rx="17" fill="#fff" stroke="#141413" stroke-width=".6"/>
-<text x="454" y="221" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Economic conditions</text>
-<text x="454" y="233" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Scenarios like a new BID</text>
-<rect x="440" y="252" width="220" height="34" rx="17" fill="#fff" stroke="#141413" stroke-width=".6"/>
-<text x="454" y="267" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Land use</text>
-<text x="454" y="279" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Past patterns, zoning impacts</text>
-<rect x="440" y="298" width="220" height="34" rx="17" fill="#fff" stroke="#141413" stroke-width=".6"/>
-<text x="454" y="313" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Political modeling</text>
-<text x="454" y="325" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Voting districts and access</text>
-<rect x="440" y="344" width="220" height="34" rx="17" fill="#fff" stroke="#141413" stroke-width=".6"/>
-<text x="454" y="359" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Demographic analysis</text>
-<text x="454" y="371" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Who a decision affects</text>
-<rect x="440" y="390" width="220" height="34" rx="17" fill="#fff" stroke="#141413" stroke-width=".6"/>
-<text x="454" y="405" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Population</text>
-<text x="454" y="417" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Change over time</text>
-<rect x="440" y="436" width="220" height="34" rx="17" fill="#fff" stroke="#141413" stroke-width=".6"/>
-<text x="454" y="451" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Transportation</text>
-<text x="454" y="463" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Does supply meet demand?</text>
-<rect x="440" y="482" width="220" height="34" rx="17" fill="#fff" stroke="#141413" stroke-width=".6"/>
-<text x="454" y="497" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Traffic flow</text>
-<text x="454" y="509" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Least disruptive times</text>
-<rect x="440" y="528" width="220" height="34" rx="17" fill="#fff" stroke="#141413" stroke-width=".6"/>
-<text x="454" y="543" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Accidents</text>
-<text x="454" y="555" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Safer intersections</text>
-<text x="670" y="187" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#141413" fill-opacity="1" letter-spacing="0">*</text>
-<text x="682" y="369" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#141413" fill-opacity="1" letter-spacing="0">+</text>
-<rect x="704" y="344" width="176" height="34" rx="17" fill="#fff" stroke="#141413" stroke-width=".6"/>
-<text x="718" y="359" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Housing</text>
-<text x="718" y="371" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Occupancy, type, affordability</text>
-<text x="440" y="596" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">* Possible use, less certain</text>
-<text x="590" y="596" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">+ Builds on demographic analysis</text>
-<text x="20" y="40" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="0.6" letter-spacing="1">DATA SOURCES</text>
-<text x="440" y="40" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="0.6" letter-spacing="1">WHAT PLANNERS COULD DO</text></svg>
+<svg data-thinned="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 534" role="img" aria-label="Flowchart: ten urban data sources, such as weather, buildings, parcels, census, roads and transit, linked to twelve planning analyses, from shadow studies and demographic analysis to transportation, traffic flow and accidents"><rect width="660" height="534" fill="#EAE6DE"/>
+<path d="M192 82.0 C 252 82.0, 240 80.0, 300 80.0" fill="none" stroke="#8A857B" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 126.0 C 252 126.0, 240 80.0, 300 80.0" fill="none" stroke="#D29A12" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 126.0 C 252 126.0, 240 120.0, 300 120.0" fill="none" stroke="#D29A12" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 126.0 C 252 126.0, 240 160.0, 300 160.0" fill="none" stroke="#D29A12" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 126.0 C 252 126.0, 240 200.0, 300 200.0" fill="none" stroke="#D29A12" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 126.0 C 252 126.0, 240 240.0, 300 240.0" fill="none" stroke="#D29A12" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 170.0 C 252 170.0, 240 240.0, 300 240.0" fill="none" stroke="#D29A12" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 170.0 C 252 170.0, 240 200.0, 300 200.0" fill="none" stroke="#D29A12" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 214.0 C 252 214.0, 240 200.0, 300 200.0" fill="none" stroke="#E2512B" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 214.0 C 252 214.0, 240 240.0, 300 240.0" fill="none" stroke="#E2512B" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 214.0 C 252 214.0, 240 280.0, 300 280.0" fill="none" stroke="#E2512B" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 214.0 C 252 214.0, 240 320.0, 300 320.0" fill="none" stroke="#E2512B" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 258.0 C 252 258.0, 240 280.0, 300 280.0" fill="none" stroke="#C7356B" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 258.0 C 252 258.0, 240 320.0, 300 320.0" fill="none" stroke="#C7356B" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 258.0 C 252 258.0, 240 200.0, 300 200.0" fill="none" stroke="#C7356B" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 258.0 C 252 258.0, 240 360.0, 300 360.0" fill="none" stroke="#C7356B" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 302.0 C 252 302.0, 240 320.0, 300 320.0" fill="none" stroke="#6E9E2E" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 302.0 C 252 302.0, 240 360.0, 300 360.0" fill="none" stroke="#6E9E2E" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 302.0 C 252 302.0, 240 280.0, 300 280.0" fill="none" stroke="#6E9E2E" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 346.0 C 252 346.0, 240 400.0, 300 400.0" fill="none" stroke="#1597AC" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 346.0 C 252 346.0, 240 440.0, 300 440.0" fill="none" stroke="#1597AC" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 390.0 C 252 390.0, 240 400.0, 300 400.0" fill="none" stroke="#2E78C8" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 434.0 C 252 434.0, 240 400.0, 300 400.0" fill="none" stroke="#5B4FC4" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 434.0 C 252 434.0, 240 440.0, 300 440.0" fill="none" stroke="#5B4FC4" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 478.0 C 252 478.0, 240 440.0, 300 440.0" fill="none" stroke="#8C3BAE" stroke-width=".8" stroke-opacity=".7"/>
+<path d="M192 478.0 C 252 478.0, 240 480.0, 300 480.0" fill="none" stroke="#8C3BAE" stroke-width=".8" stroke-opacity=".7"/>
+<rect x="16" y="66.0" width="176" height="32" rx="4" fill="#fff" stroke="#8A857B" stroke-width=".9"/>
+<text x="26" y="80.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#8A857B" fill-opacity="1" letter-spacing="0">Weather</text>
+<text x="26" y="92.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Historical, real-time, forecasts</text>
+<rect x="16" y="110.0" width="176" height="32" rx="4" fill="#fff" stroke="#D29A12" stroke-width=".9"/>
+<text x="26" y="124.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#D29A12" fill-opacity="1" letter-spacing="0">Buildings</text>
+<text x="26" y="136.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Occupancy, geometry, type, rent</text>
+<rect x="16" y="154.0" width="176" height="32" rx="4" fill="#fff" stroke="#D29A12" stroke-width=".9"/>
+<text x="26" y="168.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#D29A12" fill-opacity="1" letter-spacing="0">Land use</text>
+<text x="26" y="180.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Current and historical</text>
+<rect x="16" y="198.0" width="176" height="32" rx="4" fill="#fff" stroke="#E2512B" stroke-width=".9"/>
+<text x="26" y="212.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#E2512B" fill-opacity="1" letter-spacing="0">Parcels</text>
+<text x="26" y="224.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Units, tax lots, zoning</text>
+<rect x="16" y="242.0" width="176" height="32" rx="4" fill="#fff" stroke="#C7356B" stroke-width=".9"/>
+<text x="26" y="256.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#C7356B" fill-opacity="1" letter-spacing="0">Boundaries</text>
+<text x="26" y="268.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Admin, political, social, economic</text>
+<rect x="16" y="286.0" width="176" height="32" rx="4" fill="#fff" stroke="#6E9E2E" stroke-width=".9"/>
+<text x="26" y="300.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#6E9E2E" fill-opacity="1" letter-spacing="0">Census</text>
+<text x="26" y="312.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Income, housing, commute</text>
+<rect x="16" y="330.0" width="176" height="32" rx="4" fill="#fff" stroke="#1597AC" stroke-width=".9"/>
+<text x="26" y="344.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#1597AC" fill-opacity="1" letter-spacing="0">Roads</text>
+<text x="26" y="356.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Intersections, curbs, lanes</text>
+<rect x="16" y="374.0" width="176" height="32" rx="4" fill="#fff" stroke="#2E78C8" stroke-width=".9"/>
+<text x="26" y="388.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#2E78C8" fill-opacity="1" letter-spacing="0">Bike data</text>
+<text x="26" y="400.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Racks, paths, suggested routes</text>
+<rect x="16" y="418.0" width="176" height="32" rx="4" fill="#fff" stroke="#5B4FC4" stroke-width=".9"/>
+<text x="26" y="432.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#5B4FC4" fill-opacity="1" letter-spacing="0">Transit</text>
+<text x="26" y="444.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Parking, stations, schedules</text>
+<rect x="16" y="462.0" width="176" height="32" rx="4" fill="#fff" stroke="#8C3BAE" stroke-width=".9"/>
+<text x="26" y="476.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#8C3BAE" fill-opacity="1" letter-spacing="0">Traffic</text>
+<text x="26" y="488.0" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Congestion, accidents, live flow</text>
+<rect x="300" y="64" width="176" height="32" rx="16" fill="#fff" stroke="#141413" stroke-width=".6"/>
+<text x="314" y="78" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Shadow analysis</text>
+<text x="314" y="90" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Sun and weather on buildings</text>
+<rect x="300" y="104" width="176" height="32" rx="16" fill="#fff" stroke="#141413" stroke-width=".6"/>
+<text x="314" y="118" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Shading</text>
+<text x="314" y="130" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Glare, views, daylight</text>
+<rect x="300" y="144" width="176" height="32" rx="16" fill="#fff" stroke="#141413" stroke-width=".6"/>
+<text x="314" y="158" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Environment</text>
+<text x="314" y="170" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Emissions, watersheds, pollution</text>
+<rect x="300" y="184" width="176" height="32" rx="16" fill="#fff" stroke="#141413" stroke-width=".6"/>
+<text x="314" y="198" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Economic conditions</text>
+<text x="314" y="210" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Scenarios like a new BID</text>
+<rect x="300" y="224" width="176" height="32" rx="16" fill="#fff" stroke="#141413" stroke-width=".6"/>
+<text x="314" y="238" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Land use</text>
+<text x="314" y="250" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Past patterns, zoning impacts</text>
+<rect x="300" y="264" width="176" height="32" rx="16" fill="#fff" stroke="#141413" stroke-width=".6"/>
+<text x="314" y="278" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Political modeling</text>
+<text x="314" y="290" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Voting districts and access</text>
+<rect x="300" y="304" width="176" height="32" rx="16" fill="#fff" stroke="#141413" stroke-width=".6"/>
+<text x="314" y="318" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Demographic analysis</text>
+<text x="314" y="330" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Who a decision affects</text>
+<rect x="300" y="344" width="176" height="32" rx="16" fill="#fff" stroke="#141413" stroke-width=".6"/>
+<text x="314" y="358" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Population</text>
+<text x="314" y="370" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Change over time</text>
+<rect x="300" y="384" width="176" height="32" rx="16" fill="#fff" stroke="#141413" stroke-width=".6"/>
+<text x="314" y="398" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Transportation</text>
+<text x="314" y="410" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Does supply meet demand?</text>
+<rect x="300" y="424" width="176" height="32" rx="16" fill="#fff" stroke="#141413" stroke-width=".6"/>
+<text x="314" y="438" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Traffic flow</text>
+<text x="314" y="450" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Least disruptive times</text>
+<rect x="300" y="464" width="176" height="32" rx="16" fill="#fff" stroke="#141413" stroke-width=".6"/>
+<text x="314" y="478" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Accidents</text>
+<text x="314" y="490" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Safer intersections</text>
+<text x="484" y="170" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#141413" fill-opacity="1" letter-spacing="0">*</text>
+<text x="487" y="327" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#141413" fill-opacity="1" letter-spacing="0">+</text>
+<rect x="510" y="304" width="134" height="32" rx="16" fill="#fff" stroke="#141413" stroke-width=".6"/>
+<text x="524" y="318" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#141413" fill-opacity="1" letter-spacing="0">Housing</text>
+<text x="524" y="330" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">Occupancy, affordability</text>
+<text x="300" y="520" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">* Possible use, less certain</text>
+<text x="440" y="520" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#141413" fill-opacity="0.65" letter-spacing="0">+ Builds on demographic analysis</text>
+<text x="16" y="36" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="0.6" letter-spacing="1">DATA SOURCES</text>
+<text x="300" y="36" text-anchor="start" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#141413" fill-opacity="0.6" letter-spacing="1">WHAT PLANNERS COULD DO</text></svg>

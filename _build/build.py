@@ -224,13 +224,14 @@ P[-1]["lead"] = f.fig("fig-ped.svg", "Diagram: one census count for an area is s
 P[-1]["chapters"] = [
     ("<p>Generative design tools score design options against objectives. One question matters for almost any site: how busy will the streets around it be? Answering it needs data about who actually lives and works there.</p>"
      "<p>Getting geospatial data into those tools was slow and manual, which kept them stuck on narrow test cases. The first step was research into which use cases mattered most, and which standard datasets, like pedestrian activity and transit access, they needed.</p>"
-     f'<div class="figs">{f.fig("fig-ped-research.svg", "Flowchart linking ten urban data sources to twelve planning analyses", "The research: which data sources feed which planning questions.")}</div>'),
+     "<p>The research traced each kind of urban data, from weather to traffic, to the planning questions it could help answer. Building, parcel, boundary and census data fed the most questions, and all four describe who lives and works where. That pointed to the dataset built next: an estimate of the people around a site, and the activity they bring to its streets.</p>"
+     f'<div class="figs research">{f.fig("fig-ped-research.svg", "Flowchart linking ten urban data sources to twelve planning analyses", "Use-case research: ten kinds of urban data, and the planning questions each one feeds.")}</div>'),
     ("<p>An automated pipeline pulls the data in. Census population and workforce counts come in large areas called block groups, so the pipeline splits them down to individual buildings then estimates pedestrian activity on the streets around them.</p>"
      f'<div class="figs strip grow">{f.fig("ped-blockgroups.jpg", "Map of Manhattan with the test site highlighted", "The test site in Manhattan.", strip=True)}{f.fig("ped-units-map.jpg", "Map of Manhattan block groups by population", "Census counts, block group by block group.", strip=True)}{f.fig("ped-units.gif", "Animated map of units per building on the test site", "Split down to units in each building.", strip=True)}</div>'
-     f'<div class="figs grow">{f.fig("ped-buildingtypes.jpg", "3D model of buildings by type with activity", "Buildings by type, ready to be scored.", grow=True)}</div>'),
+     f'<div class="figs">{f.fig("ped-buildingtypes.jpg", "3D model of buildings by type with activity", "Buildings by type, ready to be scored.")}</div>'),
 
     ("<p>The result was a repeatable, automated pipeline, built and tested on a site in Manhattan. It produces building-level population, workforce and land use, plus a “buzz metric” that shows pedestrian activity from residents and workers. It was built to plug into the generative design workflow, so the tools would not be limited to narrow test cases.</p>"
-     f'<div class="figs grow">{f.fig("ped-buzz.gif", "Animated 3D site model with pedestrian activity from residents, then workers", "The buzz metric: estimated activity from residents, then workers, around the site.", grow=True)}</div>'),
+     f'<div class="figs">{f.fig("ped-buzz.gif", "Animated 3D site model with pedestrian activity from residents, then workers", "The buzz metric: estimated activity from residents, then workers, around the site.")}</div>'),
 ]
 
 # Earlier work with their own pages
